@@ -1,0 +1,6665 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+      <style>
+        table { font: .9em Monaco; display: block; }
+tr { background: #5DADE2
+        ; display: inline-block; text-align: center; width: 10em; height: 11em; margin: .5em; padding: 15px; position: relative; }
+td { display: block; }
+
+.character { style = "font-family:courier,arial,helvética;">, serif; line-height: 4.0; }
+
+ tr:hover .character { font-size: 6em; }
+tr:hover .hex, tr:hover .dec { visibility: visible; }
+xtr:hover .desc { display: block; top: 40%; left: 0; }
+.hex, .dec { visibility: hidden; }
+.desc { display: none; position :absolute; text-align: center; background: silver; color: black; } 
+
+      body {
+          background: #00FF00;
+        }
+        h2{
+          background: #00FF00;
+        }
+      </style>
+
+<title> QUE SON LAS ENTIDADES DE CARACTERES Y NUMERICAS </title>
+
+</head>
+
+<body>
+  <center> <h1><FONT FACE="impact" SIZE=7 COLOR="blue"> ¿QUÉ SON LAS ENTIDADES DE CARACTERES Y NUMÉRICAS? </FONT> </h1> </center>
+
+ <p ALING=justify>En las primeras versiones de HTML se especificaba que el juego de caracteres utilizado por las páginas web debía ser el juego de caracteres ISO-8859-1, más conocido como Latin-1.
+Para poder incluir en un página web caracteres no incluidos en ese juego de caracteres se debían utilizar las entidades de carácter. Una entidad de carácter es una referencia a un carácter 
+y se escribe con la sintaxis &nombre; es decir, empieza por el símbolo & (en inglés, ampersand, en español, et), a continuación se escribe el nombre del carácter y termina por un punto y coma.
+La norma RFC 2070, publicada en enero de 1997, permitió el uso de Unicode como juego de caracteres en HTML, por lo que se amplió el concepto de entidad de carácter a entidad numérica, 
+para permitr la referencia a cualquier carácter Unicode, con la sintaxis &número; es decir empieza por el símbolo &, a continuación se escribe el código Unicode del carácter (en notación decimal 
+o en notación hexadecimal precedida por una letra "x") y termina por un punto y coma.
+</p>
+<center><h2><FONT FACE="impact" SIZE=6 COLOR="black"> ENTIDADES DE CARACTERES Y NUMÉRICAS  </FONT></h2></center>
+                     
+<center><table>
+<tr ><td>
+        <p><i>&Tab;</i></p>
+        <p>&amp;#x00009;</p>
+        <pre>&amp;#9;</pre>
+        </td></tr >
+
+<tr ><td>
+        <p><i>&NewLine;</i></p>
+        <p>&amp;#x0000A;</p>
+        <pre>&amp;#10;</pre>
+        </td></tr >
+
+<tr ><td>
+        <p><i>&excl;</i></p>
+        <p>&amp;#x00021</p>
+        <pre>&amp;#33</pre>
+        </td></tr >
+
+<tr ><td>
+        <p>&quot; &QUOT;</p>
+         <p>&amp;#x00022;</p>
+        <pre>&amp;#34;</pre>
+       </td> </tr >
+
+<tr ><td>
+        <p>&num;</p>
+         <p>&amp;#x00023;</p>
+        <pre>&amp;#35;</pre>
+       </td> </tr >
+
+<tr ><td>
+        <p>&dollar;</p>
+         <p>&amp;#x00024;</p>
+        <p>&amp;#36;</p>
+       </td>  </tr>   
+ 
+ 
+<tr><td> 
+      <p>&percnt;</p>
+      <p>&amp;#x00025;</p>
+     <p>&amp;#37;</p>
+</td></tr >
+
+<tr ><td>
+        <p>&amp; &AMP;</p>
+        <p>&amp;#x00026;</p>
+        <p>&amp;#38;</p></td> </tr >
+
+
+<tr ><td>
+        <p>&apos;</p>
+         <p>&amp;#x00027;</p>
+        <p>&amp;#39;</p>
+       </td> </tr >
+
+<tr ><td> 
+       <p>&lpar;</p>
+      <p>&amp;#x00028;</p>
+    <p>&amp;#40;</p>
+</td></tr>
+
+<tr><td>
+        <p>&rpar;</p>
+        <p>&amp;#x00029;</p>
+        <p>&amp;#41;</p></td> </tr >
+
+
+<tr ><td>
+        <p>&ast; &midast;</p>
+         <p>&amp;#x0002A;</p>
+        <p>&amp;#42;</p>
+       </td> <td> </tr >
+
+ <tr ><td>
+       <p>&plus;</p>
+      <p> &amp;#x0002B;</p>
+     <p>&amp;#43;</p>
+      </td></tr >
+
+<tr ><td><p>&comma;</p>
+        <p>&amp;#x0002C;</p>
+        <p>&amp;#44;</p></td> </tr>
+
+<tr> <td>
+        <p>&period;</p>
+         <p>&amp;#x0002E;</p>
+        <p>&amp;#46;</p>
+       </td> </tr>    
+ 
+ <tr> <td> 
+        <p>&sol;</p>
+        <p>&amp;#x0002F;</p>
+        <p>&amp;#47;</p>
+</td></tr>
+
+<tr ><td><p>&colon;</p>
+        <p>&amp;#x0003A;</p>
+        <p>&amp;#58;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&semi;</p>
+         <p>&amp;0003B;</p>
+        <p>&amp;#59;</p>
+       </td> </tr>    
+ 
+ <tr ><td><p>&lt; &LT;</p>
+<p>&amp;#x0003C;</p>
+    <p>&amp;#60;</p>
+</td></tr> 
+
+<td><p>&equals;</p>
+        <p>&amp;#x0003D;</p>
+        <p>&amp;#61;</p></td> </tr>
+
+<tr> <td>
+        <p>&gt; &GT;</p>
+         <p>&amp;#x0003E;</p>
+        <p>&amp;#62;</p>
+       </td> </tr>
+
+<tr> <td>    
+<p>&quest;</p>
+<p>&amp;#x0003F;</p>
+<p>&amp;#63;</p>
+</td></tr>
+
+<tr><td>
+        <p>&lsqb; &lbrack;</p>
+        <p>&amp;#x0005B;</p>
+        <p>&amp;#91;</p></td> </tr>
+
+<tr> <td>
+        <p>&bsol;</p>
+         <p>&amp;#x0005C;</p>
+        <p>&amp;#92;</p>
+       </td></tr> 
+
+<tr>  <td>    
+ <p>&rsqb; &rbrack;</p>
+<p>&amp;#x0005D;</p>
+    <p>&amp;#93;</p>
+</td></tr> 
+
+<tr> <td><p>&Hat;</p>
+        <p>&amp;#x0005E;</p>
+        <p>&amp;#94;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&lowbar;</p>
+         <p>&amp;#x0005F;</p>
+        <p>&amp;#95;</p>
+       </td></tr>  
+
+ <tr><td><p>&grave;</p>
+<p>&amp;DiacriticalGrave;</p>
+    <p>&amp;#x00060;</p>
+</td></tr>
+
+<tr> <td><p>&lcub; &lbrace;</p>
+        <p>&amp;#x0007B;</p>
+        <p>&amp;#123;</p></td> </tr>
+
+<tr> <td>
+        <p>&verbar; &vert;</p>
+         <p>&amp;#x0007C;</p>
+        <p>&amp;#124;</p>
+       </td> </tr>  
+
+ <tr><td> <p>&rcub; &rbrace;</p>
+<p>&amp;#x0007D;</p>
+    <p>&amp;#125;</p>
+</td></tr>
+
+<tr> <td><p>&nbsp;</p>
+        <p>&amp;#x000A0;</p>
+        <p>&amp;#160;</p></td> </tr>
+
+<tr> <td>
+        <p>&iexcl;</p>
+         <p>&amp;#x000A1;</p>
+        <p>&amp;#161;</p>
+       </td></tr>
+
+ <tr><td><p>&cent;</p>
+<p>&amp;#x000A2;</p>
+    <p>&amp;#162;</p>
+</td></tr> 
+
+<tr> <td><p>&pound;</p>
+        <p>&amp;pound;</p>
+        <p>&amp;#163;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&curren;</p>
+         <p>&amp;#x000A4;</p>
+        <p>&amp;#164;</p>
+       </td> </tr>   
+ 
+ <tr> <td><p>&yen;</p>
+<p>&amp;#x000A5;
+</p>
+    <p>&amp;#165;</p>
+</td></tr>
+
+<tr> <td><p>&brvbar;</p>
+        <p>&amp;#x000A6;</p>
+        <p>&amp;#166;</p></td> </tr>
+
+<tr> <td>
+        <p>&sect;</p>
+         <p>&amp;#x000A7;</p>
+        <p>&amp;#167;</p>
+       </td> </tr>
+
+<td>    
+ <p>&Dot; &die;</p>
+<p>&amp;#x000A8;</p>
+    <p>&amp;#168;</p>
+</td></tr>
+
+<tr><td><p>&copy; &COPY;</p>
+        <p>&amp;#x000A9;</p>
+        <p>&amp;#169;</p></td> </tr>
+
+<tr> <td>
+        <p>&ordf;</p>
+         <p>&amp;#x000AA;</p>
+        <p>&amp;#170;</p>
+       </td> </tr>
+
+<tr><td>   
+ <p>&laquo;</p>
+<p>&amp;#x000AB;</p>
+    <p>&amp;#171;</p>
+</td></tr>
+
+<tr><td><p>&not;</p>
+        <p>&amp;#x000AC;</p>
+        <p>&amp;#172;</p></td> </tr>
+
+<tr> <td>
+        <p>&shy;</p>
+         <p>&amp;#x000AD;</p>
+        <p>&amp;#173;</p>
+       </td> </tr>
+<tr><td>    
+ <p>&reg; &circledR; &REG;</p>
+<p>&amp;#x000AE;</p>
+    <p>&amp;#174;</p>
+</td></tr>
+
+<tr><td><p>&macr; &OverBar;</p>
+        <p>&amp;#x000AF;</p>
+        <p>&amp;#175;</p></td> </tr>
+
+<tr> <td>
+        <p>&deg;</p>
+         <p>&amp;#x000B0;</p>
+        <p>&amp;#176;;</p>
+       </td> </tr>
+<td>    
+ <p>&plusmn; &pm;</p>
+<p>&amp;#x000B1;</p>
+    <p>&amp;#177;</p>
+</td></tr>
+
+<tr><td><p>&sup2;</p>
+        <p>&amp;#x000B2;</p>
+        <p>&amp;#178;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&sup3;</p>
+         <p>&amp;#x000B3;</p>
+        <p>&amp;#179;</p>
+       </td> </tr>
+<td>    
+ <p>&acute;</p>
+<p>&amp;#x000B4;</p>
+    <p>&amp;#180;</p>
+</td></tr>
+
+<tr><td><p>&micro;</p>
+        <p>&amp;#x000B5;</p>
+        <p>&amp;#181;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&para;</p>
+         <p>&amp;#x000B6;</p>
+        <p>&amp;#182;</p>
+       </td> </tr>
+
+<tr><td>    
+ <p>&middot; &centerdot;</p>
+<p>&amp;#x000B7;</p>
+    <p>&amp;#183;</p>
+</td></tr>
+
+<tr><td><p>&cedil; &Cedilla;</p>
+        <p>&amp;#x000B8;</p>
+        <p>&amp;#184;</p></td> </tr>
+
+<tr> <td>
+        <p>&sup1;</p>
+         <p>&amp;#x000B9;</p>
+        <p>&amp;#185;</p>
+       </td></tr>
+
+<tr> <td>    
+ <p>&ordm;</p>
+<p>&amp;#x000BA;</p>
+    <p>&amp;#186;</p>
+</td></tr>
+
+<tr><td><p>&raquo;</p>
+        <p>&amp;#x000BB;</p>
+        <p>&amp;#187;</p></td> </tr>
+
+
+<tr> <td>
+        <p>&frac14;</p>
+         <p>&amp;#x000BC;</p>
+        <p>&amp;#188;</p>
+       </td> </tr>
+<tr><td>    
+ <p>½</p>
+<p>&amp;#x000BD;</p>
+    <p>&amp;#189;</p>
+</td></tr>
+
+<tr><td><p>¾</p>
+        <p>&amp;#x000BE;</p>
+        <p>&amp;#190;</p></td> </tr>
+
+<tr> <td>
+        <p>&iquest;</p>
+         <p>&amp;#x000BF;</p>
+        <p>&amp;#191;</p>
+       </td></tr>
+  <tr><td>    
+ <td><p>&Agrave;</p>
+        <p>&amp;#x000C0;</p>
+        <p>&amp;#192;</p></td> </tr>
+        
+<tr> <td>
+        <p>&Aacute;</p>
+         <p>&amp;#193;</p>
+        <p>&amp;#xc1;</p>
+       </td></tr>
+   <tr><td>    
+ <p>&aacute</p>
+<p>&amp;#225;</p>
+    <p>&amp;#xe1;</p>
+       </td></tr>
+
+<tr><td><p>&Abreve;</p>
+        <p>&amp;#258;</p>
+        <p>&amp;#x102;</p></td> </tr>
+
+<tr> <td>
+        <p>&Acirc;</p>
+         <p>&amp;#x000C2;</p>
+        <p>&amp;#194;</p>
+       </td> </tr>
+  <td>    
+ <p>&Atilde;</p>
+<p>&amp;#x000C3;</p>
+    <p>&amp;#195;</p>
+</td></tr>
+
+<tr><td><p>&Auml;</p>
+        <p>&amp;#x000C4;</p>
+        <p>&amp;#196;</p></td> </tr>
+
+<tr> <td><p>&abreve;</p>
+          <p>&amp;#259;</p>
+        <p>&amp;#x103;</p></td></tr>
+
+<tr><td> <p>&ac;</p>
+         <p>&amp;#8766;</p>
+        <p>&amp;#x223e;</p></td></tr>
+<tr><td><p>&acd;</p>
+          <p>&amp;#8767;</p>
+        <p>&amp;#x223f;</p></td> </tr>
+
+
+<tr> <td>  <p>&acE;</p>
+          <p>&amp;#8766;&amp;#819;</p>
+        <p>&amp;#x223e;&amp;#x333;</p>
+</td> </tr><tr><td> <p>&Acirc;</p>
+          <p>&amp;#194;</p>
+        <p>&amp;#xc2;</p></td></tr>
+       <tr><td> <p>&Acirc</p>
+          <p>&amp;#194;</p>
+        <p>&amp;#xc2;</p></td> </tr>
+
+
+
+<tr> <td>  <p>&Ccedil;</p>
+          <p>&amp;#x000C7;</p>
+        <p>#199;</p>
+</td></tr><tr> <td> <p>&Egrave;</p>
+          <p>&amp;#x000C8;</p>
+        <p>&amp;#200;</p></td></tr>
+       <tr><td> <p>Ê</p>
+          <p>&amp;#x000CA;</p>
+        <p>&amp;#202;</p></td> </tr>
+
+
+<tr> <td>  <p>&Euml;</p>
+          <p>&amp;#x000CB;</p>
+        <p>&amp;#203;</p>
+</td></tr> <td> <p>&Igrave;</p>
+          <p>&amp;#x000CC;</p>
+        <p>&amp;#204;</p></td></tr>
+       <tr><td> <p>&Iacute;</p>
+          <p>&amp;#x000CD;</p>
+        <p>&amp;#205;</p></td> </tr>
+
+
+
+<tr> <td>  <p>&Icirc;</p>
+          <p>&amp;#x000CE;</p>
+        <p>&amp;#206;</p>
+</td> </tr><td> <p>&Iuml;</p>
+          <p>&amp;#x000CC;</p>
+        <p>&amp;#204;</p></td></tr>
+       <tr><td> <p>&Iacute;</p>
+          <p>&amp;#x000CF;</p>
+        <p>&amp;#207;</p></td> </tr>
+
+
+<tr> <td>  <p>&ETH;</p>
+          <p>&amp;#x000D0;</p>
+        <p>&amp;#208;</p>
+</td></tr><tr> <td> <p>&Ntilde;</p>
+          <p>&amp;#x000D1;</p>
+        <p>&amp;#209;</p></td></tr>
+       <tr><td> <p>&Ograve;</p>
+          <p>&amp;#x000D2;</p>
+        <p>&amp;#210;</p></td> </tr>
+
+
+<tr> <td>  <p>&Oacute;</p>
+          <p>&amp;#x000D3;</p>
+        <p>&amp;#211;</p>
+</td> </tr><tr><td> <p>&Ocirc;</p>
+          <p>&amp;#x000D4;</p>
+        <p>&amp;#212;</p></td></tr>
+       <tr><td> <p>&Otilde;</p>
+          <p>&amp;#x000D5;</p>
+        <p>&amp;#213;</p></td> </tr>
+
+<tr> <td>  <p>&Ouml;</p>
+          <p>&amp;#x000D6;</p>
+        <p>&amp;#214;</p>
+</td> </tr><tr><td> <p>&times;</p>
+          <p>&amp;#x000D7;</p>
+        <p>&amp;#215;</p></td></tr>
+       <tr><td> <p>&Oslash;</p>
+          <p>&amp;#x000D8;</p>
+        <p>&amp;#216;</p></td> </tr>
+
+<tr> <td>  <p>&Uacute;</p>
+          <p>&amp;#x000DA;</p>
+        <p>&amp;#218;</p>
+</td></tr> <tr><td> <p>&Ucirc;</p>
+          <p>&amp;#x000DB;</p>
+        <p>&amp;#219;</p></td></tr>
+       </tr><td> <p>&Uuml;</p>
+          <p>&amp;#x000DC;</p>
+        <p>&amp;#220;</p></td> </tr>
+
+<tr> <td>  <p>&Yacute;</p>
+          <p>&amp;#x000DD;</p>
+        <p>&amp;#221;</p>
+</td></tr><tr> <td> <p>&THORN;</p>
+          <p>&amp;#x000DB;</p>
+        <p>&amp;#222;</p></td></tr>
+       <tr><td> <p>&szlig;</p>
+          <p>&amp;#x000DF;</p>
+        <p>&amp;#223;</p></td> </tr>
+
+<tr> <td>  <p>&agrave;</p>
+          <p>&amp;#x000E0;</p>
+        <p>&amp;#224;</p>
+</td> </tr><tr><td> <p>&atilde;</p>
+          <p>&amp;#x000E3;</p>
+        <p>&amp;#227;</p></td></tr>
+       <tr><td> <p>&auml;</p>
+          <p>&amp;#x000E4;</p>
+        <p>&amp;#228;</p></td> </tr>
+
+<tr> <td>  <p>&aring;</p>
+          <p>&amp;#x000E5;</p>
+        <p>&amp;#229;</p>
+</td></tr> <tr><td> <p>&aelig;</p>
+          <p>&amp;#x000E6;</p>
+        <p>&amp;&amp;#230;</p></td></tr>
+       <tr><td> <p>&ccedil;</p>
+          <p>&amp;#x000E7;</p>
+        <p>&amp;#231;</p></td> </tr>
+
+
+<tr> <td>  <p>&egrave;</p>
+          <p>&amp;&amp;#x000E8;</p>
+        <p>&amp;#232;</p>
+</td></tr><tr> <td> <p>&eacute;</p>
+          <p>&amp;#x000E9;</p>
+        <p>&amp;#233;;</p></td></tr>
+       <tr><td> <p>&ecirc;</p>
+          <p>&#x000EA;</p>
+        <p>&amp;#234;</p></td> </tr>
+
+
+<tr> <td>  <p>&euml;</p>
+          <p>&amp;#x000EB;</p>
+        <p>&amp;#235;</p>
+</td></tr><tr> <td> <p>&igrave;</p>
+          <p>&amp;#x000EC;</p>
+        <p>&amp;#236;</p></td></tr>
+       <tr><td> <p>&iacute;</p>
+          <p>&amp;#x000ED;</p>
+        <p>&amp;#237;</p></td> </tr>
+
+<tr> <td>  <p>&iuml;</p>
+          <p>&amp;#x000EF;</p>
+        <p>&amp;#239;</p>
+</td></tr> <tr><td> <p>&eth;</p>
+          <p>&amp;#x000F0;</p>
+        <p>&amp;#240;</p></td></tr>
+       <tr><td> <p>&ntilde;</p>
+          <p>&amp;#x000F1;</p>
+        <p>&amp;#241;</p></td> </tr>
+
+<tr> <td>  <p>&ograve;</p>
+          <p>&amp;#x000F2;</p>
+        <p>&amp;#242;</p>
+</td></tr> <tr><td> <p>&oacute;</p>
+          <p>&amp;#x000F3;</p>
+        <p>&amp;#243;</p></td></tr>
+       <tr><td> <p>&ocirc;</p>
+          <p>&amp;#x000F4;</p>
+        <p>&amp;#244;</p></td> </tr>
+
+<tr> <td>  <p>&otilde;</p>
+          <p>&amp;#x000F5;</p>
+        <p>&amp;#245;</p>
+</td></tr> </tr><td> <p>&ouml;</p>
+          <p>&amp;#x000F6;
+</p>
+        <p>&amp;#246;</p></td></tr>
+      <tr> <td> <p>&divide; &div;</p>
+          <p>&amp;#x000F7;</p>
+        <p>&amp;#247;</p></td> </tr>
+
+<tr> <td>  <p>&oslash;</p>
+               <p>&amp;#x000F8;</p>
+        <p>&amp;#248;</p></td>
+</tr><tr><td> <p>&ugrave;</p>
+         <p>&amp;#x000F9;</p>
+        <p>&amp;#249;</p></td></tr>
+ <tr><td><p>&uacute;</p>
+          <p>&amp;#x000FA;</p>
+        <p>&amp;#250;</p></td> </tr>
+
+<tr> <td>  <p>&ucirc;</p>
+               <p>&amp;#x000FB;</p>
+        <p>&amp;#251;</p></td></tr>
+<tr><td>  <p>&uuml;</p>
+         <p>&amp;#x000FC;</p>
+        <p>&amp;#252;</p></td></tr>
+ <tr><td><p>&yacute;</p>
+          <p>&amp;#x000FD;</p>
+        <p>&amp;#253;</p></td> </tr>
+
+
+<tr> <td>  <p>&thorn;</p>
+               <p>&amp;#x000FE;</p>
+        <p>&amp;#254;</p></td></tr>
+<tr><td>  <p>&yuml;</p>
+         <p>&amp;#x000FF;</p>
+        <p>&amp;#255;</p></td></tr>
+ <tr><td><p>&Amacr;</p>
+          <p>&amp;#x00100;</p>
+        <p>&amp;#256;</p></td> </tr>
+
+
+<tr> <td>  <p>&amacr;</p>
+               <p>&amp;#x00101;</p>
+        <p>&amp;#257;</p></td></tr>
+<tr><td>  <p>&Abreve;</p>
+         <p>&amp;#x00102;</p>
+        <p>&amp;#258;</p></td></tr>
+ <tr><td><p>&Amacr;</p>
+          <p>&amp;#x00100;</p>
+        <p>&amp;#259;</p></td> </tr>
+
+<tr> <td>  <p>&Aogon;</p>
+               <p>&amp;#x00104;</p>
+        <p>&amp;#260;</p></td></tr>
+<tr><td>  <p>&aogon;</p>
+         <p>&amp;#x00105;</p>
+        <p>&amp;#261;</p></td></tr>
+ <tr><td><p>&Cacute;</p>
+          <p>&amp;#x00106;</p>
+        <p>&amp;#262;</p></td> </tr>
+
+<tr> <td>  <p>&cacute;</p>
+               <p>&amp;#x00107;</p>
+        <p>&amp;#263;</p></td></tr>
+<tr><td>  <p>&Ccirc;</p>
+         <p>&amp;#x00108;</p>
+        <p>&amp;#264;</p></td></tr>
+ <tr><td><p>&ccirc;</p>
+          <p>&amp;#x00109;</p>
+        <p>&amp;#265;</p></td> </tr>
+
+<tr> <td>  <p>&Cdot;</p>
+               <p>&amp;#x0010A;</p>
+        <p>&amp;#266;</p></td></tr>
+</tr><td>  <p>&cdot;</p>
+         <p>&amp;#x0010B;</p>
+        <p>&amp;#267;</p></td></tr>
+ </tr><td><p>&Ccaron;</p>
+          <p>&amp;#x0010C;</p>
+        <p>&amp;#268;</p></td> </tr>
+
+<tr> <td>  <p>&ccaron;</p>
+               <p>&amp;#x0010D;</p>
+        <p>&amp;#269;</p></td></tr>
+<tr><td>  <p>&Dcaron;</p>
+         <p>&amp;#x0010E;</p>
+        <p>&amp;#270;</p></td></tr>
+ <tr><td><p>&dcaron;</p>
+          <p>&amp;#x0010F;</p>
+        <p>&amp;#271;</p></td> </tr>
+
+<tr> <td>  <p>&Dstrok;</p>
+               <p>&amp;#x00110;</p>
+        <p>&amp;#272;</p></td></tr>
+<tr><td>  <p>&dstrok;</p>
+         <p>&amp;#x00111;</p>
+        <p>&amp;#273;</p></td></tr>
+ <tr><td><p>&Emacr;</p>
+          <p>&amp;#x00112;</p>
+        <p>&amp;#274;</p></td> </tr>
+
+<tr> <td>  <p>&emacr;</p>
+               <p>&amp;#x00113;</p>
+        <p>&amp;#275;</p></td></tr>
+<tr><td>  <p>&Edot;</p>
+         <p>&amp;#x00116;</p>
+        <p>&amp;#278;</p></td></tr>
+ <tr><td><p>&edot;</p>
+          <p>&amp;#x00117;</p>
+        <p>&amp;#279;</p></td> </tr>
+
+<tr> <td>  <p>&Eogon;</p>
+               <p>&amp;#x00118;</p>
+        <p>&amp;#280;</p></td></tr>
+<tr><td>  <p>&eogon;</p>
+         <p>&amp;#x00119;</p>
+        <p>&amp;#281;</p></td></tr>
+ <tr><td><p>&Ecaron;</p>
+          <p>&amp;#x0011A;</p>
+        <p>&amp;#282;</p></td> </tr>
+
+
+<tr><td><p>&ecaron;</p>
+          <p>&amp;#x0011B;</p>
+        <p>&amp;#283;</p></td> </tr>
+
+<tr><td><p>&Ecaron;</p>
+          <p>&amp;##x0011C;</p>
+        <p>&amp;#284;</p></td> </tr>
+
+<tr><td><p>&gcirc;</p>
+          <p>&amp;#x0011D;</p>
+        <p>&amp;#285;</p></td> </tr>
+
+<tr><td><p>&Gbreve;</p>
+          <p>&amp;#x0011E;</p>
+        <p>&amp;#286;</p></td> </tr>
+
+<tr><td><p>&gbreve;</p>
+          <p>&amp;#x0011F;</p>
+        <p>&amp;#287;</p></td> </tr>
+
+<tr><td><p>&Gdot;</p>
+          <p>&amp;#x00120;</p>
+        <p>&amp;#288;</p></td> </tr>
+
+<tr><td><p>&gdot;</p>
+          <p>&amp;#x00121;</p>
+        <p>&amp;#289;</p></td> </tr>
+
+<tr><td><p>&Gcedil;</p>
+          <p>&amp;#x00122;</p>
+        <p>&amp;#290;</p></td> </tr>
+
+<tr><td><p>&Hcirc;</p>
+          <p>&amp;#x00124;</p>
+        <p>&amp;#292;</p></td> </tr>
+
+<tr><td><p>&hcirc;</p>
+          <p>&amp;#x00125;</p>
+        <p>&amp;#293;</p></td> </tr>
+
+<tr><td><p>&Hstrok;</p>
+          <p>&amp;#x00126;</p>
+        <p>&amp;#294;</p></td> </tr>
+
+<tr><td><p>&hstrok;</p>
+          <p>&amp;#x00127;</p>
+        <p>&amp;#295;</p></td> </tr>
+
+<tr><td><p>&Itilde;</p>
+          <p>&amp;#x00128;</p>
+        <p>&amp;#296;</p></td> </tr>
+
+<tr><td><p>&itilde;</p>
+          <p>&amp;#x00129;</p>
+        <p>&amp;#297;</p></td> </tr>
+
+<tr><td><p>&Imacr;</p>
+          <p>&amp;#x0012A;</p>
+        <p>&amp;#298;</p></td> </tr>
+
+<tr><td><p>&imacr;</p>
+          <p>&amp;#x0012B;</p>
+        <p>&amp;#299;</p></td> </tr>
+
+<tr><td><p>&Iogon;</p>
+          <p>&amp;#x0012E;</p>
+        <p>&amp;#302;</p></td> </tr>
+
+<tr><td><p>&iogon;</p>
+          <p>&amp;#x0012F;</p>
+        <p>&amp;#303;</p></td> </tr>
+
+<tr><td><p>&Idot;</p>
+          <p>&amp;#x00130;</p>
+        <p>&amp;#304;</p></td> </tr>
+
+<tr><td><p>&imath; &inodot;</p>
+          <p>&amp;#x00131;</p>
+        <p>&amp;#305;</p></td> </tr>
+
+<tr><td><p>&IJlig;</p>
+          <p>&amp;#x00132;</p>
+        <p>&amp;#306;</p></td> </tr>
+
+<tr><td><p>&ijlig;</p>
+          <p>&amp;##x00133;</p>
+        <p>&amp;#307;</p></td> </tr>
+
+<tr><td><p>&Jcirc;</p>
+          <p>&amp;#x00134;</p>
+        <p>&amp;#308;</p></td> </tr>
+
+<tr><td><p>&jcirc;</p>
+          <p>&amp;#x00135;</p>
+        <p>&amp;#309;</p></td> </tr>
+
+<tr><td><p>&Kcedil;</p>
+          <p>&amp;#x00136;</p>
+        <p>&amp;#310;</p></td> </tr>
+
+<tr><td><p>&kcedil;</p>
+          <p>&amp;#x00137;</p>
+        <p>&amp;#311;</p></td> </tr>
+
+<tr><td><p>&kgreen;</p>
+          <p>&amp;#x00138;</p>
+        <p>&amp;#312;</p></td> </tr>
+
+<tr><td><p>&Lacute;</p>
+          <p>&amp;#x00139;</p>
+        <p>&amp;#313;</p></td> </tr>
+
+<tr><td><p>&lacute;</p>
+          <p>&amp;#x0013A;</p>
+        <p>&amp;#314;</p></td> </tr>
+
+<tr><td><p>&Lcedil;</p>
+          <p>&amp;#x0013B;</p>
+        <p>&amp;#315;</p></td> </tr>
+
+<tr><td><p>&lcedil;</p>
+          <p>&amp;#x0013C;</p>
+        <p>&amp;#316;</p></td> </tr>
+
+<tr><td><p>&Lcaron;</p>
+          <p>&amp;#x0013D;</p>
+        <p>&amp;#317;</p></td> </tr>
+
+<tr><td><p>&lcaron;</p>
+          <p>&amp;#x0013E;</p>
+        <p>&amp;#318;</p></td> </tr>
+
+<tr><td><p>&Lmidot;</p>
+          <p>&amp;#x0013F;</p>
+        <p>&amp;#319;</p></td> </tr>
+
+<tr><td><p>&lmidot;</p>
+          <p>&amp;#x00140;</p>
+        <p>&amp;#320;</p></td> </tr>
+
+<tr><td><p>&Lstrok;</p>
+          <p>&amp;#x00141;</p>
+        <p>&amp;#321;</p></td> </tr>
+
+<tr><td><p>&lstrok;</p>
+          <p>&amp;#x00142;</p>
+        <p>&amp;#322;</p></td> </tr>
+
+<tr><td><p>&Nacute;</p>
+          <p>&amp;#x00143;</p>
+        <p>&amp;#323;</p></td> </tr>
+
+<tr><td><p>&nacute;</p>
+          <p>&amp;#x00144;</p>
+        <p>&amp;#324;</p></td> </tr>
+
+<tr><td><p>&Ncedil;</p>
+          <p>&amp;#x00145;</p>
+        <p>&amp;#325;</p></td> </tr>
+
+<tr><td><p>&ncedil;</p>
+          <p>&amp;#x00146;</p>
+        <p>&amp;#326;</p></td> </tr>
+
+<tr><td><p>&Ncaron;</p>
+          <p>&amp;#x00147;</p>
+        <p>&amp;#327;</p></td> </tr>
+
+<tr><td><p>&ncaron;</p>
+          <p>&amp;#x00148;</p>
+        <p>&amp;#328;</p></td> </tr>
+
+<tr><td><p>&napos;</p>
+          <p>&amp;#x00149;</p>
+        <p>&amp;#329;</p></td> </tr>
+
+<tr><td><p>&ENG;</p>
+          <p>&amp;#x0014A;</p>
+        <p>&amp;#330;</p></td> </tr>
+
+<tr><td><p>&eng;</p>
+          <p>&amp;#x0014B;</p>
+        <p>&amp;#331;</p></td> </tr>
+
+<tr><td><p>&omacr;</p>
+          <p>&amp;#x0014C;</p>
+        <p>&amp;#332;</p></td> </tr>
+
+<tr><td><p>&Gbreve;</p>
+          <p>&amp;#x0014D;</p>
+        <p>&amp;#333;</p></td> </tr>
+
+<tr><td><p>&Odblac;</p>
+          <p>&amp;#x00150;</p>
+        <p>&amp;#336;</p></td> </tr>
+
+<tr><td><p>&odblac;</p>
+          <p>&amp;#x00151;</p>
+        <p>&amp;#337;</p></td> </tr>
+
+<tr><td><p>&OElig;</p>
+          <p>&amp;#x00152;</p>
+        <p>&amp;#338;</p></td> </tr>
+
+<tr><td><p>&oelig;</p>
+          <p>&amp;#x00153;</p>
+        <p>&amp;#339;</p></td> </tr>
+
+<tr><td><p>&Racute;</p>
+          <p>&amp;#x00154;</p>
+        <p>&amp;#340;</p></td> </tr>
+
+<tr><td><p>&racute;</p>
+          <p>&amp;#x00155;</p>
+        <p>&amp;#341;</p></td> </tr>
+
+<tr><td><p>&Rcedil;</p>
+          <p>&amp;#x00156;</p>
+        <p>&amp;#342;</p></td> </tr>
+
+<tr><td><p>&rcedil;</p>
+          <p>&amp;#x00157;</p>
+        <p>&amp;#343;</p></td> </tr>
+
+<tr><td><p>&Rcaron;</p>
+          <p>&amp;#x00158;</p>
+        <p>&amp;#344;</p></td> </tr>
+
+<tr><td><p>&rcaron;</p>
+          <p>&amp;#x00159;</p>
+        <p>&amp;#345;</p></td> </tr>
+
+<tr><td><p>&Sacute;</p>
+          <p>&amp;#x0015A;</p>
+        <p>&amp;#346;</p></td> </tr>
+
+<tr><td><p>&sacute;</p>
+          <p>&amp;#x0015B;</p>
+        <p>&amp;#347;</p></td> </tr>
+
+<tr><td><p>&Scirc;</p>
+          <p>&amp;#x0015C;</p>
+        <p>&amp;#348;</p></td> </tr>
+
+<tr><td><p>&scirc;</p>
+          <p>&amp;#x0015D;</p>
+        <p>&amp;#349;</p></td> </tr>
+
+<tr><td><p>&Scedil;</p>
+          <p>&amp;#x0015E;</p>
+        <p>&amp;#350;</p></td> </tr>
+
+<tr><td><p>&scedil;</p>
+          <p>&amp;#x0015F;</p>
+        <p>&amp;#351;</p></td> </tr>
+
+<tr><td><p>&Scaron;</p>
+          <p>&amp;#x00160;</p>
+        <p>&amp;#352;</p></td> </tr>
+
+<tr><td><p>&scaron;</p>
+          <p>&amp;##x00161;</p>
+        <p>&amp;#353;</p></td> </tr>
+
+<tr><td><p>&Tcedil;</p>
+          <p>&amp;#x00162;</p>
+        <p>&amp;#354;</p></td> </tr>
+
+<tr><td><p>&tcedil;</p>
+          <p>&amp;#x00163;</p>
+        <p>&amp;#355;</p></td> </tr>
+
+<tr> <td>  <p >&Tcaron;</p>
+               <p>&amp;#x00164;</p>
+        <p>&amp;#356;</p></td></tr>
+
+<tr><td><p>&tcaron;</p>
+          <p>&amp;#x00165;</p>
+        <p>&amp;#357;</p></td> </tr>
+
+<tr><td><p>&Tstrok;</p>
+          <p>&amp;#x00166;</p>
+        <p>&amp;#358;</p></td> </tr>
+
+<tr><td><p>&tstrok;</p>
+          <p>&amp;#x00167;</p>
+        <p>&amp;#359;</p></td> </tr>
+
+<tr><td><p>&Utilde;</p>
+          <p>&amp;#x00169;</p>
+        <p>&amp;#361;</p></td> </tr>
+
+<tr><td><p>&Umacr;</p>
+          <p>&amp;#x0016A;</p>
+        <p>&amp;#362;</p></td> </tr>
+
+<tr><td><p>&umacr;</p>
+          <p>&amp;#x0016B;</p>
+        <p>&amp;#363;</p></td> </tr>
+
+<tr><td><p>&Ubreve;</p>
+          <p>&amp;#x0016C;</p>
+        <p>&amp;#364;</p></td> </tr>
+
+<tr><td><p>&ubreve;</p>
+          <p>&amp;#x0016D;</p>
+        <p>&amp;#365;</p></td> </tr>
+
+<tr><td><p>&Uring;</p>
+          <p>&amp;#x0016E;</p>
+        <p>&amp;#366;</p></td> </tr>
+
+<tr><td><p>&uring;</p>
+          <p>&amp;#x0016F;</p>
+        <p>&amp;#367;</p></td> </tr>
+
+<tr><td><p>&Udblac;</p>
+          <p>&amp;#x00170;</p>
+        <p>&amp;#368;</p></td> </tr>
+
+<tr><td><p>&udblac;</p>
+          <p>&amp;#x00171;</p>
+        <p>&amp;#369;</p></td> </tr>
+
+<tr><td><p>&Uogon;</p>
+          <p>&amp;#x00172;</p>
+        <p>&amp;#370;</p></td> </tr>
+
+<tr><td><p>&uogon;</p>
+          <p>&amp;#x00173;</p>
+        <p>&amp;#371;</p></td> </tr>
+
+<tr><td><p>&Wcirc;</p>
+          <p>&amp;#x00174;</p>
+        <p>&amp;#372;</p></td> </tr>
+
+<tr><td><p>&wcirc;</p>
+          <p>&amp;#x00175;</p>
+        <p>&amp;#373;</p></td> </tr>
+
+<tr><td><p>&Ycirc;</p>
+          <p>&amp;##x00176;</p>
+        <p>&amp;#374;</p></td> </tr>
+
+<tr><td><p>&ycirc;</p>
+          <p>&amp;#x00177;</p>
+        <p>&amp;#375;</p></td> </tr>
+
+<tr><td><p>&Yuml;</p>
+          <p>&amp;#x00178;</p>
+        <p>&amp;#376;</p></td> </tr>
+
+<tr><td><p>&Zacute;</p>
+          <p>&amp;#x00179;</p>
+        <p>&amp;#377;</p></td> </tr>
+
+<tr><td><p>&zacute;</p>
+          <p>&amp;#x0017A;</p>
+        <p>&amp;#378;</p></td> </tr>
+
+<tr><td><p>&Zdot;</p>
+          <p>&amp;#x0017B;</p>
+        <p>&amp;#379;</p></td> </tr>
+
+<tr><td><p>&zdot;</p>
+          <p>&amp;#x0017C;</p>
+        <p>&amp;#380;</p></td> </tr>
+
+<tr><td><p>&Zcaron;</p>
+          <p>&amp;#x0017D;</p>
+        <p>&amp;#381;</p></td> </tr>
+
+<tr><td><p>&zcaron;</p>
+          <p>&amp;#x0017E;</p>
+        <p>&amp;#382;</p></td> </tr>
+
+<tr><td><p>&fnof;</p>
+          <p>&amp;#x00192;</p>
+        <p>&amp;#402;</p></td> </tr>
+
+<tr><td><p>&imped;</p>
+          <p>&amp;#x001B5;</p>
+        <p>&amp;#437;</p></td> </tr>
+<tr><td><p>&gacute;</p>
+          <p>&amp;#x001F5;</p>
+        <p>&amp;#501;</p></td> </tr>
+
+<tr><td><p>&jmath;</p>
+          <p>&amp;#x00237;</p>
+        <p>&amp;#567;</p></td> </tr>
+
+<tr><td><p>&circ;</p>
+          <p>&amp;#x002C6;</p>
+        <p>&amp;#710;</p></td> </tr>
+
+<tr><td><p>&umacr;</p>
+          <p>&amp;#x002C7;</p>
+        <p>&amp;#711;</p></td> </tr>
+
+<tr><td><p>&breve; &Breve;</p>
+          <p>&amp;#x002D8;</p>
+        <p>&amp;#728;</p></td> </tr>
+
+<tr><td><p>&dot; &DiacriticalDot;</p>
+          <p>&amp;#x002D9;</p>
+        <p>&amp;#729;</p></td> </tr>
+
+<tr><td><p>&ring;</p>
+          <p>&amp;#x002DA;</p>
+        <p>&amp;#730;</p></td> </tr>
+
+<tr><td><p>&ogon;</p>
+          <p>&amp;#x002DB;</p>
+        <p>&amp;#731;</p></td> </tr>
+
+<tr><td><p>&tilde;</p>
+          <p>&amp;#x002DC;</p>
+        <p>&amp;#732;</p></td> </tr>
+
+<tr><td><p>&DiacriticalDoubleAcute;</p>
+          <p>&amp;#x002DD;</p>
+        <p>&amp;#733;</p></td> </tr>
+
+<tr><td><p>&DownBreve;</p>
+          <p>&amp;#x00311;</p>
+        <p>&amp;#785;</p></td> </tr>
+
+<tr><td><p>&UnderBar;</p>
+          <p>&amp;#x00332;</p>
+        <p>&amp;#818;</p></td> </tr>
+
+<tr><td><p>&Alpha;</p>
+          <p>&amp;#x00391;</p>
+        <p>&amp;#913;</p></td> </tr>
+
+<tr><td><p>&Beta;</p>
+          <p>&amp;#x00392;</p>
+        <p>&amp;#914;</p></td> </tr>
+
+<tr><td><p>&Gamma;</p>
+          <p>&amp;#x00393;</p>
+        <p>&amp;#915;</p></td> </tr>
+
+<tr><td><p>&Delta;</p>
+          <p>&amp;#x00394;</p>
+        <p>&amp;#916;</p></td> </tr>
+
+<tr><td><p>&Epsilon;</p>
+          <p>&amp;#x00395;</p>
+        <p>&amp;#917;</p></td> </tr>
+
+<tr><td><p>&Zeta;</p>
+          <p>&amp;#x00396;</p>
+        <p>&amp;#918;</p></td> </tr>
+
+<tr><td><p>&Eta;</p>
+          <p>&amp;#x00397;</p>
+        <p>&amp;#919;</p></td> </tr>
+
+<tr><td><p>&Theta;</p>
+          <p>&amp;#x00398;/p>
+        <p>&amp;#920;</p></td> </tr>
+
+<tr><td><p>&Iota;</p>
+          <p>&amp;#x00399;</p>
+        <p>&amp;#921;</p></td> </tr>
+
+<tr><td><p>&Kappa;</p>
+          <p>&amp;#x0039A;</p>
+        <p>&amp;#922;</p></td> </tr>
+
+<tr><td><p>&Kappa;</p>
+          <p>&amp;#x0039B;</p>
+        <p>&amp;#923;</p></td> </tr>
+
+<tr><td><p>&Mu;</p>
+          <p>&amp;#x0039C;</p>
+        <p>&amp;#924;</p></td> </tr>
+
+<tr><td><p>&Kappa;</p>
+          <p>&amp;#x0039A;</p>
+        <p>&amp;#922;</p></td> </tr>
+
+<tr><td><p>&Nu;</p>
+          <p>&amp;#x0039D;</p>
+        <p>&amp;#925;</p></td> </tr>
+
+<tr><td><p>&Xi;</p>
+          <p>&amp;#x0039E;</p>
+        <p>&amp;#926;</p></td> </tr>
+
+<tr><td><p>&Omicron;</p>
+          <p>&amp;#x0039F;</p>
+        <p>&amp;#927;</p></td> </tr>
+
+<tr><td><p>&Pi;</p>
+          <p>&amp;#x003A0;</p>
+        <p>&amp;#928;</p></td> </tr>
+
+<tr><td><p>&Rho;</p>
+          <p>&amp;#x003A1;</p>
+        <p>&amp;#929;</p></td> </tr>
+
+<tr><td><p>&Sigma;</p>
+          <p>&amp;#x003A3;</p>
+        <p>&amp;#931;</p></td> </tr>
+
+<tr><td><p>&Tau;</p>
+          <p>&amp;#x003A4;</p>
+        <p>&amp;#932;</p></td> </tr>
+
+<tr><td><p>&Upsilon;</p>
+          <p>&amp;#x003A5;</p>
+        <p>&amp;#933;</p></td> </tr>
+
+<tr><td><p>&Phi;</p>
+          <p>&amp;#x003A6;</p>
+        <p>&amp;#934;</p></td> </tr>
+
+<tr><td><p>&Chi;</p>
+          <p>&amp;#x003A7;</p>
+        <p>&amp;#935;</p></td> </tr>
+
+<tr><td><p>&Psi;</p>
+          <p>&amp;#x003A8;</p>
+        <p>&amp;#936;</p></td> </tr>
+
+<tr><td><p>&Omega;</p>
+          <p>&amp;#x003A9;</p>
+        <p>&amp;#937;</p></td> </tr>
+
+<tr><td><p>&alpha;</p>
+          <p>&amp;#x003B1;</p>
+        <p>&amp;#945;</p></td> </tr>
+
+<tr><td><p>&beta;</p>
+          <p>&amp;#x003B2;</p>
+        <p>&amp;#946;</p></td> </tr>
+
+<tr><td><p>&gamma;</p>
+          <p>&amp;#x003B3;</p>
+        <p>&amp;#947;</p></td> </tr>
+
+<tr><td><p>&delta;</p>
+          <p>&amp;#x003B4;</p>
+        <p>&amp;#948;</p></td> </tr>
+
+<tr><td><p>&epsiv; &varepsilon;</p>
+          <p>&amp;#x003B5;</p>
+        <p>&amp;#949;</p></td> </tr>
+
+<tr><td><p>&zeta;</p>
+          <p>&amp;#x003B6;</p>
+        <p>&amp;#950;</p></td> </tr>
+
+<tr><td><p>&eta;</p>
+          <p>&amp;#x003B7;</p>
+        <p>&amp;#951;</p></td> </tr>
+
+<tr><td><p>&theta;</p>
+          <p>&amp;#x003B8;</p>
+        <p>&amp;#952;</p></td> </tr>
+
+<tr><td><p>&iota;</p>
+          <p>&amp;#x003B9;</p>
+        <p>&amp;#953;</p></td> </tr>
+
+<tr><td><p>&Kappa;</p>
+          <p>&amp;#x003BA;</p>
+        <p>&amp;#954;</p></td> </tr>
+
+<tr><td><p>&lambda;</p>
+          <p>&amp;#x003BB;</p>
+        <p>&amp;#955;</p></td> </tr>
+
+<tr><td><p>&mu;</p>
+          <p>&amp;#x003BC;</p>
+        <p>&amp;#956;</p></td> </tr>
+
+<tr><td><p>&nu;</p>
+          <p>&amp;#x003BD;</p>
+        <p>&amp;#957;</p></td> </tr>
+
+<tr><td><p>&xi;</p>
+          <p>&amp;#x003BE;</p>
+        <p>&amp;#958;</p></td> </tr>
+
+<tr><td><p>&omicron;</p>
+          <p>&amp;#x003BF;</p>
+        <p>&amp;#959;</p></td> </tr>
+
+<tr><td><p>&Kappa;</p>
+          <p>&amp;#x0039A;</p>
+        <p>&amp;#960;</p></td> </tr>
+
+<tr><td><p>&rho;</p>
+          <p>&amp;#x003C1;</p>
+        <p>&amp;#961;</p></td> </tr>
+
+<tr><td><p>&sigmav; &varsigma;</p>
+          <p>&amp;#x003C2;</p>
+        <p>&amp;#962;</p></td> </tr>
+
+<tr><td><p>&sigma;</p>
+          <p>&amp;#x003C3;</p>
+        <p>&amp;#963;</p></td> </tr>
+
+<tr><td><p>&tau;</p>
+          <p>&amp;#x003C4;</p>
+        <p>&amp;#964;</p></td> </tr>
+
+<tr><td><p>&upsi; &upsilon;</p>
+          <p>&amp;#x003C5;</p>
+        <p>&amp;#965;</p></td> </tr>
+
+<tr><td><p>&phi; &phiv; &varphi;</p>
+          <p>&amp;#x003C6;</p>
+        <p>&amp;#966;</p></td> </tr>
+
+<tr><td><p>&chi;</p>
+          <p>&amp;#x003C7;</p>
+        <p>&amp;#967;</p></td> </tr>
+
+<tr><td><p>&psi;</p>
+          <p>&amp;#x003C8;</p>
+        <p>&amp;#968;</p></td> </tr>
+
+<tr><td><p>&omega;</p>
+          <p>&amp;#x003C9;</p>
+        <p>&amp;#969;</p></td> </tr>
+
+<tr><td><p>&thetav; &vartheta;</p>
+          <p>&amp;#x003D1;</p>
+        <p>&amp;#977;</p></td> </tr>
+
+<tr><td><p>&Upsi; &upsih;</p>
+          <p>&amp;#x003D2;</p>
+        <p>&amp;#978;</p></td> </tr>
+
+<tr><td><p>&straightphi;</p>
+          <p>&amp;#x003D5;</p>
+        <p>&amp;#981;</p></td> </tr>
+
+<tr><td><p>&piv; &varpi;</p>
+          <p>&amp;#x003D6;</p>
+        <p>&amp;#982;</p></td> </tr>
+
+<tr><td><p>&Gammad;</p>
+          <p>&amp;#x003DC;</p>
+        <p>&amp;#988;</p></td> </tr>
+
+<tr><td><p>&gammad; &digamma;</p>
+          <p>&amp;#x003DD;</p>
+        <p>&amp;#989;</p></td> </tr>
+
+<tr><td><p>&kappav; &varkappa;</p>
+          <p>&amp;#x003F0;</p>
+        <p>&amp;#1008;</p></td> </tr>
+
+<tr><td><p>&rhov; &varrho;</p>
+          <p>&amp;#x003F1;</p>
+        <p>&amp;#1009;</p></td> </tr>
+
+<tr><td><p>&epsi;</p>
+          <p>&amp;#x003F5;</p>
+        <p>&amp;#1013;</p></td> </tr>
+
+<tr><td><p>&bepsi; &backepsilon;</p>
+          <p>&amp;#x003F6;</p>
+        <p>&amp;#1014;</p></td> </tr>
+
+<tr><td><p>&IOcy;</p>
+          <p>&amp;#x00401;</p>
+        <p>&amp;#1025;</p></td> </tr>
+
+<tr><td><p>&DJcy;</p>
+          <p>&amp;#x00402;</p>
+        <p>&amp;#1026;</p></td> </tr>
+
+<tr><td><p>&GJcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1027;</p></td> </tr>
+
+<tr><td><p>&Jukcy;</p>
+          <p>&amp;#x00404;</p>
+        <p>&amp;#1028;</p></td> </tr>
+
+<tr><td><p>&DScy;</p>
+          <p>&amp;#x00405;</p>
+        <p>&amp;#1029;</p></td> </tr>
+
+<tr><td><p>&Iukcy;</p>
+          <p>&amp;#x00406;</p>
+        <p>&amp;#1030;</p></td> </tr>
+
+<tr><td><p>&YIcy;</p>
+          <p>&amp;#x00407;</p>
+        <p>&amp;#1031;</p></td> </tr>
+
+<tr><td><p>&Jsercy;</p>
+          <p>&amp;#x00408;</p>
+        <p>&amp;#1032;</p></td> </tr>
+
+<tr><td><p>&LJcy;</p>
+          <p>&amp;#x00409;</p>
+        <p>&amp;#1033;</p></td> </tr>
+
+<tr><td><p>&NJcy;</p>
+          <p>&amp;#x0040A;</p>
+        <p>&amp;#1034;</p></td> </tr>
+
+<tr><td><p>&TSHcy;</p>
+          <p>&amp;#x0040B;</p>
+        <p>&amp;#1035;</p></td> </tr>
+
+<tr><td><p>&KJcy;</p>
+          <p>&amp;#x0040C;</p>
+        <p>&amp;#1036;</p></td> </tr>
+
+<tr><td><p>&GJcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1038;</p></td> </tr>
+
+<tr><td><p>&DZcy;</p>
+          <p>&amp;#x0040F;</p>
+        <p>&amp;#1039;</p></td> </tr>
+
+<tr><td><p>&Acy;</p>
+          <p>&amp;#x00410;</p>
+        <p>&amp;#1040;</p></td> </tr>
+
+<tr><td><p>&Bcy;</p>
+          <p>&amp;#x00411;</p>
+        <p>&amp;#1041;</p></td> </tr>
+
+<tr><td><p>&Vcy;</p>
+          <p>&amp;#x00412;</p>
+        <p>&amp;#1042;</p></td> </tr>
+
+<tr><td><p>&Gcy;</p>
+          <p>&amp;#x00413;</p>
+        <p>&amp;#1043;</p></td> </tr>
+
+<tr><td><p>&Dcy;</p>
+          <p>&amp;#x00414;</p>
+        <p>&amp;#1044;</p></td> </tr>
+
+<tr><td><p>&IEcy;</p>
+          <p>&amp;#x00415;</p>
+        <p>&amp;#1045;</p></td> </tr>
+
+<tr><td><p>&ZHcy;</p>
+          <p>&amp;#x00416;</p>
+        <p>&amp;#1046;</p></td> </tr>
+
+<tr><td><p>&Zcy;</p>
+          <p>&amp;#x00417;</p>
+        <p>&amp;#1047;</p></td> </tr>
+
+<tr><td><p>&Icy;</p>
+          <p>&amp;#x00418;</p>
+        <p>&amp;#1048;</p></td> </tr>
+
+<tr><td><p>&Jcy;</p>
+          <p>&amp;#x00419;</p>
+        <p>&amp;#1049;</p></td> </tr>
+
+<tr><td><p>&Kcy;</p>
+          <p>&amp;#x0041A;</p>
+        <p>&amp;#1050;</p></td> </tr>
+
+<tr><td><p>&Lcy;</p>
+          <p>&amp;#x0041B;</p>
+        <p>&amp;#1051;</p></td> </tr>
+
+<tr><td><p>&Mcy;</p>
+          <p>&amp;#x0041C;</p>
+        <p>&amp;#1052;</p></td> </tr>
+
+<tr><td><p>&GJcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1053;</p></td> </tr>
+
+<tr><td><p>&Ocy;</p>
+          <p>&amp;#x0041E;</p>
+        <p>&amp;#1054;</p></td> </tr>
+
+<tr><td><p>&Pcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1055;</p></td> </tr>
+
+<tr><td><p>&Rcy;</p>
+          <p>&amp;#x00420;</p>
+        <p>&amp;#1056;</p></td> </tr>
+
+<tr><td><p>&GJcy;</p>
+          <p>&amp;#x00421;</p>
+        <p>&amp;#1057;</p></td> </tr>
+
+<tr><td><p>&Tcy;</p>
+          <p>&amp;#x00422;</p>
+        <p>&amp;#1058;</p></td> </tr>
+
+<tr><td><p>&Fcy;</p>
+          <p>&amp;#x00424;</p>
+        <p>&amp;#1059;</p></td> </tr>
+
+<tr><td><p>&Fcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1060;</p></td> </tr>
+
+<tr><td><p>&KHcy;</p>
+          <p>&amp;#x00425;</p>
+        <p>&amp;#1061;</p></td> </tr>
+
+<tr><td><p>&TScy;</p>
+          <p>&amp;#x00426;</p>
+        <p>&amp;#1062;</p></td> </tr>
+
+<tr><td><p>&CHcy;</p>
+          <p>&amp;#x00403;</p>
+        <p>&amp;#1063;</p></td> </tr>
+
+<tr><td><p>&SHcy;</p>
+          <p>&amp;x00428;</p>
+        <p>&amp;#1064;</p></td> </tr>
+
+<tr><td><p>&SHCHcy;</p>
+          <p>&amp;#x00429;</p>
+        <p>&amp;#1065;</p></td> </tr>
+
+<tr><td><p>&HARDcy;</p>
+          <p>&amp;#x0042A;</p>
+        <p>&amp;#1066;</p></td> </tr>
+
+<tr><td><p>&Ycy;</p>
+          <p>&amp;#x0042B;</p>
+        <p>&amp;#1067;</p></td> </tr>
+
+<tr><td><p>&SOFTcy;</p>
+          <p>&amp;#x0042C;</p>
+        <p>&amp;#1068;</p></td> </tr>
+
+<tr><td><p>&SOFTcy;</p>
+          <p>&amp;#x0042D;</p>
+        <p>&amp;#1069;</p></td> </tr>
+
+<tr><td><p>&YUcy;</p>
+          <p>&amp;#x0042E;</p>
+        <p>&amp;#1070;</p></td> </tr>
+
+<tr><td><p>&YAcy;</p>
+          <p>&amp;#x0042F;</p>
+        <p>&amp;#1071;</p></td> </tr>
+
+<tr><td><p>&acy;</p>
+          <p>&amp;#x00430;</p>
+        <p>&amp;#1072;</p></td> </tr>
+
+<tr><td><p>&bcy;</p>
+          <p>&amp;#x00431;</p>
+        <p>&amp;#1073;</p></td> </tr>
+
+<tr><td><p>&vcy;</p>
+          <p>&amp;#x00432;</p>
+        <p>&amp;#1074;</p></td> </tr>
+
+<tr><td><p>&gcy;</p>
+          <p>&amp;#x00433;</p>
+        <p>&amp;#1075;</p></td> </tr>
+
+<tr><td><p>&dcy;</p>
+          <p>&amp;#x00434;</p>
+        <p>&amp;#1076;</p></td> </tr>
+
+<tr><td><p>&iecy;</p>
+          <p>&amp;#x00435;</p>
+        <p>&amp;#1077;</p></td> </tr>
+
+<tr><td><p>&zhcy;</p>
+          <p>&amp;#x00436;</p>
+        <p>&amp;#1078;</p></td> </tr>
+
+<tr><td><p>&vcy;</p>
+          <p>&amp;#x00437;</p>
+        <p>&amp;#1079;</p></td> </tr>
+
+<tr><td><p>&icy;</p>
+          <p>&amp;#x00438;</p>
+        <p>&amp;#1080;</p></td> </tr>
+
+<tr><td><p>&jcy;</p>
+          <p>&amp;#x00439;</p>
+        <p>&amp;#1081;</p></td> </tr>
+
+<tr><td><p>&kcy;</p>
+          <p>&amp;#x0043A;</p>
+        <p>&amp;#1082;</p></td> </tr>
+
+<tr><td><p>&lcy;</p>
+          <p>&amp;#x0043B;</p>
+        <p>&amp;#1083;</p></td> </tr>
+
+<tr><td><p>&mcy;</p>
+          <p>&amp;#x0043C;</p>
+        <p>&amp;#1084;</p></td> </tr>
+
+<tr><td><p>&ncy;</p>
+          <p>&amp;#x0043D;</p>
+        <p>&amp;#1085;</p></td> </tr>
+
+<tr><td><p>&ocy;</p>
+          <p>&amp;#x0043E;</p>
+        <p>&amp;#1086;</p></td> </tr>
+
+<tr><td><p>&pcy;</p>
+          <p>&amp;#x0043F;</p>
+        <p>&amp;#1087;</p></td> </tr>
+
+<tr><td><p>&rcy;</p>
+          <p>&amp;#x00440;</p>
+        <p>&amp;#1088;</p></td> </tr>
+
+<tr><td><p>&scy;</p>
+          <p>&amp;#x00441;</p>
+        <p>&amp;#1089;</p></td> </tr>
+
+<tr><td><p>&tcy;</p>
+          <p>&amp;#x00442;</p>
+        <p>&amp;#1090;</p></td> </tr>
+
+<tr><td><p>&ucy;</p>
+          <p>&amp;#x00443;</p>
+        <p>&amp;#1091;</p></td> </tr>
+
+<tr><td><p>&fcy;</p>
+          <p>&amp;#x00444;</p>
+        <p>&amp;#1092;</p></td> </tr>
+
+<tr><td><p>&khcy;</p>
+          <p>&amp;#x00445;</p>
+        <p>&amp;#1093;</p></td> </tr>
+
+<tr><td><p>&tscy;</p>
+          <p>&amp;#x00446;</p>
+        <p>&amp;#1094;</p></td> </tr>
+
+<tr><td><p>&chcy;</p>
+          <p>&amp;#x00447;</p>
+        <p>&amp;#1095;</p></td> </tr>
+
+<tr><td><p>&shcy;</p>
+          <p>&amp;#x00448;</p>
+        <p>&amp;#1096;</p></td> </tr>
+
+<tr><td><p>&shchcy;</p>
+          <p>&amp;#x00449;</p>
+        <p>&amp;#1097;</p></td> </tr>
+
+<tr><td><p>&hardcy;</p>
+          <p>&amp;#x0044A;</p>
+        <p>&amp;#1098;</p></td> </tr>
+
+<tr><td><p>&ycy;</p>
+          <p>&amp;#x0044B;</p>
+        <p>&amp;#1099;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#1100;</p></td> </tr>
+
+<tr><td> <p>&acy;</p>
+        <p>&amp;#1072;</p>
+        <p>&amp;#x430;</p></td></tr>
+
+<tr><td>  <p >&AElig;</p>
+         <p>&amp;#198;</p>
+        <p>&amp;#xc6;</p></td></tr>
+
+<tr> <td>  <p >&af;</p>
+            <p>&amp;#8289;</p>
+        <p>&amp;#x2061;</p></td></tr>
+
+<tr><td> <p>&Afr;</p>
+         <p>&amp;#120068;</p>
+        <p>&amp;#x1d504;</p></td></tr>
+
+<tr><td>   <p>&afr;</p>
+         <p>&amp;#120094;</p>
+        <p>&amp;#x1d51e;</p></td> </tr>
+
+<tr> <td>     <p>&Agrave</p>
+            <p>&amp;#192;</p>
+        <p>&amp;#xc0;</p></td></tr>
+ 
+<tr><td>   <p>&agrave</p>
+           <p>&amp;#224;</p>
+        <p>&amp;#xe0;</p></td></tr>
+
+<tr><td> <p>&aleph;</p>
+           <p>&amp;#8501;</p>
+        <p>&amp;#x2135;</p></td> </tr>
+
+<tr> <td>  <p >&Alpha;</p>
+        <p>&amp;#913;</p>
+        <p>&amp;#x391;</p></td></tr>
+
+<tr><td><p>&alpha;</p>
+          <p>&amp;#945;</p>
+        <p>&amp;#x3b1;</p></td></tr>
+
+<tr><td><p >&Amacr;</p>
+         <p>&amp;#256;</p>
+        <p>&amp;#x100;</p></td> </tr>
+
+<tr> <td><p>&amacr;</p>
+        <p>&amp;#257;</p>
+        <p>&amp;#x101;</p></td></tr>
+
+<tr><td> <p>&amalg;</p>
+         <p>&amp;#10815;</p>
+        <p>&amp;#x2a3f;</p></td></tr>
+
+<tr><td><p>&AMP;</p>
+        <p>&amp;#38;</p>
+        <p>&amp;#x26;</p></td> </tr>
+
+<tr> <td> <p >&And;</p>
+        <p>&amp;#10835;</p>
+        <p>&amp;#x2a53;</p></td></tr>
+
+<tr><td><p>&and;</p>
+        <p>&amp;#8743;</p>
+        <p>&amp;#x2227;</p></td></tr>
+
+<tr><td> <p>&andand;</p>
+         <p>&amp;#10837;</p>
+        <p>&amp;#x2a55;</p></td> </tr>
+
+<tr> <td>     <p>&andd;</p>
+             <p>&amp;#10844;</p>
+        <p>&amp;#x2a5c;</p></td></tr>
+
+<tr><td>   <p >&andslope;</p>
+        <p>&amp;#10840;</p>
+        <p>&amp;#x2a58;</p></td></tr>
+
+<tr><td><p>&andv;</p>
+       <p>&amp;#10842;</p>
+        <p>&amp;#x2a5a;</p></td> </tr>
+
+<tr> <td>  <p>&ang;</p>
+        <p>&amp;#8736;</p>
+        <p>&amp;#x2220;</p></td></tr>
+
+<tr><td>  <p>&ange;</p>
+        <p>&amp;#10660;</p>
+        <p>&amp;#x29a4;</p></td></tr>
+
+<tr><td>  <p >&angle;</p>
+        <p>&amp;#8736;</p>
+        <p>&amp;#x2220;</p></td> </tr>
+
+<tr> <td>   <p >&angmsd;</p>
+          <p>&amp;#8737;</p>
+        <p>&amp;#x2221;</p></td></tr>
+
+<tr><td>    <p>&angmsdaa;</p>
+         <p>&amp;#10664;</p>
+        <p>&amp;#x29a8;</p></td></tr>
+
+<tr><td>    <p>&angmsdab;</p>
+         <p>&amp;#10665;</p>
+        <p>&amp;#x29a9;</p></td> </tr>
+
+<tr> <td>     <p>&angmsdac;</p>
+        <p>&amp;#10666;</p>
+        <p>&amp;#x29aa;</p></td></tr>
+
+<tr><td>        <p >&angmsdad;</p>
+          <p>&amp;#10667;</p>
+        <p>&amp;#x29ab;</p></td></tr>
+
+<tr><td>    <p>&angmsdae;</p>
+           <p>&amp;#10668;</p>
+        <p>&amp;#x29ac;</p></td> </tr>
+
+<tr> <td>     <p>&angmsdaf;</p>
+          <p>&amp;#10669;</p>
+        <p>&amp;#x29ad;</p></td></tr>
+
+<tr><td>     <p >&angmsdag;</p>
+           <p>&amp;#10670;</p>
+        <p>&amp;#x29ae;</p></td></tr>
+
+<tr><td>    <p>&angmsdah;</p>
+         <p>&amp;#10671;</p>
+        <p>&amp;#x29af;</p></td> </tr>
+
+<tr> <td>    <p>&angrt;</p>
+            <p>&amp;#8735;</p>
+        <p>&amp;#x221f;</p></td></tr>
+
+<tr><td>        <p>&angrtvb;</p>
+        <p>&amp;#8894;</p>
+        <p>&amp;#x22be;</p></td></tr>
+
+<tr><td> <p>&angrtvbd;</p>
+          <p>&amp;#10653;</p>
+        <p>&amp;#x299d;</p></td> </tr>
+
+<tr> <td>   <p >&angsph;</p>
+          <p>&amp;#8738;</p>
+        <p>&amp;#x2222;</p></td></tr>
+
+<tr><td>   <p>&angst;</p>
+          <p>&amp;#197;</p>
+        <p>&amp;#xc5;</p></td></tr>
+
+<tr><td>       <p >&angzarr;</p>
+       <p>&amp;#9084;</p>
+        <p>&amp;#x237c;</p></td> </tr>
+
+<tr> <td>  <p >&Aogon;</p>
+         <p>&amp;#260;</p>
+        <p>&amp;#x104;</p></td></tr>
+
+<tr><td>   <p >&aogon;</p>
+        <p>&amp;#261;</p>
+        <p>&amp;#x105;</p></td></tr>
+
+<tr><td>      <p >&Aopf;</p>
+        <p>&amp;#120120;</p>
+        <p>&amp;#x1d538;</p></td> </tr>
+
+<tr> <td> <p>&aopf;</p>
+         <p>&amp;#120146;</p>
+        <p>&amp;#x1d552;</p></td></tr>
+
+<tr><td>   <p>&ap;</p>
+         <p>&amp;#8776;</p>
+        <p>&amp;#x2248;</p></td></tr>
+ 
+<tr><td>   <p>&apacir;</p>
+        <p>&amp;#10863;</p>
+        <p>&amp;#x2a6f;</p></td> </tr>
+
+<tr> <td>  <p >&apE;</p>
+            <p>&amp;#10864;</p>
+        <p>&amp;#x2a70;</p></td></tr>
+
+<tr><td>   <p >&ape;</p>
+        <p>&amp;#8778;</p>
+        <p>&amp;#x224a;</p></td></tr>
+
+<tr><td>  <p >&apid;</p>
+        <p>&amp;#8779;</p>
+        <p>&amp;#x224b;</p></td> </tr>
+
+<tr> <td>     <p> &apos;</p>
+        <p>&amp;apos;</p>
+        <p>&amp;#39;</p>
+        <p>&amp;#x27;</p></td></tr>
+
+<tr><td><p>&ApplyFunction;</p>
+              <p>&amp;#8289;</p>
+        <p>&amp;#x2061;</p></td></tr>
+
+<tr><td>   <p>&approx;</p>
+          <p>&amp;#8776;</p>
+        <p>&amp;#x2248;</p></td> </tr>
+
+<tr> <td>  <p >&approxeq;</p>
+               <p>&amp;#8778;</p>
+        <p>&amp;#x224a;</p></td></tr>
+
+<tr> <td>     <p >&Aring</p>
+        <p>&amp;#197;</p>
+        <p>&amp;#xc5;</p></td></tr>
+
+<tr><td>  <p>&aring</p>
+         <p>&amp;#229;</p>
+        <p>&amp;#xe5;</p></td></tr>
+
+<tr><td>    <p >&Ascr;</p>
+        <p>&amp;#119964;</p>
+        <p>&amp;#x1d49c;</p></td> </tr>
+
+<tr> <td>     <p>&ascr;</p>
+           <p>&amp;#119990;</p>
+        <p>&amp;#x1d4b6;</p></td></tr>
+
+<tr><td>   <p>&Assign;</p>
+        <p>&amp;#8788;</p>
+        <p>&amp;#x2254;</p></td></tr>
+
+<tr><td>      <p>&ast;</p>
+           <p>&amp;#42;</p>
+        <p>&amp;#x2a;</p></td> </tr>
+
+<tr> <td> <p>&asymp;</p>
+        <p>&amp;#8776;</p>
+        <p>&amp;#x2248;</p></td></tr>
+
+<tr> <td>  <p >&asympeq;</p>
+           <p>&amp;#8781;</p>
+        <p>&amp;#x224d;</p></td></tr>
+
+<tr><td>     <p>&Atilde</p>
+        <p>&amp;#195;</p>
+        <p>&amp;#xc3;</p></td> </tr>
+
+<tr> <td>      <p>&atilde</p>
+           <p>&amp;#227;</p>
+        <p>&amp;#xe3;</p></td></tr>
+
+<tr><td> <p>&Auml</p>
+           <p>&amp;#196;</p>
+        <p>&amp;#xc4;</p></td></tr>
+
+<tr><td><p">&auml</p>
+        <p>&amp;#228;</p>
+        <p>&amp;#xe4;</p></td> </tr>
+
+<tr> <td>     <p >&awconint;</p>
+          <p>&amp;#8755;</p>
+        <p>&amp;#x2233;</p></td></tr>
+
+<tr> <td>  <p>&awint;</p>
+         <p>&amp;#10769;</p>
+        <p>&amp;#x2a11;</p></td></tr>
+
+<tr><td> <p >&backcong;</p>
+        <p>&amp;#8780;</p>
+        <p>&amp;#x224c;</p></td></tr>
+
+<tr><td> <p >&backepsilon;</p>
+        <p>&amp;#1014;</p>
+        <p>&amp;#x3f6;</p></td> </tr>
+
+<tr> <td>     <p>&backprime;</p>
+         <p>&amp;#8245;</p>
+        <p>&amp;#x2035;</p></td></tr>
+
+<tr><td>    <p>&backsim;</p>
+          <p>&amp;#8765;</p>
+        <p>&amp;#x223d;</p></td></tr>
+ 
+ <tr><td>    <p >&backsimeq;</p>
+          <p>&amp;#8909;</p>
+        <p>&amp;#x22cd;</p></td> </tr>
+
+<tr> <td>     <p >&Backslash;</p>
+               <p>&amp;#8726;</p>
+        <p>&amp;#x2216;</p></td></tr>
+
+<tr><td>    <p >&Barv;</p>
+         <p>&amp;#10983;</p>
+        <p>&amp;#x2ae7;</p></td></tr>
+
+<tr><td>    <p >&barvee;</p>
+          <p>&amp;#8893;</p>
+        <p>&amp;#x22bd;</p></td> </tr>
+
+<tr> <td>    <p >&Barwed;</p>
+        <p>&amp;#8966;</p>
+        <p>&amp;#x2306;</p></td></tr>
+
+<tr><td><p>&barwedge;</p>
+              <p>&amp;#8965;</p>
+        <p>&amp;#x2305;</p></td></tr>
+
+<tr><td>    <p>&bbrk;</p>
+          <p>&amp;#9141;</p>
+        <p>&amp;#x23b5;</p></td> </tr>
+
+<tr> <td>      <p >&bbrktbrk;</p>
+        <p>&amp;#9142;</p>
+        <p>&amp;#x23b6;</p></td></tr>
+
+<tr><td>        <p >&bcong;</p>
+            <p>&amp;#8780;</p>
+        <p>&amp;#x224c;</p></td></tr>
+
+<tr><td>     <p>&Bcy;</p>
+         <p>&amp;#1041;</p>
+        <p>&amp;#x411;</p></td> </tr>
+
+<tr> <td>     <p >&bcy;</p>
+           <p>&amp;#1073;</p>
+        <p>&amp;#x431;</p></td></tr>
+
+<tr><td>   <p >&bdquo;</p>
+           <p>&amp;#8222;</p>
+        <p>&amp;#x201e;</p></td></tr>
+
+<tr><td>    <p >&because;</p>
+           <p>&amp;#8757;</p>
+        <p>&amp;#x2235;</p></td> </tr>
+
+<tr> <td><p>&bemptyv;</p>
+         <p>&amp;#10672;</p>
+        <p>&amp;#x29b0;</p></td></tr>
+
+<tr><td>  <p >&bepsi;</p>
+         <p>&amp;#1014;</p>
+        <p>&amp;#x3f6;</p></td></tr>
+
+<tr><td>  <p>&bernou;</p>
+        <p>&amp;#8492;</p>
+        <p>&amp;#x212c;</p></td> </tr>
+
+<tr> <td>    <p>&Beta;</p>
+           <p>&amp;#914;</p>
+        <p>&amp;#x392;</p></td></tr>
+<tr><td>   <p>&beta;</p>
+        <p>&amp;#946;</p>
+        <p>&amp;#x3b2;</p></td></tr>
+
+<tr><td>    <p>&beth;</p>
+            <p>&amp;#8502;</p>
+        <p>&amp;#x2136;</p></td> </tr>
+
+<tr> <td> <p>&between;</p>
+        <p>&amp;#8812;</p>
+        <p>&amp;#x226c;</p></td></tr>
+
+<tr><td>  <p>&Bfr;</p>
+           <p>&amp;#120069;</p>
+        <p>&amp;#x1d505;</p></td></tr>
+
+<tr><td>  <p >&bfr;</p>
+         <p>&amp;#120095;</p>
+        <p>&amp;#x1d51f;</p></td> </tr>
+
+<tr> <td>    <p>&bigcap;</p>
+            <p>&amp;#8898;</p>
+        <p>&amp;#x22c2;</p></td></tr>
+
+<tr><td> <p>&bigcirc;</p>
+            <p>&amp;#9711;</p>
+        <p>&amp;#x25ef;</p></td></tr>
+
+<tr><td>   <p>&bigcup;</p>
+          <p>&amp;#8899;</p>
+        <p>&amp;#x22c3;</p></td> </tr>
+
+<tr> <td>     <p>&bigodot;</p>
+               <p>&amp;#10752;</p>
+        <p>&amp;#x2a00;</p></td></tr>
+
+<tr><td>  <p >&bigoplus;</p>
+             <p>&amp;#10753;</p>
+        <p>&amp;#x2a01;</p></td></tr>
+
+<tr><td>        <p>&bigotimes;</p>
+         <p>&amp;#10754;</p>
+        <p>&amp;#x2a02;</p></td> </tr>
+
+<tr> <td>       <p>&bigsqcup;</p>
+             <p>&amp;#10758;</p>
+        <p>&amp;#x2a06;</p></td></tr>
+
+<tr><td>    <p>&bigstar;</p>
+           <p>&amp;#9733;</p>
+        <p>&amp;#x2605;</p></td></tr>
+
+<tr><td>     <p>&bigtriangledown;</p>
+              <p>&amp;#9661;</p>
+        <p>&amp;#x25bd;</p></td> </tr>
+
+<tr> <td>   <p>&bigtriangleup;</p>
+            <p>&amp;#9651;</p>
+        <p>&amp;#x25b3;</p></td></tr>
+
+<tr><td>      <p>&biguplus;</p>
+          <p>&amp;#10756;</p>
+        <p>&amp;#x2a04;</p></td></tr>
+
+<tr><td>        <p >&bigvee;</p>
+          <p>&amp;#8897;</p>
+        <p>&amp;#x22c1;</p></td> </tr>
+
+<tr> <td>  <p>&bigwedge;</p>
+             <p>&amp;#8896;</p>
+        <p>&amp;#x22c0;</p></td></tr>
+
+<tr><td><p>&bkarow;</p>
+        <p>&amp;#10509;</p>
+        <p>&amp;#x290d;</p></td></tr>
+
+<tr><td> <p>&blacklozenge;</p>
+          <p>&amp;#10731;</p>
+        <p>&amp;#x29eb;</p></td> </tr>
+
+<tr> <td><p>&blacksquare;</p>
+         <p>&amp;#9642;</p>
+        <p>&amp;#x25aa;</p></td></tr>
+
+<tr><td>  <p>&blacktriangle;</p>
+            <p>&amp;#9652;</p>
+        <p>&amp;#x25b4;</p></td></tr>
+
+<tr><td>        <p>&blacktriangledown;</p>
+            <p>&amp;#9662;</p>
+        <p>&amp;#x25be;</p></td> </tr>
+
+<tr> <td>   <p>&blacktriangleleft;</p>
+            <p>&amp;#9666;</p>
+        <p>&amp;#x25c2;</p></td></tr>
+
+<tr><td> <p>&blacktriangleright;</p>
+         <p>&amp;#9656;</p>
+        <p>&amp;#x25b8;</p></td></tr>
+
+<tr><td>   <p>&blank;</p>
+          <p>&amp;#9251;</p>
+        <p>&amp;#x2423;</p></td> </tr>
+
+<tr> <td> <p >&blk12;</p>
+            <p>&amp;#9618;</p>
+        <p>&amp;#x2592;</p></td></tr>
+
+<tr><td> <p>&blk14;</p>
+         <p>&amp;#9617;</p>
+        <p>&amp;#x2591;</p></td></tr>
+
+<tr><td><p>&blk34;</p>
+        <p>&amp;#9619;</p>
+        <p>&amp;#x2593;</p></td> </tr>
+
+<tr> <td> <p>&block;</p>
+            <p>&amp;#9608;</p>
+        <p>&amp;#x2588;</p></td></tr>
+
+<tr><td><p>&bne;</p>
+             <p>&amp;#61;&amp;#8421;</p>
+        <p>&amp;#x3d;&amp;#x20e5;</p></td></tr>
+
+<tr><td>       <p>&bnequiv;</p>
+                <p>&amp;#8801;&amp;#8421;</p>
+        <p>&amp;#x2261;&amp;#x20e5;</p></td> </tr>
+
+<tr> <td> <p>&bNot;</p>
+             <p>&amp;#10989;</p>
+        <p>&amp;#x2aed;</p></td>
+
+<tr><td>   <p>&bnot;</p>
+                <p>&amp;#8976;</p>
+        <p>&amp;#x2310;</p></td></tr>
+        
+<tr><td><p >&Bopf;</p>
+            <p>&amp;#120121;</p>
+        <p>&amp;#x1d539;</p></td> </tr>
+
+<tr> <td><p>&bopf;</p>
+          <p>&amp;#120147;</p>
+        <p>&amp;#x1d553;</p></td></tr>
+
+<tr><td><p>&bottom;</p>
+              <p>&amp;#8869;</p>
+        <p>&amp;#x22a5;</p></td></tr>
+
+<tr><td><p>&bowtie;</p>
+              <p>&amp;#8904;</p>
+        <p>&amp;#x22c8;</p></td> </tr>
+
+<tr> <td><p>&boxbox;</p>
+              <p>&amp;#10697;</p>
+        <p>&amp;#x29c9;</p></td></tr>
+
+<tr><td><p>&boxDL;</p>
+             <p>&amp;#9559;</p>
+        <p>&amp;#x2557;</p></td></tr>
+
+<tr><td><p>&boxDl;</p>
+              <p>&amp;#9558;</p>
+        <p>&amp;#x2556;</p></td> </tr>
+
+<tr> <td> <p >&boxdL;</p>
+               <p>&amp;#9557;</p>
+        <p>&amp;#x2555;</p></td></tr>
+
+<tr><td><p>&boxdl;</p>
+            <p>&amp;#9488;</p>
+        <p>&amp;#x2510;</p></td></tr>
+
+<tr><td> <p>&boxDR;</p>
+               <p>&amp;#9556;</p>
+        <p>&amp;#x2554;</p></td> </tr>
+
+<tr> <td><p>&boxDr;</p>
+               <p>&amp;#9555;</p>
+        <p>&amp;#x2553;</p></td></tr>
+
+<tr><td><p>&boxdR;</p>
+               <p>&amp;#9554;</p>
+        <p>&amp;#x2552;</p></td></tr>
+
+<tr><td><p>&boxdr;</p>
+              <p>&amp;#9484;</p>
+        <p>&amp;#x250c;</p></td> </tr>
+
+<tr> <td><p>&boxH;</p>
+              <p>&amp;#9552;</p>
+        <p>&amp;#x2550;</p></td></tr>
+
+<tr><td><p>&boxh;</p>
+               <p>&amp;#9472;</p>
+        <p>&amp;#x2500;</p></td></tr>
+
+<tr><td> <p>&boxHD;</p>
+              <p>&amp;#9574;</p>
+        <p>&amp;#x2566;</p></td> </tr>
+
+<tr> <td><p>&boxHd;</p>
+          <p>&amp;#9572;</p>
+        <p>&amp;#x2564;</p></td></tr>
+
+<tr><td><p>&boxhD;</p>
+           <p>&amp;#9573;</p>
+        <p>&amp;#x2565;</p></td></tr>
+
+<tr><td><p>&boxhd;</p>
+               <p>&amp;#9516;</p>
+        <p>&amp;#x252c;</p></td> </tr>
+
+<tr> <td> <p>&boxHU;</p>
+             <p>&amp;#9577;</p>
+        <p>&amp;#x2569;</p></td></tr>
+
+<tr><td> <p>&boxHu;</p>
+              <p>&amp;#9575;</p>
+        <p>&amp;#x2567;</p></td></tr>
+
+<tr><td><p>&boxhU;</p>
+          <p>&amp;#9576;</p>
+        <p>&amp;#x2568;</p></td> </tr>
+
+<tr> <td><p>&boxhu;</p>
+            <p>&amp;#9524;</p>
+        <p>&amp;#x2534;</p></td></tr>
+
+<tr><td><p>&boxminus;</p>
+             <p>&amp;#8863;</p>
+        <p>&amp;#x229f;</p></td></tr>
+
+<tr><td><p>&boxplus;</p>
+                <p>&amp;#8862;</p>
+        <p>&amp;#x229e;</p></td> </tr>
+
+<tr> <td><p>&boxtimes;</p>
+            <p>&amp;#8864;</p>
+        <p>&amp;#x22a0;</p></td></tr>
+
+<tr><td><p>&boxUL;</p>
+            <p>&amp;#9565;</p>
+        <p>&amp;#x255d;</p></td></tr>
+
+<tr><td> <p>&boxUl;</p>
+         <p>&amp;#9564;</p>
+        <p>&amp;#x255c;</p></td> </tr>
+
+<tr> <td><p>&boxuL;</p>
+        <p>&amp;#9563;</p>
+        <p>&amp;#x255b;</p></td></tr>
+
+<tr><td><p>&boxul;</p>
+               <p>&amp;#9496;</p>
+        <p>&amp;#x2518;</p></td></tr>
+
+<tr><td><p>&boxUR;</p>
+        <p>&amp;#9562;</p>
+        <p>&amp;#x255a;</p></td> </tr>
+
+<tr> <td><p>&boxUr;</p>
+              <p>&amp;#9561;</p>
+        <p>&amp;#x2559;</p></td></tr>
+
+<tr><td><p>&boxuL;</p>
+           <p>&amp;#x0255B;</p>
+        <p>&amp;#9563;</p></td></tr>
+
+<tr><td> <p>&boxur;</p>
+              <p>&amp;#9492;</p>
+        <p>&amp;#x2514;</p></td> </tr>
+
+<tr> <td><p>&boxV;</p>
+               <p>&amp;#9553;</p>
+        <p>&amp;#x2551;</p></td></tr>
+
+<tr><td><p>&boxv;</p>
+           <p>&amp;#9474;</p>
+        <p>&amp;#x2502;</p></td></tr>
+
+<tr><td><p>&boxVH;</p>
+           <p>&amp;#9580;</p>
+        <p>&amp;#x256c;</p></td> </tr>
+
+<tr> <td><p>&boxVh;</p>
+             <p>&amp;#9579;</p>
+        <p>&amp;#x256b;</p></td></tr>
+
+<tr><td><p>&boxvH;</p>
+            <p>&amp;#9578;</p>
+        <p>&amp;#x256a;</p></td></tr>
+
+<tr><td><p>&boxvh;</p>
+            <p>&amp;#9532;</p>
+        <p>&amp;#x253c;</p></td> </tr>
+
+<tr> <td><p >&boxVL;</p>
+              <p>&amp;#9571;</p>
+        <p>&amp;#x2563;</p></td></tr>
+
+<tr><td> <p>&boxVl;</p>
+        <p>&amp;#9570;</p>
+        <p>&amp;#x2562;</p></td></tr>
+
+<tr><td><p>&boxvL;</p>
+                <p>&amp;#9569;</p>
+        <p>&amp;#x2561;</p></td> </tr>
+
+<tr> <td><p>&boxvl;</p>
+              <p>&amp;#9508;</p>
+        <p>&amp;#x2524;</p></td></tr>
+
+<tr><td><p>&boxVR;</p>
+                <p>&amp;#9568;</p>
+        <p>&amp;#x2560;</p></td></tr>
+
+<tr><td><p>&boxVr;</p>
+               <p>&amp;#9567;</p>
+        <p>&amp;#x255f;</p></td> </tr>
+
+<tr> <td><p>&boxvR;</p>
+            <p>&amp;#9566;</p>
+        <p>&amp;#x255e;</p></td></tr>
+
+<tr><td><p>&boxvr;</p>
+              <p>&amp;#9500;</p>
+        <p>&amp;#x251c;</p></td></tr>
+
+<tr><td><p >&bprime;</p>
+              <p>&amp;#8245;</p>
+        <p>&amp;#x2035;</p></td> </tr>
+
+<tr> <td> <p>&breve;</p>
+              <p>&amp;#728;</p>
+        <p>&amp;#x2d8;</p></td></tr>
+
+<tr><td><p >&brvbar</p>
+              <p>&amp;#166;</p>
+        <p>&amp;#xa6;</p></td></tr>
+
+<tr><td><p >&Bscr;</p>
+            <p>&amp;#8492;</p>
+        <p>&amp;#x212c;</p></td> </tr>
+
+<tr> <td><p>&bscr;</p>
+                <p>&amp;#119991;</p>
+        <p>&amp;#x1d4b7;</p></td></tr>
+
+<tr><td><p>&bsemi;</p>
+             <p>&amp;#8271;</p>
+        <p>&amp;#x204f;</p></td></tr>
+
+<tr><td><p >&bsim;</p>
+           <p>&amp;#8765;</p>
+        <p>&amp;#x223d;</p></td> </tr>
+
+<tr> <td><p >&bsime;</p>
+              <p>&amp;#8909;</p>
+        <p>&amp;#x22cd;</p></td></tr>
+
+<tr><td><p>&bsol;</p>
+              <p>&amp;#92;</p>
+        <p>&amp;#x5c;</p></td></tr>
+
+<tr><td> <p>&bsolb;</p>
+              <p>&amp;#10693;</p>
+        <p>&amp;#x29c5;</p></td> </tr>
+
+<tr> <td><p>&bsolhsub;</p>
+         <p>&amp;#10184;</p>
+        <p>&amp;#x27c8;</p></td></tr>
+
+<tr><td><p>&bullet;</p>
+            <p>&amp;#8226;</p>
+        <p>&amp;#x2022;</p></td></tr>
+
+<tr><td><p>&bump;</p>
+                <p>&amp;#8782;</p>
+        <p>&amp;#x224e;</p></td> </tr>
+
+<tr> <td><p>&bumpE;</p>
+              <p>&amp;#10926;</p>
+        <p>&amp;#x2aae;</p></td></tr>
+
+<tr><td><p >&bumpe;</p>
+              <p>&amp;#8783;</p>
+        <p>&amp;#x224f;</p></td></tr>
+
+<tr><td><p >&Cacute;</p>
+             <p>&amp;#262;</p>
+        <p>&amp;#x106;</p></td> </tr>
+
+<tr> <td><p>&cacute;</p>
+               <p>&amp;#263;</p>
+        <p>&amp;#x107;</p></td></tr>
+
+<tr><td><p>&Cap;</p>
+            <p>&amp;#8914;</p>
+        <p>&amp;#x22d2;</p></td></tr>
+
+<tr><td><p>&cap;</p>
+              <p>&amp;#8745;</p>
+        <p>&amp;#x2229;</p></td> </tr>
+
+<tr> <td><p >&capand;</p>
+                <p>&amp;#10820;</p>
+        <p>&amp;#x2a44;</p></td></tr>
+
+<tr><td><p>&capbrcup;</p>
+         <p>&amp;#10825;</p>
+        <p>&amp;#x2a49;</p></td></tr>
+
+<tr><td><p >&capcap;</p>
+                <p>&amp;#10827;</p>
+        <p>&amp;#x2a4b;</p></td> </tr>
+
+<tr> <td> <p>&capcup;</p>
+          <p>&amp;#10823;</p>
+        <p>&amp;#x2a47;</p></td></tr>
+
+<tr><td><p>&capdot;</p>
+        <p>&amp;#10816;</p>
+        <p>&amp;#x2a40;</p></td></tr>
+
+<tr><td><p>&CapitalDifferentialD;</p>
+        <p>&amp;#8517;</p>
+        <p>&amp;#x2145;</p></td> </tr>
+
+<tr> <td> <p>&caps;</p>
+          <p>&amp;#8745;&amp;#65024;</p>
+        <p>&amp;#x2229;&amp;#xfe00;</p></td></tr>
+
+<tr><td><p >&caret;</p>
+             <p>&amp;#8257;</p>
+        <p>&amp;#x2041;</p></td></tr>
+
+<tr><td><p>&caron;</p>
+             <p>&amp;#711;</p>
+        <p>&amp;#x2c7;</p></td> </tr>
+
+<tr> <td> <p>&Cayleys;</p>
+              <p>&amp;#8493;</p>
+        <p>&amp;#x212d;</p></td></tr>
+
+<tr><td><p>&ccaps;</p>
+                <p>&amp;#10829;</p>
+        <p>&amp;#x2a4d;</p></td></tr>
+
+<tr><td><p >&Ccaron;</p>
+                <p>&amp;#268;</p>
+        <p>&amp;#x10c;</p></td> </tr>
+
+<tr> <td><p >&ccaron;</p>
+              <p>&amp;#269;</p>
+        <p>&amp;#x10d;</p></td></tr>
+
+<tr><td><p>&Ccedil</p>
+               <p>&amp;#199;</p>
+        <p>&amp;#xc7;</p></td></tr>
+
+<tr><td><p >&ccedil;</p>
+               <p>&amp;#231;</p>
+        <p>&amp;#xe7;</p></td> </tr>
+
+<tr> <td><p">&Ccirc;</p>
+         <p>&amp;#264;</p>
+        <p>&amp;#x108;</p></td></tr>
+
+<tr><td><p>&ccirc;</p>
+        <p>&amp;#265;</p>
+        <p>&amp;#x109;</p></td></tr>
+
+<tr><td><p>&Cconint;</p>
+        <p>&amp;#8752;</p>
+        <p>&amp;#x2230;</p></td> </tr>
+
+<tr> <td><p>&ccups;</p>
+              <p>&amp;#10828;</p>
+        <p>&amp;#x2a4c;</p></td></tr>
+
+<tr><td><p>&ccupssm;</p>
+               <p>&amp;#10832;</p>
+        <p>&amp;#x2a50;</p></td></tr>
+
+<tr><td> <p>&Cdot;</p>
+         <p>&amp;#266;</p>
+        <p>&amp;#x10a;</p></td> </tr>
+
+<tr> <td><p >&cdot;</p>
+        <p>&amp;#267;</p>
+        <p>&amp;#x10b;</p></td></tr>
+
+<tr><td><p >&Cedilla;</p>
+         <p>&amp;#184;</p>
+        <p>&amp;#xb8;</p></td></tr>
+
+<tr><td><p >&cemptyv;</p>
+        <p>&amp;#10674;</p>
+        <p>&amp;#x29b2;</p></td> </tr>
+
+<tr> <td><p>&cent</p>
+              <p>&amp;#162;</p>
+        <p>&amp;#xa2;</p></td></tr>
+
+<tr><td><p >&centerdot;</p>
+        <p>&amp;#183;</p>
+        <p>&amp;#xb7;</p></td></tr>
+
+<tr><td><p>&Cfr;</p>
+               <p>&amp;#8493;</p>
+        <p>&amp;#x212d;</p></td> </tr>
+
+<tr> <td><p>&cfr;</p>
+             <p>&amp;#120096;</p>
+        <p>&amp;#x1d520;</p></td></tr>
+
+<tr><td><p>&CHcy;</p>
+          <p>&amp;#1063;</p>
+        <p>&amp;#x427;</p></td></tr>
+
+<tr><td><p >&chcy;</p>
+              <p>&amp;#1095;</p>
+        <p>&amp;#x447;</p></td> </tr>
+
+<tr> <td><p>&checkmark;</p>
+               <p>&amp;#10003;</p>
+        <p>&amp;#x2713;</p></td></tr>
+
+<tr><td><p>&Chi;</p>
+             <p>&amp;#935;</p>
+        <p>&amp;#x3a7;</p></td></tr>
+
+<tr><td><p>&Chi;</p>
+         <p>&amp;#967;</p>
+        <p>&amp;#x3c7;</p></td> </tr>
+
+<tr> <td><p>&cir;</p>
+          <p>&amp;#9675;</p>
+        <p>&amp;#x25cb;</p></td></tr>
+
+<tr><td><p >&circ;</p>
+        <p>&amp;#710;</p>
+        <p>&amp;#x2c6;</p></td></tr>
+
+<tr><td><p>&circeq;</p>
+        <p>&amp;#8791;</p>
+        <p>&amp;#x2257;</p></td> </tr>
+
+<tr> <td> <p>&circlearrowleft;</p>
+             <p>&amp;#8634;</p>
+        <p>&amp;#x21ba;</p></td></tr>
+
+<tr><td><p>&circlearrowright;</p>
+        <p>&amp;#8635;</p>
+        <p>&amp;#x21bb;</p></td></tr>
+
+<tr><td><p>&circledast;</p>
+        <p>&amp;#8859;</p>
+        <p>&amp;#x229b;</p></td> </tr>
+
+<tr> <td><p >&circledcirc;</p>
+          <p>&amp;#8858;</p>
+        <p>&amp;#x229a;</p></td></tr>
+
+<tr><td><p >&circleddash;</p>
+        <p>&amp;#8861;</p>
+        <p>&amp;#x229d;</p></td></tr>
+
+<tr><td><p >&CircleDot;</p>
+        <p>&amp;#8857;</p>
+        <p>&amp;#x2299;</p></td> </tr>
+
+<tr> <td><p>&circledR;</p>
+        <p>&amp;#174;</p>
+        <p>&amp;#xae;</p></td></tr>
+
+<tr><td><p >&circledS;</p>
+        <p>&amp;#9416;</p>
+        <p>&amp;#x24c8;</p></td></tr>
+
+<tr><td><p>&CircleMinus;</p>
+        <p>&amp;#8854;</p>
+        <p>&amp;#x2296;</p></td> </tr>
+
+<tr> <td><p >&CirclePlus;</p>
+        <p>&amp;#8853;</p>
+        <p>&amp;#x2295;</p></td></tr>
+
+<tr><td><p>&CircleTimes;</p>
+        <p>&amp;#8855;</p>
+        <p>&amp;#x2297;</p></td></tr>
+<tr><td><p >&cirE;</p>
+        <p>&amp;#10691;</p>
+        <p>&amp;#x29c3;</p></td> </tr>
+
+<tr> <td><p>&cire;</p>
+        <p>&amp;#8791;</p>
+        <p>&amp;#x2257;</p></td></tr>
+
+<tr><td><p>&cirfnint;</p>
+        <p>&amp;#10768;</p>
+        <p>&amp;#x2a10;</p></td></tr>
+
+<tr><td><p>&cirmid;</p>
+               <p>&amp;#10991;</p>
+        <p>&amp;#x2aef;</p></td> </tr>
+
+<tr> <td><p>&cirscir;</p>
+        <p>&amp;#10690;</p>
+        <p>&amp;#x29c2;</p></td></tr>
+
+<tr><td><p>&ClockwiseContourIntegral;</p>
+        <p>&amp;#8754;</p>
+        <p>&amp;#x2232;</p></td></tr>
+
+<tr><td><p>&CloseCurlyDoubleQuote;</p>
+        <p>&amp;#8221;</p>
+        <p>&amp;#x201d;</p></td> </tr>
+
+<tr> <td><p>&CloseCurlyQuote;</p>
+        <p>&amp;#8217;</p>
+        <p>&amp;#x2019;</p></td></tr>
+
+<tr><td> <p>&clubsuit;</p>
+        <p>&amp;#9827;</p>
+        <p>&amp;#x2663;</p></td></tr>
+
+<tr><td><p>&Colon;</p>
+        <p>&amp;#8759;</p>
+        <p>&amp;#x2237;</p></td> </tr>
+
+<tr> <td><p >&colon;</p>
+        <p>&amp;#58;</p>
+        <p>&amp;#x3a;</p></td></tr>
+
+<tr><td><p>&Colone;</p>
+        <p>&amp;#10868;</p>
+        <p>&amp;#x2a74;</p></td></tr>
+
+<tr><td><p >&colone;</p>
+        <p>&amp;#8788;</p>
+        <p>&amp;#x2254;</p></td> </tr>
+
+<tr> <td><p class="e-c">&comma;</p>
+        <p>&amp;comma;</p>
+        <p>&amp;#44;</p>
+        <p>&amp;#x2c;</p></td></tr>
+
+<tr><td><p >&commat;</p>
+        <p>&amp;#64;</p>
+        <p>&amp;#x40;</p></td></tr>
+
+<tr><td><p>&comp;</p>
+        <p>&amp;#8705;</p>
+        <p>&amp;#x2201;</p></td> </tr>
+
+<tr> <td><p>&compfn;</p>
+        <p>&amp;#8728;</p>
+        <p>&amp;#x2102;</p></td></tr>
+        
+<tr><td><p>&complexes;</p>
+        <p>&amp;#8450;</p>
+        <p>&amp;#x2102;</p></td></tr>
+
+<tr><td><p >&cong;</p>
+        <p>&amp;#8773;</p>
+        <p>&amp;#x2245;</p></td> </tr>
+
+<tr> <td><p>&congdot;</p>
+        <p>&amp;#10861;</p>
+        <p>&amp;#x2a6d;</p></td> </tr>
+
+<tr><td><p >&Congruent;</p>
+        <p>&amp;#8801;</p>
+        <p>&amp;#x2261;</p></td> </tr>
+
+<tr><td><p >&Conint;</p>
+        <p>&amp;#8751;</p>
+        <p>&amp;#x222f;</p></td> </tr>
+
+<tr> <td> <p>&ContourIntegral;</p>
+        <p>&amp;#8750;</p>
+        <p>&amp;#x222e;</p></td> </tr>
+
+<tr><td> <p>&Copf;</p>
+        <p>&amp;#8450;</p>
+        <p>&amp;#x2102;</p></td> </tr>
+
+<tr><td> <p>&copf;</p>
+        <p>&amp;#120148;</p>
+        <p>&amp;#x1d554;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#1100;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#1101;</p></td> </tr>
+
+<tr><td><p>&yucy;</p>
+          <p>&amp;#x0044E;</p>
+        <p>&amp;#1102;</p></td> </tr>
+
+<tr><td><p>&yacy;</p>
+          <p>&amp;#x0044F;</p>
+        <p>&amp;#1103;</p></td> </tr>
+
+<tr><td><p>&iocy;</p>
+          <p>&amp;#x00451;</p>
+        <p>&amp;#1105;</p></td> </tr>
+
+<tr><td><p>&djcy;</p>
+          <p>&amp;#x00452;</p>
+        <p>&amp;#1106;</p></td> </tr>
+
+<tr><td><p>&gjcy;</p>
+          <p>&amp;#x00453;</p>
+        <p>&amp;#1107;</p></td> </tr>
+
+<tr><td><p>&jukcy;</p>
+          <p>&amp;#x00454;</p>
+        <p>&amp;#1108;</p></td> </tr>
+
+<tr><td><p>&dscy;</p>
+          <p>&amp;#x00455;</p>
+        <p>&amp;#1109;</p></td> </tr>
+
+<tr><td><p>&iukcy;</p>
+          <p>&amp;#x00456;</p>
+        <p>&amp;#1110;</p></td> </tr>
+
+<tr><td><p>&yicy;</p>
+          <p>&amp;#x00457;</p>
+        <p>&amp;#1111;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#1112;</p></td> </tr>
+
+<tr><td><p>&ljcy;</p>
+          <p>&amp;#x00459;</p>
+        <p>&amp;#1113;</p></td> </tr>
+
+<tr><td><p>&njcy;</p>
+          <p>&amp;#x0045A;</p>
+        <p>&amp;#1114;</p></td> </tr>
+
+<tr><td><p>&tshcy;</p>
+          <p>&amp;#x0045B;</p>
+        <p>&amp;#1115;</p></td> </tr>
+
+<tr><td><p>&kjcy;#x0045B;</p>
+          <p>&amp;#x0045C;</p>
+        <p>&amp;#1116;</p></td> </tr>
+
+<tr><td><p>&ubrcy;</p>
+          <p>&amp;#x0045E;</p>
+        <p>&amp;#1118;</p></td> </tr>
+
+<tr><td><p>&dzcy;</p>
+          <p>&amp;#x0045F;</p>
+        <p>&amp;#1119;</p></td> </tr>
+
+<tr><td><p>&ensp;</p>
+          <p>&amp;#x02002;</p>
+        <p>&amp;#8194;</p></td> </tr>
+
+<tr><td><p>&emsp;</p>
+          <p>&amp;#x02003;</p>
+        <p>&amp;#8195;</p></td> </tr>
+
+<tr><td><p>&emsp13;</p>
+          <p>&amp;#x02004;</p>
+        <p>&amp;#8196;</p></td> </tr>
+
+<tr><td><p>&emsp14;</p>
+          <p>&amp;#x02005;</p>
+        <p>&amp;#8197;</p></td> </tr>
+
+<tr><td><p>&numsp;</p>
+          <p>&amp;#x02007;</p>
+        <p>&amp;#8199;</p></td> </tr>
+
+<tr><td><p>&puncsp;</p>
+          <p>&amp;#x02008;</p>
+        <p>&amp;#8200;</p></td> </tr>
+
+<tr><td><p>&thinsp; &ThinSpace;</p>
+          <p>&amp;#x02009;</p>
+        <p>&amp;#8201;</p></td> </tr>
+
+<tr><td><p>&hairsp;</p>
+          <p>&amp;#x0200A;</p>
+        <p>&amp;#8202;</p></td> </tr>
+
+<tr><td><p>&NegativeVeryThinSpace;</p>
+          <p>&amp;#x0200B;</p>
+        <p>&amp;#8203;</p></td> </tr>
+
+<tr><td><p>&zwnj;</p>
+          <p>&amp;#x0200C;</p>
+        <p>&amp;#8204;</p></td> </tr>
+
+<tr><td><p>&zwj;</p>
+          <p>&amp;#x0200D;</p>
+        <p>&amp;#8205;</p></td> </tr>
+
+<tr><td><p>&lrm;</p>
+          <p>&amp;#x0200E;</p>
+        <p>&amp;#8206;</p></td> </tr>
+
+<tr><td><p>&rlm;</p>
+          <p>&amp;#x0200F;</p>
+        <p>&amp;#8207;</p></td> </tr>
+
+<tr><td><p>&hyphen; &dash;</p>
+          <p>&amp;#x02010;</p>
+        <p>&amp;#8208;</p></td> </tr>
+
+<tr><td><p>&ndash;</p>
+          <p>&amp;#x02013;</p>
+        <p>&amp;#8211;</p></td> </tr>
+
+<tr><td><p>&mdash;</p>
+          <p>&amp;#x02014;</p>
+        <p>&amp;#8212;</p></td> </tr>
+
+<tr><td><p>&horbar;</p>
+          <p>&amp;#x02015;</p>
+        <p>&amp;#8213;</p></td> </tr>
+
+<tr><td><p>&Verbar; &Vert;</p>
+          <p>&amp;#x02016;</p>
+        <p>&amp;#8214;</p></td> </tr>
+
+<tr><td><p>&lsquo;</p>
+          <p>&amp;#x02018;</p>
+        <p>&amp;#8216;</p></td> </tr>
+
+<tr><td><p>&rsquo; &rsquor;;</p>
+          <p>&amp;#x02019;</p>
+        <p>&amp;#8217;</p></td> </tr>
+
+<tr><td><p>&lsquor; &sbquo;</p>
+          <p>&amp;#x0201A;</p>
+        <p>&amp;#8218;</p></td> </tr>
+
+<tr><td><p>&OpenCurlyDoubleQuote;</p>
+          <p>&amp;#x0201C;</p>
+        <p>&amp;#8220;</p></td> </tr>
+
+<tr><td><p>&CloseCurlyDoubleQuote;</p>
+          <p>&amp;#x0201D;</p>
+        <p>&amp;#8221;</p></td> </tr>
+
+<tr><td><p>&ldquor; &bdquo;</p>
+          <p>&amp;#x0201E;</p>
+        <p>&amp;#8222;</p></td> </tr>
+
+<tr><td><p>&dagger;</p>
+          <p>&amp;#x02020;</p>
+        <p>&amp;#8224;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#8225;</p></td> </tr>
+
+<tr><td><p>&bull; &bullet;</p>
+          <p>&amp;#x02022;</p>
+        <p>&amp;#8226;</p></td> </tr>
+
+<tr><td><p>&nldr;</p>
+          <p>&amp;#x02025;</p>
+        <p>&amp;#8229;</p></td> </tr>
+
+<tr><td><p>&hellip; &mldr;</p>
+          <p>&amp;#x02026;</p>
+        <p>&amp;#8230;</p></td> </tr>
+
+<tr><td><p>&permil;</p>
+          <p>&amp;#x02030;</p>
+        <p>&amp;#8240;</p></td> </tr>
+
+<tr><td><p>&pertenk;</p>
+          <p>&amp;#x02031;</p>
+        <p>&amp;#8241;</p></td> </tr>
+
+<tr><td><p>&tprime;</p>
+          <p>&amp;#x02033</p>
+        <p>&amp;#8242;</p></td> </tr>
+
+<tr><td><p>&softcy;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#8243;</p></td> </tr>
+
+<tr><td><p>&tprime;</p>
+          <p>&amp;#x02034;</p>
+        <p>&amp;#8244;</p></td> </tr>
+
+<tr><td><p>&bprime; &backprime;</p>
+          <p>&amp;#x02035;</p>
+        <p>&amp;#8245;</p></td> </tr>
+
+<tr><td><p>&lsaquo;</p>
+          <p>&amp;#x02039;</p>
+        <p>&amp;#8249;</p></td> </tr>
+
+<tr><td><p>&rsaquo;</p>
+          <p>&amp;#x0203A;</p>
+        <p>&amp;#8250;</p></td> </tr>
+
+<tr><td><p>&oline;</p>
+          <p>&amp;#x0203E;</p>
+        <p>&amp;#8254;</p></td> </tr>
+
+<tr><td><p>&caret;</p>
+          <p>&amp;#x02041;</p>
+        <p>&amp;#8257;</p></td> </tr>
+
+<tr><td><p>&hybull;</p>
+          <p>&amp;#x02043;</p>
+        <p>&amp;#8259;</p></td> </tr>
+
+<tr><td><p>&frasl;</p>
+          <p>&amp;#x02044;</p>
+        <p>&amp;#8260;</p></td> </tr>
+
+<tr><td><p>&bsemi;</p>
+          <p>&amp;#x0204F;</p>
+        <p>&amp;#8271;</p></td> </tr>
+
+<tr><td><p>&qprime;</p>
+          <p>&amp;#x02057;</p>
+        <p>&amp;#8279;</p></td> </tr>
+
+<tr><td><p>&MediumSpace;</p>
+          <p>&amp;#x0205F;</p>
+        <p>&amp;#8287;</p></td> </tr>
+
+<tr><td><p>&NoBreak;</p>
+          <p>&amp;#x02060;</p>
+        <p>&amp;#8288;</p></td> </tr>
+
+<tr><td><p>&ApplyFunction; &af;</p>
+          <p>&amp;#x02061;</p>
+        <p>&amp;#8289;</p></td> </tr>
+
+<tr><td><p>&InvisibleTimes; &it;</p>
+          <p>&amp;#x02062;</p>
+        <p>&amp;#8290;</p></td> </tr>
+
+<tr><td><p>&InvisibleComma; &ic;</p>
+          <p>&amp;#x02063;</p>
+        <p>&amp;#8291;</p></td> </tr>
+
+<tr><td><p>&euro;</p>
+          <p>&amp;#x020AC;</p>
+        <p>&amp;#8364;</p></td> </tr>
+
+<tr><td><p>&tdot; &TripleDot;</p>
+          <p>&amp;#x020DB;</p>
+        <p>&amp;#8411;</p></td> </tr>
+
+<tr><td><p>&DotDot;</p>
+          <p>&amp;#x020DC;</p>
+        <p>&amp;#8412;</p></td> </tr>
+<tr><td><p>&Copf; &complexes;</p>
+          <p>&amp;#x02102;</p>
+        <p>&amp;#8450;</p></td> </tr>
+
+<tr><td><p>&incare;</p>
+          <p>&amp;#x02105;</p>
+        <p>&amp;#8453;</p></td> </tr>
+
+<tr><td><p>&gscr;</p>
+          <p>&amp;#x0210A;</p>
+        <p>&amp;#8458;</p></td> </tr>
+
+<tr><td><p>&hamilt;</p>
+          <p>&amp;#x0210B;</p>
+        <p>&amp;#8459;</p></td> </tr>
+
+<tr><td><p>&Hfr; &Poincareplane;</p>
+          <p>&amp;#x0210C;</p>
+        <p>&amp;#8460;</p></td> </tr>
+
+<tr><td><p>&quaternions; &Hopf;</p>
+          <p>&amp;#x0210D;</p>
+        <p>&amp;#8461;</p></td> </tr>
+
+<tr><td><p>&planckh;</p>
+          <p>&amp;#x0210E;</p>
+        <p>&amp;#8462;</p></td> </tr>
+
+<tr><td><p>&planck; &hbar;</p>
+          <p>&amp;#x0210F;</p>
+        <p>&amp;#8463;</p></td> </tr>
+
+<tr><td><p>&Iscr; &imagline;</p>
+          <p>&amp;#x02110;</p>
+        <p>&amp;#8464;</p></td> </tr>
+
+<tr><td><p>&image; &Im;</p>
+          <p>&amp;#x02111;</p>
+        <p>&amp;#8465;</p></td> </tr>
+
+<tr><td><p>&Lscr; &lagran;</p>
+          <p>&amp;#x02112;</p>
+        <p>&amp;#8466;</p></td> </tr>
+
+<tr><td><p>&ell;</p>
+          <p>&amp;#x02113;</p>
+        <p>&amp;#8467;</p></td> </tr>
+
+<tr><td><p>&Nopf; &naturals;</p>
+          <p>&amp;#x02115;</p>
+        <p>&amp;#8469;</p></td> </tr>
+
+<tr><td><p>&numero;</p>
+          <p>&amp;#x02116;</p>
+        <p>&amp;#8470;</p></td> </tr>
+
+<tr><td><p>&copysr;</p>
+          <p>&amp;#x02117;</p>
+        <p>&amp;#8471;</p></td> </tr>
+
+<tr><td><p>&weierp; &wp;</p>
+          <p>&amp;#x02118;</p>
+        <p>&amp;#8472;</p></td> </tr>
+
+<tr><td><p>&Popf; &primes;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#8473;</p></td> </tr>
+
+<tr><td><p>&rationals; &Qopf;</p>
+          <p>&amp;#x0211A;</p>
+        <p>&amp;#8474;</p></td> </tr>
+
+<tr><td><p>&Rscr; &realine;</p>
+          <p>&amp;#x0211B;</p>
+        <p>&amp;#8475;</p></td> </tr>
+
+<tr><td><p>&real; &Re; &realpart;</p>
+          <p>&amp;#x0211C;</p>
+        <p>&amp;#8476;</p></td> </tr>
+
+<tr><td><p>&reals; &Ropf;</p>
+          <p>&amp;#x0211D;</p>
+        <p>&amp;#8477;</p></td> </tr>
+
+<tr><td><p>&rx;</p>
+          <p>&amp;#x0211E;</p>
+        <p>&amp;#8478;</p></td> </tr>
+
+<tr><td><p>&trade; &TRADE;</p>
+          <p>&amp;#x02122;</p>
+        <p>&amp;#8482;</p></td> </tr>
+
+<tr><td><p>&integers; &Zopf;</p>
+          <p>&amp;#x02124;</p>
+        <p>&amp;#8484;</p></td> </tr>
+
+<tr><td><p>&ohm;</p>
+          <p>&amp;#x02126;</p>
+        <p>&amp;#8486;</p></td> </tr>
+
+<tr><td><p>&mho;</p>
+          <p>&amp;#x0044C;</p>
+        <p>&amp;#8487;</p></td> </tr>
+
+<tr><td><p>&Zfr; &zeetrf;</p>
+          <p>&amp;#x02128;</p>
+        <p>&amp;#8488;</p></td> </tr>
+
+<tr><td><p>&iiota;</p>
+          <p>&amp;#x02129;</p>
+        <p>&amp;#8489;</p></td> </tr>
+
+<tr><td><p>&angst;</p>
+          <p>&amp;#x0212B;</p>
+        <p>&amp;#8491</p></td> </tr>
+
+<tr><td><p>&bernou; &Bernoullis;</p>
+          <p>&amp;#x0212C;</p>
+        <p>&amp;#8492;</p></td> </tr>
+
+<tr><td><p>&Cfr; &Cayleys;</p>
+          <p>&amp;#x0212D;</p>
+        <p>&amp;#8493;</p></td> </tr>
+
+<tr><td><p>&escr;</p>
+          <p>&amp;#x0212F;</p>
+        <p>&amp;#8495;</p></td> </tr>
+
+<tr><td><p>&Escr; &expectation;</p>
+          <p>&amp;#x02130;</p>
+        <p>&amp;#8496;</p></td> </tr>
+
+<tr><td><p>&Fscr; &Fouriertrf;</p>
+          <p>&amp;#x02131;</p>
+        <p>&amp;#8497;</p></td> </tr>
+
+<tr><td><p>&phmmat; &Mellintrf;</p>
+          <p>&amp;#x02133;</p>
+        <p>&amp;#8499;</p></td> </tr>
+
+<tr><td><p>&order; &orderof;</p>
+          <p>&amp;#x02134;</p>
+        <p>&amp;#8500</p></td> </tr>
+
+<tr><td><p>&alefsym; &aleph;</p>
+          <p>&amp;#x02135;</p>
+        <p>&amp;#8501;</p></td> </tr>
+
+<tr><td><p>&beth;</p>
+          <p>&amp;#x02136;</p>
+        <p>&amp;#8502;</p></td> </tr>
+
+<tr><td><p>&gimel;</p>
+          <p>&amp;#x02137;</p>
+        <p>&amp;#8503;</p></td> </tr>
+
+<tr><td><p>&daleth;</p>
+          <p>&amp;#x02138;</p>
+        <p>&amp;#8504;</p></td> </tr>
+
+<tr><td><p>&CapitalDifferentialD;</p>
+          <p>&amp;#x02145;</p>
+        <p>&amp;#8517;</p></td> </tr>
+
+<tr><td><p>&DifferentialD; &dd;</p>
+          <p>&amp;#x02146;</p>
+        <p>&amp;#8518;</p></td> </tr>
+
+<tr><td><p>&ExponentialE;</p>
+          <p>&amp;#x02147;</p>
+        <p>&amp;#8519;</p></td> </tr>
+
+<tr><td><p>&ImaginaryI; &ii;/p>
+          <p>&amp;#x02148;</p>
+        <p>&amp;#8520;</p></td> </tr>
+
+<tr><td><p>&frac13;</p>
+          <p>&amp;#x02153;</p>
+        <p>&amp;#8531;</p></td> </tr>
+
+ <tr><td><p>&frac23;</p>
+          <p>&amp;#x02154;</p>
+        <p>&amp;#8532;</p></td> </tr>       
+
+<tr><td><p>&frac15;</p>
+          <p>&amp;#x02155;</p>
+        <p>&amp;#8533;</p></td> </tr>
+
+<tr><td><p>&frac25;</p>
+          <p>&amp;#x02156;</p>
+        <p>&amp;#8534;</p></td> </tr>
+
+<tr><td><p>&frac35;</p>
+          <p>&amp;x02157;</p>
+        <p>&amp;#8535;</p></td> </tr>
+
+<tr><td><p>&frac45;</p>
+          <p>&amp;#x02158;</p>
+        <p>&amp;#8536</p></td> </tr>
+
+<tr><td><p>&frac16;</p>
+          <p>&amp;#x02159;</p>
+        <p>&amp;#8537</p></td> </tr>
+
+<tr><td><p>&frac56;</p>
+          <p>&amp;#x0215A;</p>
+        <p>&amp;#8538</p></td> </tr>
+
+<tr><td><p>&frac18;</p>
+          <p>&amp;#x0215B;</p>
+        <p>&amp;#8539</p></td> </tr>
+
+<tr><td><p>&frac38;</p>
+          <p>&amp;#x0215C;</p>
+        <p>&amp;#8540</p></td> </tr>        
+
+<tr><td><p>&frac58;</p>
+          <p>&amp;#x0215D;</p>
+        <p>&amp;#8541</p></td> </tr>
+
+<tr><td><p>&frac78;</p>
+          <p>&amp;#x0215E;</p>
+        <p>&amp;#8542</p></td> </tr>
+
+<tr><td><p>&larr; &leftarrow;</p>
+          <p>&amp;#x02190;</p>
+        <p>&amp;#8592;</p></td> </tr>
+
+<tr><td><p>&uarr; &uparrow;</p>
+          <p>&amp;#x02191;</p>
+        <p>&amp;#8593;</p></td> </tr>
+
+<tr><td><p>&rarr; &rightarrow;</p>
+          <p>&amp;#x02192;</p>
+        <p>&amp;#8594;</p></td> </tr>
+
+<tr><td><p>&darr; &downarrow;</p>
+          <p>&amp;#x02193;</p>
+        <p>&amp;#8595;</p></td> </tr>
+
+<tr><td><p>&harr;</p>
+          <p>&amp;#x02194;</p>
+        <p>&amp;#8596;</p></td> </tr>
+
+<tr><td><p>&varr; &updownarrow;</p>
+          <p>&amp;#x02195;</p>
+        <p>&amp;#8597;</p></td> </tr>
+
+<tr><td><p>&nwarr;</p>
+          <p>&amp;#x02196;</p>
+        <p>&amp;#8598;</p></td> </tr>
+
+<tr><td><p>&nearr;</p>
+          <p>&amp;#x02197;</p>
+        <p>&amp;#8599;</p></td> </tr>
+
+<tr><td><p>&searr; &searrow;</p>
+          <p>&amp;#x02198;</p>
+        <p>&amp;#8600;</p></td> </tr>
+
+<tr><td><p>&swarr; &swarrow;</p>
+          <p>&amp;#x02199;</p>
+        <p>&amp;#8601;</p></td> </tr>
+
+<tr><td><p>&nlarr; &nleftarrow;</p>
+          <p>&amp;#x0219A;</p>
+        <p>&amp;#8602;</p></td> </tr>
+
+<tr><td><p>&nrarr; &nrightarrow;</p>
+          <p>&amp;#x0219B;</p>
+        <p>&amp;#8603;</p></td> </tr>
+
+<tr><td><p>&rarrw;</p>
+          <p>&amp;#x0219D;</p>
+        <p>&amp;#8605;</p></td> </tr>
+
+<tr><td><p>&twoheadleftarrow;</p>
+          <p>&amp;#x0219E;</p>
+        <p>&amp;#8606;</p></td> </tr>
+
+<tr><td><p>&Uarr;</p>
+          <p>&amp;#x0219F;</p>
+        <p>&amp;#8607</p></td> </tr>
+
+<tr><td><p>&Rarr;</p>
+          <p>&amp;#x021A0;</p>
+        <p>&amp;#8608;</p></td> </tr>
+
+<tr><td><p>&Darr;</p>
+          <p>&amp;#x021A1;</p>
+        <p>&amp;#8609;</p></td> </tr>
+
+<tr><td><p>&larrtl;</p>
+          <p>&amp;#x021A2;</p>
+        <p>&amp;#8610;</p></td> </tr>
+
+<tr><td><p>&rightarrowtail;</p>
+          <p>&amp;#x021A3;</p>
+        <p>&amp;#8611;</p></td> </tr>
+
+<tr><td><p>&LeftTeeArrow;</p>
+          <p>&amp;#x021A4;</p>
+        <p>&amp;#8612;</p></td> </tr>
+
+<tr><td><p>&UpTeeArrow;</p>
+          <p>&amp;#x021A5;</p>
+        <p>&amp;#8613;</p></td> </tr>
+
+<tr><td><p>&map; &RightTeeArrow;</p>
+          <p>&amp;#x021A6;</p>
+        <p>&amp;#8614;</p></td> </tr>
+
+<tr><td><p>&DownTeeArrow;</p>
+          <p>&amp;#x021A7;</p>
+        <p>&amp;#8615;</p></td> </tr>
+
+<tr><td><p>&hookleftarrow;</p>
+          <p>&amp;#x021A9;</p>
+        <p>&amp;#8617;</p></td> </tr>
+
+<tr><td><p>&hookrightarrow;</p>
+          <p>&amp;#x021AA;</p>
+        <p>&amp;#8618;</p></td> </tr>
+
+<tr><td><p>&larrlp;</p>
+          <p>&amp;#x021AB;</p>
+        <p>&amp;#8619;</p></td> </tr>
+
+<tr><td><p>&rarrlp;</p>
+          <p>&amp;#x021AC;</p>
+        <p>&amp;#8620;</p></td> </tr>
+
+<tr><td><p>&leftrightsquigarrow;</p>
+          <p>&amp;#x021AD;</p>
+        <p>&amp;#8621;</p></td> </tr>
+
+<tr><td><p>&nleftrightarrow;</p>
+          <p>&amp;#x021AE;</p>
+        <p>&amp;#8622;</p></td> </tr>
+
+<tr><td><p>&lsh; &Lsh;</p>
+          <p>&amp;#x021B0;</p>
+        <p>&amp;#8624;</p></td> </tr>
+
+<tr><td><p>&rsh; &Rsh;</p>
+          <p>&amp;#x021B1;</p>
+        <p>&amp;#8625;</p></td> </tr>
+
+<tr><td><p>&ldsh;</p>
+          <p>&amp;#x021B2;</p>
+        <p>&amp;#8626;</p></td> </tr>
+
+<tr><td><p>&rdsh;</p>
+          <p>&amp;#x021B3;</p>
+        <p>&amp;#8627;</p></td> </tr>
+
+<tr><td><p>&crarr;</p>
+          <p>&amp;#x021B5;</p>
+        <p>&amp;#8629;</p></td> </tr>
+
+<tr><td><p>&cularr;</p>
+          <p>&amp;#x021B6;</p>
+        <p>&amp;#8630;</p></td> </tr>
+
+<tr><td><p>&curarr;</p>
+          <p>&amp;#x021B7;</p>
+        <p>&amp;#8631;</p></td> </tr>
+
+<tr><td><p>&circlearrowleft;</p>
+          <p>&amp;#x021BA;</p>
+        <p>&amp;#8634;</p></td> </tr>
+
+<tr><td><p>&circlearrowright;</p>
+          <p>&amp;#x021BB;</p>
+        <p>&amp;#8635;</p></td> </tr>
+
+<tr><td><p>&lharu; &LeftVector;</p>
+          <p>&amp;#x021BC;</p>
+        <p>&amp;#8636;</p></td> </tr>
+
+<tr><td><p>&leftharpoondown;</p>
+          <p>&amp;#x021BD;</p>
+        <p>&amp;#8637;</p></td> </tr>
+
+<tr><td><p>&upharpoonright;</p>
+          <p>&amp;#x021BE;</p>
+        <p>&amp;#8638;</p></td> </tr>
+
+<tr><td><p>&upharpoonleft;</p>
+          <p>&amp;#x021BF;</p>
+        <p>&amp;#8639;</p></td> </tr>
+
+<tr><td><p>&rharu; &RightVector;</p>
+          <p>&amp;#x021C0;</p>
+        <p>&amp;#8640;</p></td> </tr>
+
+<tr><td><p>&rightharpoondown;</p>
+          <p>&amp;#x021C1;</p>
+        <p>&amp;#8641;</p></td> </tr>
+
+<tr><td><p>&RightDownVector;</p>
+          <p>&amp;#x021C2;</p>
+        <p>&amp;#8642;</p></td> </tr>
+
+<tr><td><p>&dharl;</p>
+          <p>&amp;#x021C3;</p>
+        <p>&amp;#8643;</p></td> </tr>
+
+<tr><td><p>&rightleftarrows;</p>
+          <p>&amp;#x021C4;</p>
+        <p>&amp;#8644;</p></td> </tr>
+
+<tr><td><p>&UpArrowDownArrow;</p>
+          <p>&amp;#x021C5;</p>
+        <p>&amp;#8645;</p></td> </tr>
+
+<tr><td><p>&leftrightarrows;</p>
+          <p>&amp;#x021C6;</p>
+        <p>&amp;#8646;</p></td> </tr>
+
+<tr><td><p>&leftleftarrows;</p>
+          <p>&amp;#x021C7;</p>
+        <p>&amp;#8647;</p></td> </tr>
+
+<tr><td><p>&uuarr; &upuparrows;</p>
+          <p>&amp;#x021C8;</p>
+        <p>&amp;#8648;</p></td> </tr>
+
+<tr><td><p>&rightrightarrows;</p>
+          <p>&amp;#x021C9;</p>
+        <p>&amp;#8649;</p></td> </tr>
+
+<tr><td><p>&downdownarrows;</p>
+          <p>&amp;#x021CA;</p>
+        <p>&amp;#8650;</p></td> </tr>
+
+<tr><td><p>&ReverseEquilibrium;</p>
+          <p>&amp;#x021CB;</p>
+        <p>&amp;#8651;</p></td> </tr>
+
+<tr><td><p>&rightleftharpoons;</p>
+          <p>&amp;#x021CC;</p>
+        <p>&amp;#8652;</p></td> </tr>
+
+<tr><td><p>&nlArr; &nLeftarrow;</p>
+          <p>&amp;#x021CD;</p>
+        <p>&amp;#8653;</p></td> </tr>
+
+<tr><td><p>&nhArr;</p>
+          <p>&amp;#x021CE;</p>
+        <p>&amp;#8654;</p></td> </tr>
+
+<tr><td><p>&nrArr; &nRightarrow;</p>
+          <p>&amp;#x021CF;</p>
+        <p>&amp;#8655;</p></td> </tr>
+
+<tr><td><p>&lArr; &Leftarrow;</p>
+          <p>&amp;#x021D0;</p>
+        <p>&amp;#8656;</p></td> </tr>
+
+<tr><td><p>&uArr; &Uparrow;</p>
+          <p>&amp;#x021D1;</p>
+        <p>&amp;#8657;</p></td> </tr>
+
+<tr><td><p>&rArr; &Rightarrow;</p>
+          <p>&amp;#x021D2;</p>
+        <p>&amp;#8658;</p></td> </tr>
+
+<tr><td><p>&dArr; &Downarrow;</p>
+          <p>&amp;#x021D3;</p>
+        <p>&amp;#8659;</p></td> </tr>
+
+<tr><td><p>&Leftrightarrow;</p>
+          <p>&amp;#x021D4;</p>
+        <p>&amp;#8660;</p></td> </tr>
+
+<tr><td><p>&vArr; &Updownarrow;</p>
+          <p>&amp;#x021D5;</p>
+        <p>&amp;#8661;</p></td> </tr>
+
+<tr><td><p>&nwArr;</p>
+          <p>&amp;#x021D6;</p>
+        <p>&amp;#8662;</p></td> </tr>
+
+<tr><td><p>&neArr;</p>
+          <p>&amp;#x021D7;</p>
+        <p>&amp;#8663;</p></td> </tr>
+
+<tr><td><p>&seArr;</p>
+          <p>&amp;#x021D8;</p>
+        <p>&amp;#8664;</p></td> </tr>
+
+<tr><td><p>&swArr;</p>
+          <p>&amp;#x021D9;</p>
+        <p>&amp;#8665;</p></td> </tr>
+
+<tr><td><p>&lAarr; &Lleftarrow;</p>
+          <p>&amp;#x021DA;</p>
+        <p>&amp;#8666;</p></td> </tr>
+
+<tr><td><p>&rAarr; &Rrightarrow;</p>
+          <p>&amp;#x021DB;</p>
+        <p>&amp;#8667;</p></td> </tr>
+
+<tr><td><p>&zigrarr;</p>
+          <p>&amp;#x021DD;</p>
+        <p>&amp;#8669;</p></td> </tr>
+
+<tr><td><p>&larrb; &LeftArrowBar;</p>
+          <p>&amp;#x021E4;</p>
+        <p>&amp;#8676;</p></td> </tr>
+
+<tr><td><p>&rarrb;</p>
+          <p>&amp;#x021E5;</p>
+        <p>&amp;#8677;</p></td> </tr>
+
+<tr><td><p>&duarr;</p>
+          <p>&amp;#x021F5;</p>
+        <p>&amp;#8693;</p></td> </tr>
+
+<tr><td><p>&loarr;</p>
+          <p>&amp;#x021FD;</p>
+        <p>&amp;#8701;</p></td> </tr>
+
+<tr><td><p>&roarr;</p>
+          <p>&amp;#x021FE;</p>
+        <p>&amp;#8702;</p></td> </tr>
+
+<tr><td><p>&hoarr;</p>
+          <p>&amp;#x021FF;</p>
+        <p>&amp;#8703;</p></td> </tr>
+
+<tr><td><p>&forall; &ForAll;</p>
+          <p>&amp;#x02200;</p>
+        <p>&amp;#8704;</p></td> </tr>
+
+<tr><td><p>&comp; &complement;</p>
+          <p>&amp;#x02201;</p>
+        <p>&amp;#8705;</p></td> </tr>
+
+<tr><td><p>&part; &PartialD;</p>
+          <p>&amp;#x02202;;</p>
+        <p>&amp;#8706;</p></td> </tr>
+
+<tr><td><p>&exist; &Exists;;</p>
+          <p>&amp;#x02203;</p>
+        <p>&amp;#8707;</p></td> </tr>
+
+<tr><td><p>&nexist; &NotExists;</p>
+          <p>&amp;#x02204;</p>
+        <p>&amp;#8708;</p></td> </tr>
+
+<tr><td><p>&emptyv; &varnothing;</p>
+          <p>&amp;#x02205;</p>
+        <p>&amp;#8709;</p></td> </tr>
+
+<tr><td><p>&nabla; &Del;</p>
+          <p>&amp;#x02207;</p>
+        <p>&amp;#8711;</p></td> </tr>
+
+<tr><td><p>&Element; &in;</p>
+          <p>&amp;#x02208;</p>
+        <p>&amp;#8712;</p></td> </tr>
+
+<tr><td><p>&notinva;</p>
+          <p>&amp;#x02209;</p>
+        <p>&amp;#8713;</p></td> </tr>
+
+<tr><td><p>&ni; &SuchThat;</p>
+          <p>&amp;#x0220B;</p>
+        <p>&amp;#8715;</p></td> </tr>
+
+<tr><td><p>&notni; &notniva;</p>
+          <p>&amp;#x0220C;</p>
+        <p>&amp;#8716;</p></td> </tr>
+
+<tr><td><p>&prod; &Product;</p>
+          <p>&amp;#x0220F;</p>
+        <p>&amp;#8719;</p></td> </tr>
+
+<tr><td><p>&coprod; &Coproduct;</p>
+          <p>&amp;#x02210;</p>
+        <p>&amp;#8720;</p></td> </tr>
+
+<tr><td><p>&sum; &Sum;</p>
+          <p>&amp;#x02211;</p>
+        <p>&amp;#8721;</p></td> </tr>
+
+<tr><td><p>&minus;</p>
+          <p>&amp;#x02212;</p>
+        <p>&amp;#8722;</p></td> </tr>
+
+<tr><td><p>&mnplus; &mp;</p>
+          <p>&amp;#x02213;</p>
+        <p>&amp;#8723;</p></td> </tr>
+
+<tr><td><p>&plusdo; &dotplus;</p>
+          <p>&amp;#x02214;</p>
+        <p>&amp;#8724;</p></td> </tr>
+       
+<tr><td><p> &Backslash; &ssetmn;;</p>
+          <p>&amp;#x02216;</p>
+        <p>&amp;#8726;</p></td> </tr>
+
+<tr><td><p>&lowast;</p>
+          <p>&amp;#x02217;</p>
+        <p>&amp;#8727;</p></td> </tr>
+
+<tr><td><p>&compfn; &SmallCircle;</p>
+          <p>&amp;#x02218;</p>
+        <p>&amp;#8728;</p></td> </tr>
+
+<tr><td><p>&SucceedsSlantEqual;</p>
+          <p>&amp;#x0227D;</p>
+        <p>&amp;#8729;</p></td> </tr>
+
+<tr><td><p>&radic; &Sqrt;</p>
+          <p>&amp;#x0221A;</p>
+        <p>&amp;#8730;</p></td> </tr>
+
+<tr><td><p>&prop; &propto;</p>
+          <p>&amp;#x0221D;</p>
+        <p>&amp;#8733;</p></td> </tr>
+
+<tr><td><p>&infin;</p>
+          <p>&amp;#x0221E;</p>
+        <p>&amp;#8734;</p></td> </tr>
+
+<tr><td><p>&angrt;</p>
+          <p>&amp;#x0221F;</p>
+        <p>&amp;#8735;</p></td> </tr>
+
+<tr><td><p>&ang; &angle;</p>
+          <p>&amp;#x02220;</p>
+        <p>&amp;#8736;</p></td> </tr>
+
+<tr><td><p>&angmsd;</p>
+          <p>&amp;#x02221;</p>
+        <p>&amp;#8737;</p></td> </tr>
+
+<tr><td><p>&angsph;</p>
+          <p>&amp;#x02222;;</p>
+        <p>&amp;#8738;</p></td> </tr>
+
+<tr><td><p>&mid; &VerticalBar;</p>
+          <p>&amp;#x02223;</p>
+        <p>&amp;#8739;</p></td> </tr>
+
+<tr><td><p>&NotVerticalBar;</p>
+          <p>&amp;#x02224;</p>
+        <p>&amp;#8740;</p></td> </tr>
+
+<tr><td><p>&par; &parallel;</p>
+          <p>&amp;#x02225;</p>
+        <p>&amp;#8741;</p></td> </tr>
+
+<tr><td><p>&NotDoubleVerticalBar;</p>
+          <p>&amp;#x02226;</p>
+        <p>&amp;#8742;</p></td> </tr>
+
+<tr><td><p>&and; &wedge;</p>
+          <p>&amp;#x02227;</p>
+        <p>&amp;#8743;</p></td> </tr>
+
+<tr><td><p>&or; &vee;</p>
+          <p>&amp;#x02228;</p>
+        <p>&amp;#8744;</p></td> </tr>
+
+<tr><td><p>&cap;</p>
+          <p>&amp;#x02229;</p>
+        <p>&amp;#8745;</p></td> </tr>
+
+<tr><td><p>&cup;</p>
+          <p>&amp;#x0222A;</p>
+        <p>&amp;#8746;</p></td> </tr>
+
+<tr><td><p>&int; &Integral;</p>
+          <p>&amp;#x0222B;</p>
+        <p>&amp;#8747;</p></td> </tr>
+
+<tr><td><p>&Int;</p>
+          <p>&amp;#x0222C;</p>
+        <p>&amp;#8748;</p></td> </tr>
+
+<tr><td><p>&tint; &iiint;</p>
+          <p>&amp;#x0222D;</p>
+        <p>&amp;#8749;</p></td> </tr>
+
+<tr><td><p>&conint; &oint;</p>
+          <p>&amp;#x0222E;</p>
+        <p>&amp;#8750;</p></td> </tr>
+
+<tr><td><p>&Conint;</p>
+          <p>&amp;#x0222F;</p>
+        <p>&amp;#8751;</p></td> </tr>
+
+<tr><td><p>&Cconint;</p>
+          <p>&amp;#x02230;</p>
+        <p>&amp;#8752;</p></td> </tr>
+
+<tr><td><p>&cwint;</p>
+          <p>&amp;#x02231;</p>
+        <p>&amp;#8753;</p></td> </tr>
+
+<tr><td><p>&cwconint;</p>
+          <p>&amp;#x02232;</p>
+        <p>&amp;#8754</p></td> </tr>
+
+<tr><td><p>&awconint;</p>
+          <p>&amp;#x02233;</p>
+        <p>&amp;#8755;</p></td> </tr>
+
+<tr><td><p>&there4; &therefore;</p>
+          <p>&amp;#x02234;</p>
+        <p>&amp;#8756;</p></td> </tr>
+
+<tr><td><p>&becaus; &because;</p>
+          <p>&amp;#x02235;</p>
+        <p>&amp;#8757;</p></td> </tr>
+
+<tr><td><p>&ratio;</p>
+          <p>&amp;#x02236;</p>
+        <p>&amp;#8758;</p></td> </tr>
+
+<tr><td><p>&Colon; &Proportion;</p>
+          <p>&amp;#x02237;</p>
+        <p>&amp;#8759;</p></td> </tr>
+
+<tr><td><p>&minusd; &dotminus;</p>
+          <p>&amp;#x02238;</p>
+        <p>&amp;#8760;</p></td> </tr>
+
+<tr><td><p>&mDDot;</p>
+          <p>&amp;#x0223A;</p>
+        <p>&amp;#8762;</p></td> </tr>
+
+<tr><td><p>&homtht;</p>
+          <p>&amp;#x0223B;</p>
+        <p>&amp;#8763;</p></td> </tr>
+
+<tr><td><p>&sim; &Tilde; &thksim;</p>
+          <p>&amp;#x0223C;</p>
+        <p>&amp;#8764;</p></td> </tr>
+
+<tr><td><p>&bsim; &backsim;</p>
+          <p>&amp;#x0223D;</p>
+        <p>&amp;#8765;</p></td> </tr>
+
+<tr><td><p>&ac; &mstpos;</p>
+          <p>&amp;#x0223E;</p>
+        <p>&amp;#8766;</p></td> </tr>
+
+<tr><td><p>&acd;</p>
+          <p>&amp;#x0223F;</p>
+        <p>&amp;#8767;</p></td> </tr>       
+<tr><td><p>&wreath;</p>
+          <p>&amp;#x02240;</p>
+        <p>&amp;#8768;</p></td> </tr>
+
+<tr><td><p>&nsim; &NotTilde;</p>
+          <p>&amp;#x02241;</p>
+        <p>&amp;#8769;</p></td> </tr>
+
+<tr><td><p>&esim; &EqualTilde;</p>
+          <p>&amp;#x02242;</p>
+        <p>&amp;#8770;</p></td> </tr>
+
+<tr><td><p>&sime; &TildeEqual;</p>
+          <p>&amp;#x02243;</p>
+        <p>&amp;#8771;</p></td> </tr>
+
+<tr><td><p>&nsime; &nsimeq;</p>
+          <p>&amp;#x02244;</p>
+        <p>&amp;#8772;</p></td> </tr>
+
+<tr><td><p>&cong;</p>
+          <p>&amp;#x02245;</p>
+        <p>&amp;#8773;</p></td> </tr>
+
+<tr><td><p>&simne;</p>
+          <p>&amp;#x02246;</p>
+        <p>&amp;#8774;</p></td> </tr>
+
+<tr><td><p>&ncong;</p>
+          <p>&amp;#x02247;</p>
+        <p>&amp;#8775;</p></td> </tr>
+
+<tr><td><p>&TildeTilde; &approx;</p>
+          <p>&amp;#x02248;</p>
+        <p>&amp;#8776;</p></td> </tr>
+
+<tr><td><p>&nap; &NotTildeTilde;</p>
+          <p>&amp;#x02249;</p>
+        <p>&amp;#8777;</p></td> </tr>
+
+<tr><td><p>&ape; &approxeq;</p>
+          <p>&amp;#x0224A;</p>
+        <p>&amp;#8778;</p></td> </tr>
+
+<tr><td><p>&apid;</p>
+          <p>&amp;#x0224B;</p>
+        <p>&amp;#8779;</p></td> </tr>
+
+<tr><td><p>&bcong; &backcong;</p>
+          <p>&amp;#x0224C;</p>
+        <p>&amp;#8780;</p></td> </tr>
+
+<tr><td><p>&asympeq; &CupCap;</p>
+          <p>&amp;#x0224D;</p>
+        <p>&amp;#8781;</p></td> </tr>
+
+<tr><td><p>&bump; &HumpDownHump;</p>
+          <p>&amp;#x0224E;</p>
+        <p>&amp;#8782;</p></td> </tr>
+
+<tr><td><p>&bumpe; &HumpEqual;</p>
+          <p>&amp;#x0224F;</p>
+        <p>&amp;#8783;</p></td> </tr>
+
+<tr><td><p>&esdot; &DotEqual;</p>
+          <p>&amp;#x02250;</p>
+        <p>&amp;#8784;</p></td> </tr>
+
+<tr><td><p>&eDot; &doteqdot;</p>
+          <p>&amp;#x02251;</p>
+        <p>&amp;#8785;</p></td> </tr>
+
+<tr><td><p>&efDot;</p>
+          <p>&amp;#x02252;</p>
+        <p>&amp;#8786;</p></td> </tr>
+
+<tr><td><p>&erDot; &risingdotseq;</p>
+          <p>&amp;#x02253;</p>
+        <p>&amp;#8787;</p></td> </tr>
+
+<tr><td><p>&colone; &coloneq;</p>
+          <p>&amp;#x02254;</p>
+        <p>&amp;#8788;</p></td> </tr>
+
+<tr><td><p>&ecolon; &eqcolon;</p>
+          <p>&amp;#x02255;</p>
+        <p>&amp;#8789;</p></td> </tr>
+
+<tr><td><p>&ecir; &eqcirc;</p>
+          <p>&amp;#x02256;</p>
+        <p>&amp;#8790;</p></td> </tr>
+
+<tr><td><p>&cire; &circeq;</p>
+          <p>&amp;#x02257;</p>
+        <p>&amp;#8791;</p></td> </tr>
+
+<tr><td><p>&wedgeq;</p>
+          <p>&amp;#x02259;</p>
+        <p>&amp;#8793;</p></td> </tr>
+
+<tr><td><p>&trie; &triangleq;</p>
+          <p>&amp;#x0225C;</p>
+        <p>&amp;#8796;</p></td> </tr>
+
+ <tr><td><p>&equest; &questeq;</p>
+          <p>&amp;#x0225F;</p>
+        <p>&amp;#8799;</p></td> </tr>
+
+<tr><td><p>&ne; &NotEqual;</p>
+          <p>&amp;#x02260;</p>
+        <p>&amp;#8800;</p></td> </tr>
+
+<tr><td><p>&equiv; &Congruent;</p>
+          <p>&amp;#x02261;</p>
+        <p>&amp;#8801;</p></td> </tr>
+
+<tr><td><p>&nequiv;</p>
+          <p>&amp;#x02262;</p>
+        <p>&amp;#8802;</p></td> </tr>
+
+<tr><td><p>&le; &leq;</p>
+          <p>&amp;#x02264;</p>
+        <p>&amp;#8804;</p></td> </tr>
+
+<tr><td><p>&ge; &GreaterEqual;</p>
+          <p>&amp;#x02265;</p>
+        <p>&amp;#8805;</p></td> </tr>
+
+<tr><td><p>&lE; &LessFullEqual;</p>
+          <p>&amp;#x02266;</p>
+        <p>&amp;#8806;</p></td> </tr>
+
+<tr><td><p>&GreaterFullEqual;</p>
+          <p>&amp;#x02267;</p>
+        <p>&amp;#8807;</p></td> </tr>
+
+<tr><td><p>&lnE; &lneqq;</p>
+          <p>&amp;#x02268;</p>
+        <p>&amp;#8808;</p></td> </tr>
+
+<tr><td><p>&gnE; &gneqq;</p>
+          <p>&amp;#x02269;</p>
+        <p>&amp;#8809;</p></td> </tr>
+
+<tr><td><p>&Lt; &NestedLessLess;</p>
+          <p>&amp;#x0226A;</p>
+        <p>&amp;#8810;</p></td> </tr>
+
+<tr><td><p>&NestedGreaterGreater;</p>
+          <p>&amp;#x0226B;</p>
+        <p>&amp;#8811;</p></td> </tr>
+
+<tr><td><p>&twixt; &between;</p>
+          <p>&amp;#x0226C;</p>
+        <p>&amp;#8812;</p></td> </tr>
+
+<tr><td><p>&NotCupCap;</p>
+          <p>&amp;#x0226D;</p>
+        <p>&amp;#8813;</p></td> </tr>
+
+<tr><td><p>&nlt; &NotLess;</p>
+          <p>&amp;#x0226E;</p>
+        <p>&amp;#8814;</p></td> </tr>
+
+<tr><td><p>&ngt; &NotGreater;</p>
+          <p>&amp;#x0226F;</p>
+        <p>&amp;#8815;</p></td> </tr>
+
+<tr><td><p>&nle; &NotLessEqual;</p>
+          <p>&amp;#x02270;</p>
+        <p>&amp;#8816;</p></td> </tr>
+
+<tr><td><p>&NotGreaterEqual;</p>
+          <p>&amp;#x02271;</p>
+        <p>&amp;#8817;</p></td> </tr>
+
+<tr><td><p>&lsim; &LessTilde;</p>
+          <p>&amp;#x02272;</p>
+        <p>&amp;#8818;</p></td> </tr>
+
+<tr><td><p>&gsim; &gtrsim;</p>
+          <p>&amp;#x02273;</p>
+        <p>&amp;#8819;</p></td> </tr>
+
+<tr><td><p>&nlsim; &NotLessTilde;</p>
+          <p>&amp;#x02274;</p>
+        <p>&amp;#8820;</p></td> </tr>
+
+<tr><td><p>&NotGreaterTilde;</p>
+          <p>&amp;#x02275;</p>
+        <p>&amp;#8821;</p></td> </tr>
+
+<tr><td><p>&lg; &lessgtr;</p>
+          <p>&amp;#x02276;</p>
+        <p>&amp;#8822;</p></td> </tr>
+
+<tr><td><p>&gl; &gtrless;</p>
+          <p>&amp;#x02277;</p>
+        <p>&amp;#8823;</p></td> </tr>
+
+<tr><td><p>&NotLessGreater;</p>
+          <p>&amp;#x02278;</p>
+        <p>&amp;#8824;</p></td> </tr>
+
+ <tr><td><p>&NotGreaterLess;</p>
+          <p>&amp;#x02279;</p>
+        <p>&amp;#8825;</p></td> </tr>       
+<tr><td><p>&pr; &Precedes; &prec;</p>
+          <p>&amp;#x0227A;</p>
+        <p>&amp;#8826;</p></td> </tr>
+
+<tr><td><p>&sc; &Succeeds; &succ;</p>
+          <p>&amp;#x0227B;</p>
+        <p>&amp;#8827;</p></td> </tr>
+
+<tr><td><p>&PrecedesSlantEqual;</p>
+          <p>&amp;#x0227C;</p>
+        <p>&amp;#8828;</p></td> </tr>
+
+<tr><td><p>&SucceedsSlantEqual;</p>
+          <p>&amp;#x0227D;</p>
+        <p>&amp;#8829;</p></td> </tr>
+
+<tr><td><p>&prsim; &precsim;</p>
+          <p>&amp;#x0227E;</p>
+        <p>&amp;#8830;</p></td> </tr>
+
+<tr><td><p>&scsim; &succsim;</p>
+          <p>&amp;#x0227F;</p>
+        <p>&amp;#8831;</p></td> </tr>
+
+<tr><td><p>&npr; &nprec;</p>
+          <p>&amp;#x02280;</p>
+        <p>&amp;#8832;</p></td> </tr>
+
+<tr><td><p>&nsc; &nsucc;</p>
+          <p>&amp;#x02281;</p>
+        <p>&amp;#8833;</p></td> </tr>
+
+<tr><td><p>&sub; &subset;</p>
+          <p>&amp;#x02282;</p>
+        <p>&amp;#8834;</p></td> </tr>
+
+<tr><td><p>&sup; &supset;</p>
+          <p>&amp;#x02283;</p>
+        <p>&amp;#8835;</p></td> </tr>
+
+<tr><td><p>&nsub;</p>
+          <p>&amp;#x02284;</p>
+        <p>&amp;#8836;</p></td> </tr>
+
+<tr><td><p>&nsup;</p>
+          <p>&amp;#x02285;</p>
+        <p>&amp;#8837;</p></td> </tr>
+
+<tr><td><p>&sube; &SubsetEqual;</p>
+          <p>&amp;#x02286;</p>
+        <p>&amp;#8838;</p></td> </tr>
+
+<tr><td><p>&supe; &supseteq;</p>
+          <p>&amp;#x02287;</p>
+        <p>&amp;#8839;</p></td> </tr>
+
+<tr><td><p>&nsube; &nsubseteq;</p>
+          <p>&amp;#x02288;</p>
+        <p>&amp;#8840;</p></td> </tr>
+
+<tr><td><p>&nsupe; &nsupseteq;</p>
+          <p>&amp;#x02289;</p>
+        <p>&amp;#8841;</p></td> </tr>
+
+<tr><td><p>&subne; &subsetneq;</p>
+          <p>&amp;#x0228A;</p>
+        <p>&amp;#8842;</p></td> </tr>
+
+<tr><td><p>&supne; &supsetneq;</p>
+          <p>&amp;#x0228B;</p>
+        <p>&amp;#8843;</p></td> </tr>
+
+<tr><td><p>&cupdot;</p>
+          <p>&amp;#x0228D;</p>
+        <p>&amp;#8845;</p></td> </tr>
+
+<tr><td><p>&uplus; &UnionPlus;</p>
+          <p>&amp;#x0228E;</p>
+        <p>&amp;#8846;</p></td> </tr>
+
+<tr><td><p>&sqsub; &SquareSubset;</p>
+          <p>&amp;#x0228F;</p>
+        <p>&amp;#8847;</p></td> </tr>
+
+<tr><td><p>&sqsup;</p>
+          <p>&amp;#x02290;</p>
+        <p>&amp;#8848;</p></td> </tr>
+
+<tr><td><p>&SquareSubsetEqual;</p>
+          <p>&amp;#x02291;</p>
+        <p>&amp;#8849;</p></td> </tr>
+
+<tr><td><p>&SquareSupersetEqual;</p>
+          <p>&amp;#x02292;</p>
+        <p>&amp;#8850;</p></td> </tr>
+
+<tr><td><p>&SquareIntersection;</p>
+          <p>&amp;#x02293;</p>
+        <p>&amp;#8851;</p></td> </tr>
+
+<tr><td><p>&sqcup; &SquareUnion;</p>
+          <p>&amp;#x02294;</p>
+        <p>&amp;#8852;</p></td> </tr>
+
+<tr><td><p>&oplus; &CirclePlus;</p>
+          <p>&amp;#x02295;</p>
+        <p>&amp;#8853;</p></td> </tr>
+
+<tr><td><p>&ominus; &CircleMinus;</p>
+          <p>&amp;#x02296;</p>
+        <p>&amp;#8854</p></td> </tr>
+
+<tr><td><p>&otimes; &CircleTimes;</p>
+          <p>&amp;#x02297;</p>
+        <p>&amp;#8855;</p></td> </tr>
+
+<tr><td><p>&osol;</p>
+          <p>&amp;#x02298;</p>
+        <p>&amp;#8856;</p></td> </tr>
+
+<tr><td><p>&odot; &CircleDot;</p>
+          <p>&amp;#x02299;</p>
+        <p>&amp;#8857;</p></td> </tr>
+
+<tr><td><p>&ocir; &circledcirc;</p>
+          <p>&amp;#x0229A;</p>
+        <p>&amp;#8858;</p></td> </tr>
+
+<tr><td><p>&oast; &circledast;</p>
+          <p>&amp;#x0229B;</p>
+        <p>&amp;#8859;</p></td> </tr>
+
+<tr><td><p>&ocir; &circledcirc;</p>
+          <p>&amp;#x0229A;</p>
+        <p>&amp;#8860;</p></td> </tr>
+
+<tr><td><p>&odash; &circleddash;</p>
+          <p>&amp;#x0229D;</p>
+        <p>&amp;#8861;</p></td> </tr>
+
+<tr><td><p>&plusb; &boxplus;</p>
+          <p>&amp;#x0229E;</p>
+        <p>&amp;#8862;</p></td> </tr>
+
+<tr><td><p>&minusb; &boxminus;</p>
+          <p>&amp;#x0229F;</p>
+        <p>&amp;#8863;</p></td> </tr>
+
+<tr><td><p>&timesb; &boxtimes;</p>
+          <p>&amp;#x022A0;</p>
+        <p>&amp;#8864;</p></td> </tr>
+
+<tr><td><p>&sdotb; &dotsquare;</p>
+          <p>&amp;#x022A1;</p>
+        <p>&amp;#8865;</p></td> </tr>
+
+<tr><td><p>&vdash; &RightTee;</p>
+          <p>&amp;#x022A2;</p>
+        <p>&amp;#8866;</p></td> </tr>
+
+<tr><td><p>&dashv; &LeftTee;</p>
+          <p>&amp;#x022A3;</p>
+        <p>&amp;#8867;</p></td> </tr>       
+<tr><td><p>&top; &DownTee;</p>
+          <p>&amp;#x022A4;</p>
+        <p>&amp;#8868;</p></td> </tr>
+
+<tr><td><p>&bottom; &bot; &perp;</p>
+          <p>&amp;#x022A5;</p>
+        <p>&amp;#8869;</p></td> </tr>
+
+<tr><td><p>&models;</p>
+          <p>&amp;#x022A7;</p>
+        <p>&amp;#8871;</p></td> </tr>
+
+<tr><td><p>&vDash;</p>
+          <p>&amp;#x022A8;</p>
+        <p>&amp;#8872;</p></td> </tr>
+
+<tr><td><p>&Vdash;</p>
+          <p>&amp;#x022A9;</p>
+        <p>&amp;#8873;</p></td> </tr>
+
+<tr><td><p>&Vvdash;</p>
+          <p>&amp;#x022AA;</p>
+        <p>&amp;#8874;</p></td> </tr>
+
+<tr><td><p>&VDash;</p>
+          <p>&amp;#x022AB;</p>
+        <p>&amp;#8875;</p></td> </tr>
+
+<tr><td><p>&nvdash;</p>
+          <p>&amp;#x022AC;</p>
+        <p>&amp;#8876;</p></td> </tr>
+
+<tr><td><p>&nvDash;</p>
+          <p>&amp;#x022AD;</p>
+        <p>&amp;#8877;</p></td> </tr>
+
+<tr><td><p>&nVdash;</p>
+          <p>&amp;#x022AE;</p>
+        <p>&amp;#8878;</p></td> </tr>
+
+<tr><td><p>&nVDash;</p>
+          <p>&amp;#x022AF;</p>
+        <p>&amp;#8879;</p></td> </tr>
+
+<tr><td><p>&prurel;</p>
+          <p>&amp;#x022B0;</p>
+        <p>&amp;#8880;</p></td> </tr>
+
+<tr><td><p>&vltri;</p>
+          <p>&amp;#x022B2;</p>
+        <p>&amp;#8882;</p></td> </tr>
+
+<tr><td><p>&vrtri;</p>
+          <p>&amp;#x022B3;</p>
+        <p>&amp;#8883;</p></td> </tr>
+
+<tr><td><p>&ltrie;</p>
+          <p>&amp;#x022B4;</p>
+        <p>&amp;#8884;</p></td> </tr>
+
+<tr><td><p>&rtrie;</p>
+          <p>&amp;#x022B5;</p>
+        <p>&amp;#8885;</p></td> </tr>
+
+<tr><td><p>&origof;</p>
+          <p>&amp;#x022B6;</p>
+        <p>&amp;#8886;</p></td> </tr>
+
+<tr><td><p>&imof;</p>
+          <p>&amp;#x022B7;</p>
+        <p>&amp;#8887;</p></td> </tr>
+
+<tr><td><p>&mumap; &multimap;</p>
+          <p>&amp;#x022B8;</p>
+        <p>&amp;#8888;</p></td> </tr>
+
+<tr><td><p>&hercon;</p>
+          <p>&amp;#x022B9;</p>
+        <p>&amp;#8889;</p></td> </tr>
+
+<tr><td><p>&intcal; &intercal;</p>
+          <p>&amp;#x022BA;</p>
+        <p>&amp;#8890;</p></td> </tr>
+
+<tr><td><p>&veebar;</p>
+          <p>&amp;#x022BB;</p>
+        <p>&amp;#8891;</p></td> </tr>
+
+<tr><td><p>&barvee;</p>
+          <p>&amp;#x022BD;</p>
+        <p>&amp;#8893;</p></td> </tr>
+
+<tr><td><p>&angrtvb;</p>
+          <p>&amp;#x022BE;</p>
+        <p>&amp;#8894;</p></td> </tr>
+
+<tr><td><p>&lrtri;</p>
+          <p>&amp;#x022BF;</p>
+        <p>&amp;#8895;</p></td> </tr>
+
+<tr><td><p>&xwedge; &Wedge;</p>
+          <p>&amp;#x022C0;</p>
+        <p>&amp;#8896;</p></td> </tr>
+
+<tr><td><p>&xvee; &Vee; &bigvee;</p>
+          <p>&amp;#x022C1;</p>
+        <p>&amp;#8897;</p></td> </tr>
+
+<tr><td><p>&xcap; &Intersection;</p>
+          <p>&amp;#x022C2;</p>
+        <p>&amp;#8898;</p></td> </tr>
+
+ <tr><td><p>&xcup; &Union;</p>
+          <p>&amp;#x022C3;</p>
+        <p>&amp;#8899;</p></td> </tr>       
+<tr><td><p>&diam; &diamond;</p>
+          <p>&amp;#x022C4;</p>
+        <p>&amp;#8900;</p></td> </tr>
+
+<tr><td><p>&sdot;</p>
+          <p>&amp;#x022C5;</p>
+        <p>&amp;#8901;</p></td> </tr>
+
+<tr><td><p>&sstarf; &Star;</p>
+          <p>&amp;#x022C6;</p>
+        <p>&amp;#8902;</p></td> </tr>
+
+<tr><td><p>&divonx;</p>
+          <p>&amp;#x022C7;</p>
+        <p>&amp;#8903;</p></td> </tr>
+
+<tr><td><p>&bowtie;</p>
+          <p>&amp;#x022C8;</p>
+        <p>&amp;#8904;</p></td> </tr>
+
+<tr><td><p>&ltimes;</p>
+          <p>&amp;#x022C9;</p>
+        <p>&amp;#8905;</p></td> </tr>
+
+<tr><td><p>&rtimes;</p>
+          <p>&amp;#x022CA;</p>
+        <p>&amp;#8906;</p></td> </tr>
+
+<tr><td><p>&lthree;</p>
+          <p>&amp;#x022CB;</p>
+        <p>&amp;#8907;</p></td> </tr>
+
+<tr><td><p>&rthree;</p>
+          <p>&amp;#x022CC;</p>
+        <p>&amp;#8908;</p></td> </tr>
+
+<tr><td><p>&bsime; &backsimeq;</p>
+          <p>&amp;#x022CD;</p>
+        <p>&amp;#8909;</p></td> </tr>
+
+<tr><td><p>&cuvee; &curlyvee;</p>
+          <p>&amp;#x022CE;</p>
+        <p>&amp;#8910;</p></td> </tr>
+
+<tr><td><p>&cuwed; &curlywedge;</p>
+          <p>&amp;#x022CF;</p>
+        <p>&amp;#8911;</p></td> </tr>
+
+<tr><td><p>&Sub; &Subset;</p>
+          <p>&amp;#x022D0;</p>
+        <p>&amp;#8912;</p></td> </tr>
+
+<tr><td><p>&Sup; &Supset;</p>
+          <p>&amp;#x022D1;</p>
+        <p>&amp;#8913;</p></td> </tr>
+
+<tr><td><p>&Cap;</p>
+          <p>&amp;#x022D2;</p>
+        <p>&amp;#8914;</p></td> </tr>
+
+<tr><td><p>&Cup;</p>
+          <p>&amp;#x022D3;</p>
+        <p>&amp;#8915;</p></td> </tr>
+
+<tr><td><p>&fork; &pitchfork;</p>
+          <p>&amp;#x022D4;</p>
+        <p>&amp;#8916;</p></td> </tr>
+
+<tr><td><p>&epar;</p>
+          <p>&amp;#x022D5;</p>
+        <p>&amp;#8917;</p></td> </tr>
+
+<tr><td><p>&ltdot; &lessdot;</p>
+          <p>&amp;#x022D6;</p>
+        <p>&amp;#8918;</p></td> </tr>
+
+<tr><td><p>&gtdot; &gtrdot;</p>
+          <p>&amp;#x022D7;</p>
+        <p>&amp;#8919;</p></td> </tr>
+
+<tr><td><p>&Ll;</p>
+          <p>&amp;#x022D8;</p>
+        <p>&amp;#8920;</p></td> </tr>
+
+<tr><td><p>&Gg; &ggg;</p>
+          <p>&amp;#x022D9;</p>
+        <p>&amp;#8921;</p></td> </tr>
+
+<tr><td><p>&LessEqualGreater;</p>
+          <p>&amp;#x022DA;</p>
+        <p>&amp;#8922;</p></td> </tr>
+
+<tr><td><p>&gel; &gtreqless;</p>
+          <p>&amp;#x022DB;</p>
+        <p>&amp;#8923;</p></td> </tr>
+
+<tr><td><p>&cuepr; &curlyeqprec;</p>
+          <p>&amp;#x022DE;</p>
+        <p>&amp;#8926;</p></td> </tr>
+
+<tr><td><p>&cuesc; &curlyeqsucc;</p>
+          <p>&amp;#x022DF;</p>
+        <p>&amp;#8927;</p></td> </tr>
+
+<tr><td><p>&nprcue;</p>
+          <p>&amp;#x022E0;</p>
+        <p>&amp;#8928;</p></td> </tr>
+
+<tr><td><p>&nsccue;</p>
+          <p>&amp;#x022E1;</p>
+        <p>&amp;#8929;</p></td> </tr>
+
+<tr><td><p>&nsqsube;</p>
+          <p>&amp;#x022E2;</p>
+        <p>&amp;#8930;</p></td> </tr>
+
+<tr><td><p>&nsqsupe;</p>
+          <p>&amp;#x022E3;</p>
+        <p>&amp;#8931;</p></td> </tr>
+
+<tr><td><p>&lnsim;</p>
+          <p>&amp;#x022E6;</p>
+        <p>&amp;#8934;</p></td> </tr>
+
+<tr><td><p>&gnsim;</p>
+          <p>&amp;#x022E7;</p>
+        <p>&amp;#8935;</p></td> </tr>
+
+<tr><td><p>&prnsim; &precnsim;</p>
+          <p>&amp;#x022E8;</p>
+        <p>&amp;#8936;</p></td> </tr>
+
+<tr><td><p>&scnsim; &succnsim;</p>
+          <p>&amp;#x022E9;</p>
+        <p>&amp;#8937;</p></td> </tr>
+
+<tr><td><p>&nltri;</p>
+          <p>&amp;#x022EA;</p>
+        <p>&amp;#8938;</p></td> </tr>
+
+<tr><td><p>&nrtri;</p>
+          <p>&amp;#x022EB;</p>
+        <p>&amp;#8939;</p></td> </tr>
+
+<tr><td><p>&nltrie;</p>
+          <p>&amp;#x022EC;</p>
+        <p>&amp;#8940;</p></td> </tr>
+
+<tr><td><p>&NotRightTriangleEqual;</p>
+          <p>&amp;#x022ED;</p>
+        <p>&amp;#8941;</p></td> </tr>
+
+<tr><td><p>&vellip;</p>
+          <p>&amp;#x022EE;</p>
+        <p>&amp;#8942;</p></td> </tr>
+
+<tr><td><p>&ctdot;</p>
+          <p>&amp;#x022EF;</p>
+        <p>&amp;#8943;</p></td> </tr>
+
+<tr><td><p>&utdot;</p>
+          <p>&amp;#x022F0;</p>
+        <p>&amp;#8944;</p></td> </tr>
+
+<tr><td><p>&dtdot;</p>
+          <p>&amp;#x022F1;</p>
+        <p>&amp;#8945;</p></td> </tr>
+
+<tr><td><p>&disin;</p>
+          <p>&amp;#x022F2;</p>
+        <p>&amp;#8946;</p></td> </tr>
+
+<tr><td><p>&isinsv;</p>
+          <p>&amp;#x022F3;</p>
+        <p>&amp;#8947;</p></td> </tr>
+
+<tr><td><p>&isins;</p>
+          <p>&amp;#x022F4;</p>
+        <p>&amp;#8948;</p></td> </tr>
+
+<tr><td><p>&isindot;</p>
+          <p>&amp;#x022F5;</p>
+        <p>&amp;#8949;</p></td> </tr>
+
+<tr><td><p>&notinvc;</p>
+          <p>&amp;#x022F6;</p>
+        <p>&amp;#8950;</p></td> </tr>
+
+<tr><td><p>&notinvb;</p>
+          <p>&amp;#x022F7;</p>
+        <p>&amp;#8951;</p></td> </tr>
+
+<tr><td><p>&isinE;</p>
+          <p>&amp;#x022F9;</p>
+        <p>&amp;#8953;</p></td> </tr>
+
+<tr><td><p>&nisd;</p>
+          <p>&amp;#x022FA;</p>
+        <p>&amp;#8954</p></td> </tr>
+
+<tr><td><p>&xnis;</p>
+          <p>&amp;#x022FB;</p>
+        <p>&amp;#8955;</p></td> </tr>
+
+<tr><td><p>&nis;</p>
+          <p>&amp;#x022FC;</p>
+        <p>&amp;#8956;</p></td> </tr>
+
+<tr><td><p>&notnivc;</p>
+          <p>&amp;#x022FD;</p>
+        <p>&amp;#8957;</p></td> </tr>
+
+<tr><td><p>&notnivb;</p>
+          <p>&amp;#x022FE;</p>
+        <p>&amp;#8958;</p></td> </tr>
+
+<tr><td><p>&barwed; &barwedge;</p>
+          <p>&amp;#x02305;</p>
+        <p>&amp;#8965;</p></td> </tr>
+
+<tr><td><p>&doublebarwedge;</p>
+          <p>&amp;#x02306;</p>
+        <p>&amp;#8966;</p></td> </tr>
+
+<tr><td><p>&lceil; &LeftCeiling;</p>
+          <p>&amp;#x02308;</p>
+        <p>&amp;#8968;</p></td> </tr>
+
+<tr><td><p>&rceil; &RightCeiling;</p>
+          <p>&amp;#x02309;</p>
+        <p>&amp;#8969;</p></td> </tr>
+
+<tr><td><p>&lfloor; &LeftFloor;</p>
+          <p>&amp;#x0230A;</p>
+        <p>&amp;#8970;</p></td> </tr>
+
+<tr><td><p>&rfloor; &RightFloor;</p>
+          <p>&amp;#x0230B;</p>
+        <p>&amp;#8971;</p></td> </tr>
+
+<tr><td><p>&drcrop;</p>
+          <p>&amp;#x0230C;</p>
+        <p>&amp;#8972;</p></td> </tr>
+
+<tr><td><p>&dlcrop;</p>
+          <p>&amp;#x0230D;</p>
+        <p>&amp;#8973;</p></td> </tr>
+
+<tr><td><p>&urcrop;</p>
+          <p>&amp;#x0230E;</p>
+        <p>&amp;#8974;</p></td> </tr>
+
+<tr><td><p>&ulcrop;</p>
+          <p>&amp;#x0230F;</p>
+        <p>&amp;#8975;</p></td> </tr>
+
+<tr><td><p>&bnot;</p>
+          <p>&amp;#x02310;</p>
+        <p>&amp;#8976;</p></td> </tr>
+
+<tr><td><p>&profline;</p>
+          <p>&amp;#x02312;</p>
+        <p>&amp;#8978;</p></td> </tr>
+
+<tr><td><p>&profsurf;</p>
+          <p>&amp;#x02313;</p>
+        <p>&amp;#8979;</p></td> </tr>
+
+<tr><td><p>&telrec;</p>
+          <p>&amp;#x02315;</p>
+        <p>&amp;#8981;</p></td> </tr>
+
+<tr><td><p>&target;</p>
+          <p>&amp;#x02316;</p>
+        <p>&amp;#8982;</p></td> </tr>
+
+<tr><td><p>&ulcorn; &ulcorner;</p>
+          <p>&amp;#x0231C;</p>
+        <p>&amp;#8988;</p></td> </tr>
+
+<tr><td><p>&urcorn; &urcorner;</p>
+          <p>&amp;#x0231D;</p>
+        <p>&amp;#8989;</p></td> </tr>
+
+<tr><td><p>&dlcorn; &llcorner;</p>
+          <p>&amp;#x0231E;</p>
+        <p>&amp;#8990;</p></td> </tr>
+
+<tr><td><p>&drcorn; &lrcorner;</p>
+          <p>&amp;#x0231F;</p>
+        <p>&amp;#8991;</p></td> </tr>
+
+<tr><td><p>&frown; &sfrown;</p>
+          <p>&amp;#x02322;</p>
+        <p>&amp;#8994;</p></td> </tr>
+
+<tr><td><p>&smile; &ssmile;</p>
+          <p>&amp;#x02323;</p>
+        <p>&amp;#8995;</p></td> </tr>
+
+<tr><td><p>&cylcty;</p>
+          <p>&amp;#x0232D;</p>
+        <p>&amp;#9005;</p></td> </tr>
+
+<tr><td><p>&profalar;</p>
+          <p>&amp;#x0232E;</p>
+        <p>&amp;#9006;</p></td> </tr>
+
+<tr><td><p>&topbot;</p>
+          <p>&amp;#x02336;</p>
+        <p>&amp;#9014;</p></td> </tr>
+
+<tr><td><p>&ovbar;</p>
+          <p>&amp;#x0233D;</p>
+        <p>&amp;#9021;</p></td> </tr>
+
+<tr><td><p>&lmoust; &lmoustache;</p>
+          <p>&amp;#x023B0;</p>
+        <p>&amp;#9136;</p></td> </tr>
+
+<tr><td><p>&solbar;</p>
+          <p>&amp;#x0233F;</p>
+        <p>&amp;#9023;</p></td> </tr>
+
+<tr><td><p>&angzarr;</p>
+          <p>&amp;#x0237C;</p>
+        <p>&amp;#9084;</p></td> </tr>
+
+<tr><td><p>&lmoust; &lmoustache;</p>
+          <p>&amp;#x023B0;</p>
+        <p>&amp;#9136;</p></td> </tr>
+
+<tr><td><p>&rmoust; &rmoustache;</p>
+          <p>&amp;#x023B1;</p>
+        <p>&amp;#9137;</p></td> </tr>
+
+<tr><td><p>&tbrk; &OverBracket;</p>
+          <p>&amp;#x023B4;</p>
+        <p>&amp;#9140;</p></td> </tr>
+
+<tr><td><p>&bbrk; &UnderBracket;</p>
+          <p>&amp;#x023B5;</p>
+        <p>&amp;#9141;</p></td> </tr>
+
+<tr><td><p>&bbrktbrk;</p>
+          <p>&amp;#x023B6;</p>
+        <p>&amp;#9142;</p></td> </tr>
+
+<tr><td><p>&OverParenthesis;</p>
+          <p>&amp;#x023DC;</p>
+        <p>&amp;#9180;</p></td> </tr>
+
+<tr><td><p>&UnderParenthesis;</p>
+          <p>&amp;#x023DD;</p>
+        <p>&amp;#9181;</p></td> </tr>
+
+<tr><td><p>&OverBrace;</p>
+          <p>&amp;#x023DE;</p>
+        <p>&amp;#9182;</p></td> </tr>
+
+<tr><td><p>&UnderBrace;</p>
+          <p>&amp;#x023DF;</p>
+        <p>&amp;#9183;</p></td> </tr>
+
+<tr><td><p>&boxvr;</p>
+          <p>&amp;#x0251C;</p>
+        <p>&amp;#9186;</p></td> </tr>
+
+<tr><td><p>&boxvr;</p>
+          <p>&amp;#x0251C;</p>
+        <p>&amp;#9500;</p></td> </tr>
+
+<tr><td><p>&elinters;</p>
+          <p>&amp;#x023E7;</p>
+        <p>&amp;#9191;</p></td> </tr>
+
+<tr><td><p>&blank;</p>
+          <p>&amp;#x02423;</p>
+        <p>&amp;#9251;</p></td> </tr>
+
+<tr><td><p>&oS; &circledS;</p>
+          <p>&amp;#x024C8;</p>
+        <p>&amp;#9416;</p></td> </tr>
+
+<tr><td><p>&boxh;</p>
+          <p>&amp;#x02500;</p>
+        <p>&amp;#9472;</p></td> </tr>
+
+<tr><td><p>&boxvr;</p>
+          <p>&amp;#x0251C;</p>
+        <p>&amp;#9474;</p></td> </tr>
+
+<tr><td><p>&boxdr;</p>
+          <p>&amp;#x0250C;</p>
+        <p>&amp;#9484;</p></td> </tr>
+
+<tr><td><p>&boxdl;</p>
+          <p>&amp;#x02510;</p>
+        <p>&amp;#9488;</p></td> </tr>
+
+<tr><td><p>&boxur;</p>
+          <p>&amp;#x02514;</p>
+        <p>&amp;#9492;</p></td> </tr>
+
+<tr><td><p>&boxul;</p>
+          <p>&amp;#x02518;</p>
+        <p>&amp;#9496;</p></td> </tr>
+
+<tr><td><p>&boxvr;</p>
+          <p>&amp;#x0251C;</p>
+        <p>&amp;#9500;</p></td> </tr>
+
+<tr><td><p>&boxvl;</p>
+          <p>&amp;#x02524;</p>
+        <p>&amp;#9508;</p></td> </tr>
+
+<tr><td><p>&boxVL;</p>
+          <p>&amp;#x0252C;</p>
+        <p>&amp;#9516;</p></td> </tr>
+
+<tr><td><p>&boxhd;</p>
+          <p>&amp;#x02534;</p>
+        <p>&amp;#9524;</p></td> </tr>
+
+<tr><td><p>&boxvh;</p>
+          <p>&amp;#x0253C;</p>
+        <p>&amp;#9532;</p></td> </tr>
+
+<tr><td><p>&boxH;</p>
+          <p>&amp;#x02550;</p>
+        <p>&amp;#9552;</p></td> </tr>
+
+<tr><td><p>&boxV;</p>
+          <p>&amp;#x02551;</p>
+        <p>&amp;#9553;</p></td> </tr>
+
+<tr><td><p>&boxdR;</p>
+          <p>&amp;#x02552;</p>
+        <p>&amp;#9554;</p></td> </tr>
+
+<tr><td><p>&boxDr;</p>
+          <p>&amp;#x02553;</p>
+        <p>&amp;#9555;</p></td> </tr>
+
+<tr><td><p>&boxDR;</p>
+          <p>&amp;#x02554;</p>
+        <p>&amp;#9556;</p></td> </tr>
+
+<tr><td><p>&boxdL;</p>
+          <p>&amp;#x02555;;</p>
+        <p>&amp;#9557;</p></td> </tr>
+
+<tr><td><p>&boxDl;</p>
+          <p>&amp;#x02556;</p>
+        <p>&amp;#9558;</p></td> </tr>
+
+<tr><td><p>&boxDL;</p>
+          <p>&amp;#x02557;</p>
+        <p>&amp;#9559;</p></td> </tr>
+
+<tr><td><p>&boxuR;</p>
+          <p>&amp;#x02558;</p>
+        <p>&amp;#9560;</p></td> </tr>
+
+<tr><td><p>&boxUr;</p>
+          <p>&amp;#x02559;</p>
+        <p>&amp;#9561;</p></td> </tr>
+
+<tr><td><p>&boxUR;;</p>
+          <p>&amp;#x0255A;</p>
+        <p>&amp;#9562;</p></td> </tr>
+
+<tr><td><p>&boxuL;</p>
+          <p>&amp;#x0255B;</p>
+        <p>&amp;#9563;</p></td> </tr>
+
+<tr><td><p>&boxU1;</p>
+          <p>&amp;#x0255C;</p>
+        <p>&amp;#9564;</p></td> </tr>
+
+<tr><td><p>&boxUL;</p>
+          <p>&amp;#x0255D;;</p>
+        <p>&amp;#9565;</p></td> </tr>
+
+<tr><td><p>&boxvR;</p>
+          <p>&amp;#x0255E;</p>
+        <p>&amp;#9566;</p></td> </tr>
+
+<tr><td><p>&boxVr;</p>
+          <p>&amp;#x0255F;</p>
+        <p>&amp;#9567;</p></td> </tr>
+
+<tr><td><p>&boxVR;</p>
+          <p>&amp;#x02560;</p>
+        <p>&amp;#9568;</p></td> </tr>
+
+<tr><td><p>&boxvL;</p>
+          <p>&amp;#x02561;</p>
+        <p>&amp;#9569;</p></td> </tr>
+
+<tr><td><p>&boxVl;</p>
+          <p>&amp;#x02562;</p>
+        <p>&amp;#9570;</p></td> </tr>
+
+<tr><td><p>&boxVL;</p>
+          <p>&amp;#x02563;</p>
+        <p>&amp;#9571;</p></td> </tr>
+
+<tr><td><p>&boxhD;</p>
+          <p>&amp;#x02565;</p>
+        <p>&amp;#9573;</p></td> </tr>
+
+<tr><td><p>&boxHD;</p>
+          <p>&amp;#x02566;</p>
+        <p>&amp;#9574;</p></td> </tr>
+
+<tr><td><p>&boxHu;</p>
+          <p>&amp;#x02567;</p>
+        <p>&amp;#9575;</p></td> </tr>
+
+<tr><td><p>&boxhU;</p>
+          <p>&amp;#x02568;</p>
+        <p>&amp;#9576;</p></td> </tr>
+
+<tr><td><p>&boxvH;</p>
+          <p>&amp;#x0256A;</p>
+        <p>&amp;#9578;</p></td> </tr>
+
+<tr><td><p>&boxVh;</p>
+          <p>&amp;#x0256B;</p>
+        <p>&amp;#9579;</p></td> </tr>
+
+<tr><td><p>&boxVH;</p>
+          <p>&amp;#x0256C;</p>
+        <p>&amp;#9580;</p></td> </tr>
+
+<tr><td><p>&uhblk;</p>
+          <p>&amp;#x02580;</p>
+        <p>&amp;#9600;</p></td> </tr>
+
+<tr><td><p>&lhblk;</p>
+          <p>&amp;#x02584;</p>
+        <p>&amp;#9604;</p></td> </tr>
+
+<tr><td><p>&blk14;</p>
+          <p>&amp;#x02591;</p>
+        <p>&amp;#9617;</p></td> </tr>
+
+<tr><td><p>&blk12;</p>
+          <p>&amp;#x02592;</p>
+        <p>&amp;#9618;</p></td> </tr>
+
+<tr><td><p>&blk34;</p>
+          <p>&amp;#x02593;</p>
+        <p>&amp;#9619;</p></td> </tr>
+
+<tr><td><p>&squ; &square;</p>
+          <p>&amp;#x025A1;</p>
+        <p>&amp;#9633;</p></td> </tr>
+
+<tr><td><p>&squf; &squarf;</p>
+          <p>&amp;#x025AA;</p>
+        <p>&amp;#9642;</p></td> </tr>
+
+<tr><td><p>&EmptyVerySmallSquare;</p>
+          <p>&amp;#x025AB;</p>
+        <p>&amp;#9643;</p></td> </tr>
+
+<tr><td><p>&rect;</p>
+          <p>&amp;#x025AD;</p>
+        <p>&amp;#9645;</p></td> </tr>
+
+<tr><td><p>&marker;</p>
+          <p>&amp;#x025AE;</p>
+        <p>&amp;#9646;</p></td> </tr>
+
+<tr><td><p>&xutri;</p>
+          <p>&amp;#x025B3;</p>
+        <p>&amp;#9651;</p></td> </tr>
+
+<tr><td><p>&utrif;</p>
+          <p>&amp;#x025B4;</p>
+        <p>&amp;#9652;</p></td> </tr>
+
+<tr><td><p>&utri; &triangle;</p>
+          <p>&amp;#x025B5;</p>
+        <p>&amp;#9653;</p></td> </tr>
+
+<tr><td><p>&uhblk;</p>
+          <p>&amp;#x02580;</p>
+        <p>&amp;#9656;</p></td> </tr>
+
+<tr><td><p>&xdtri;</p>
+          <p>&amp;#x025BD;</p>
+        <p>&amp;#9661;</p></td> </tr>
+
+<tr><td><p>&dtrif;</p>
+          <p>&amp;#x025BE;</p>
+        <p>&amp;#9662;</p></td> </tr>
+
+<tr><td><p>&dtri; &triangledown;</p>
+          <p>&amp;#x025BF;</p>
+        <p>&amp;#9663;</p></td> </tr>
+
+<tr><td><p>&ltrif;</p>
+          <p>&amp;#x025C2;</p>
+        <p>&amp;#9666;</p></td> </tr>
+
+<tr><td><p>&ltri; &triangleleft;</p>
+          <p>&amp;#x025C3;</p>
+        <p>&amp;#9667;</p></td> </tr>
+
+<tr><td><p>&loz; &lozenge;</p>
+          <p>&amp;#x025CA;</p>
+        <p>&amp;#9674;</p></td> </tr>
+
+<tr><td><p>&cir;</p>
+          <p>&amp;#x025CB;</p>
+        <p>&amp;#9675;</p></td> </tr>
+
+<tr><td><p>&tridot;</p>
+          <p>&amp;#x025EC;</p>
+        <p>&amp;#9708;</p></td> </tr>
+
+<tr><td><p>&xcirc; &bigcirc;</p>
+          <p>&amp;#x025EF;</p>
+        <p>&amp;#9711;</p></td> </tr>
+
+<tr><td><p>&ultri;</p>
+          <p>&amp;#x025F8;</p>
+        <p>&amp;#9720;</p></td> </tr>
+
+<tr><td><p>&urtri;</p>
+          <p>&amp;#x025F9;</p>
+        <p>&amp;#9721;</p></td> </tr>
+
+<tr><td><p>&lltri;</p>
+          <p>&amp;#x025FA;</p>
+        <p>&amp;#9722;</p></td> </tr>
+
+<tr><td><p>&EmptySmallSquare;</p>
+          <p>&amp;#x025FB;</p>
+        <p>&amp;#9723;</p></td> </tr>
+
+<tr><td><p>&FilledSmallSquare;</p>
+          <p>&amp;#x025FC;</p>
+        <p>&amp;#9724;</p></td> </tr>
+
+<tr><td><p>&star;</p>
+          <p>&amp;#x02606;</p>
+        <p>&amp;#9734;</p></td> </tr>
+
+<tr><td><p>&phone;</p>
+          <p>&amp;#x0260E;</p>
+        <p>&amp;#9742;</p></td> </tr>
+
+<tr><td><p>&female;</p>
+          <p>&amp;#x02640;</p>
+        <p>&amp;#9792;</p></td> </tr>
+
+<tr><td><p>&male;</p>
+          <p>&amp;#x02642;</p>
+        <p>&amp;#9794;</p></td> </tr>
+
+<tr><td><p>&spades; &spadesuit;</p>
+          <p>&amp;#x02660;</p>
+        <p>&amp;#9824;</p></td> </tr>
+
+<tr><td><p>&clubs; &clubsuit;</p>
+          <p>&amp;#x02663;</p>
+        <p>&amp;#9827;</p></td> </tr>
+
+<tr><td><p>&hearts; &heartsuit;</p>
+          <p>&amp;#x02665;</p>
+        <p>&amp;#9829;</p></td> </tr>
+
+<tr><td><p>&diams; &diamondsuit;</p>
+          <p>&amp;#x02666;</p>
+        <p>&amp;#9830;</p></td> </tr>
+
+<tr><td><p>&sung;</p>
+          <p>&amp;#x0266A;</p>
+        <p>&amp;#9834;</p></td> </tr>
+
+<tr><td><p>&natur; &natural;</p>
+          <p>&amp;#x0266E;</p>
+        <p>&amp;#9838;</p></td> </tr>
+
+<tr><td><p>&sharp;</p>
+          <p>&amp;#x0266F;</p>
+        <p>&amp;#9839;</p></td> </tr>
+
+<tr><td><p>&check; &checkmark;</p>
+          <p>&amp;#x02713;</p>
+        <p>&amp;#10003;</p></td> </tr>
+
+<tr><td><p>&cross;</p>
+          <p>&amp;#x02717;</p>
+        <p>&amp;#10007;</p></td> </tr>
+
+<tr><td><p>&sext;</p>
+          <p>&amp;#x02736;</p>
+        <p>&amp;#10038;</p></td> </tr>
+
+<tr><td><p>&VerticalSeparator;</p>
+          <p>&amp;#x02758;</p>
+        <p>&amp;#10072;</p></td> </tr>
+
+<tr><td><p>&lbbrk;</p>
+          <p>&amp;#x02772;</p>
+        <p>&amp;#10098;</p></td> </tr>
+
+<tr><td><p>&rbbrk;</p>
+          <p>&amp;#x02773;</p>
+        <p>&amp;#10099;</p></td> </tr>
+
+<tr><td><p>&robrk;</p>
+          <p>&amp;#x027E7;</p>
+        <p>&amp;#10215;</p></td> </tr>
+
+<tr><td><p>&lang;</p>
+          <p>&amp;#x027E8;</p>
+        <p>&amp;#10216;</p></td> </tr>
+
+<tr><td><p>&RightAngleBracket;</p>
+          <p>&amp;#x027E9;</p>
+        <p>&amp;#10217;</p></td> </tr>
+
+<tr><td><p>&Lang;</p>
+          <p>&amp;#x027EA;</p>
+        <p>&amp;#10218;</p></td> </tr>
+
+<tr><td><p>&loang;</p>
+          <p>&amp;#x027EC;</p>
+        <p>&amp;#10220;</p></td> </tr>
+
+<tr><td><p>&roang;</p>
+          <p>&amp;#x027ED;</p>
+        <p>&amp;#10221;</p></td> </tr>
+
+<tr><td><p>&longleftarrow;</p>
+          <p>&amp;#x027F5;</p>
+        <p>&amp;#10229;</p></td> </tr>
+
+<tr><td><p>&xrarr;</p>
+          <p>&amp;#x027F6;</p>
+        <p>&amp;#10230;</p></td> </tr>
+
+<tr><td><p>&xlArr;</p>
+          <p>&amp;#x027F8;</p>
+        <p>&amp;#10232;</p></td> </tr>
+
+<tr><td><p>&xrArr;</p>
+          <p>&amp;#x027F9;</p>
+        <p>&amp;#10233;</p></td> </tr>
+
+<tr><td><p>&xhArr;</p>
+          <p>&amp;#x027FA;</p>
+        <p>&amp;#10234;</p></td> </tr>
+
+<tr><td><p>&dzigrarr;</p>
+          <p>&amp;#x027FF;</p>
+        <p>&amp;#10239;</p></td> </tr>
+
+<tr><td><p>&xmap; &longmapsto;</p>
+          <p>&amp;#x027FC;</p>
+        <p>&amp;#10236;</p></td> </tr>
+
+<tr><td><p>&dzigrarr;</p>
+          <p>&amp;#x027FF;</p>
+        <p>&amp;#10239;</p></td> </tr>
+
+<tr><td><p>&nvlArr;</p>
+          <p>&amp;#x02902;</p>
+        <p>&amp;#10498;</p></td> </tr>
+
+<tr><td><p>&nvrArr;;</p>
+          <p>&amp;#x02903;</p>
+        <p>&amp;#10499;</p></td> </tr>
+
+<tr><td><p>&nvHarr;</p>
+          <p>&amp;#x02904;</p>
+        <p>&amp;#10500;</p></td> </tr>
+
+<tr><td><p>&Map;</p>
+          <p>&amp;#x02905;</p>
+        <p>&amp;#10501;</p></td> </tr>
+
+<tr><td><p>&rbarr; &bkarow;</p>
+          <p>&amp;#x0290D;</p>
+        <p>&amp;#10509;</p></td> </tr>
+
+<tr><td><p>&lBarr;</p>
+          <p>&amp;#x0290E;</p>
+        <p>&amp;#10510;</p></td> </tr>
+
+<tr><td><p>&rBarr; &dbkarow;</p>
+          <p>&amp;#x0290F;</p>
+        <p>&amp;#10511;</p></td> </tr>
+
+<tr><td><p>&RBarr; &drbkarow;</p>
+          <p>&amp;#x02910;</p>
+        <p>&amp;#10512;</p></td> </tr>
+
+<tr><td><p>&UpArrowBar;</p>
+          <p>&amp;#x02912;</p>
+        <p>&amp;#10514;</p></td> </tr>
+
+<tr><td><p>&DownArrowBar;</p>
+          <p>&amp;#x02913;</p>
+        <p>&amp;#10515;</p></td> </tr>
+
+<tr><td><p>&Rarrtl;</p>
+          <p>&amp;#x02916;</p>
+        <p>&amp;#10518;</p></td> </tr>
+
+<tr><td><p>&latail;</p>
+          <p>&amp;#x02919;</p>
+        <p>&amp;#10521;</p></td> </tr>
+
+<tr><td><p>&lAtail;</p>
+          <p>&amp;#x0291B;</p>
+        <p>&amp;#10523;</p></td> </tr>
+
+<tr><td><p>&rAtail;</p>
+          <p>&amp;#x0291C;</p>
+        <p>&amp;#10524;</p></td> </tr>
+
+<tr><td><p>&larrfs;</p>
+          <p>&amp;#x0291D;</p>
+        <p>&amp;#10525;</p></td> </tr>
+
+<tr><td><p>&rarrfs;</p>
+          <p>&amp;#x0291E;</p>
+        <p>&amp;#10526;</p></td> </tr>
+
+<tr><td><p>&rarrbfs;</p>
+          <p>&amp;#x02920;</p>
+        <p>&amp;#10528;</p></td> </tr>
+
+<tr><td><p>&nwarhk;</p>
+          <p>&amp;#x02923;</p>
+        <p>&amp;#10531;</p></td> </tr>
+
+<tr><td><p>&nearhk;</p>
+          <p>&amp;#x02924;</p>
+        <p>&amp;#10532;</p></td> </tr>
+
+<tr><td><p>&searhk; &hksearow;</p>
+          <p>&amp;#x02925;</p>
+        <p>&amp;#10533;</p></td> </tr>
+
+<tr><td><p>&nwnear;</p>
+          <p>&amp;#x02927;</p>
+        <p>&amp;#10535;</p></td> </tr>
+
+<tr><td><p>&nesear; &toea;</p>
+          <p>&amp;#x02928;</p>
+        <p>&amp;#10536;</p></td> </tr>
+
+<tr><td><p>&seswar; &tosa;</p>
+          <p>&amp;#x02929;</p>
+        <p>&amp;#10537;</p></td> </tr>
+
+<tr><td><p>&swnwar;</p>
+          <p>&amp;#x0292A;</p>
+        <p>&amp;#10538;</p></td> </tr>
+
+<tr><td><p>&cudarrr;</p>
+          <p>&amp;#x02935;</p>
+        <p>&amp;#10549;</p></td> </tr>
+
+<tr><td><p>&ldca;</p>
+          <p>&amp;#x02936;</p>
+        <p>&amp;#10550;</p></td> </tr>
+
+<tr><td><p>&rdca;</p>
+          <p>&amp;#x02937;</p>
+        <p>&amp;#10551;</p></td> </tr>
+
+<tr><td><p>&cudarrl;</p>
+          <p>&amp;#x02938;</p>
+        <p>&amp;#10552;</p></td> </tr>
+
+<tr><td><p>&curarrm;</p>
+          <p>&amp;#x0293C;</p>
+        <p>&amp;#10556;</p></td> </tr>
+
+<tr><td><p>&cularrp;</p>
+          <p>&amp;#x0293D;</p>
+        <p>&amp;#10557;</p></td> </tr>
+
+<tr><td><p>&rarrpl;</p>
+          <p>&amp;#x02945;</p>
+        <p>&amp;#10565;</p></td> </tr>
+
+<tr><td><p>&harrcir;</p>
+          <p>&amp;#x02948;</p>
+        <p>&amp;#10568;</p></td> </tr>
+
+<tr><td><p>&lurdshar;</p>
+          <p>&amp;#x0294A;</p>
+        <p>&amp;#10570;</p></td> </tr>
+
+<tr><td><p>&ldrushar;</p>
+          <p>&amp;#x0294B;</p>
+        <p>&amp;#10571;</p></td> </tr>
+
+<tr><td><p>&LeftRightVector;</p>
+          <p>&amp;#x0294E;</p>
+        <p>&amp;#10574;</p></td> </tr>
+
+<tr><td><p>&RightUpDownVector;</p>
+          <p>&amp;#x0294F;</p>
+        <p>&amp;#10575;</p></td> </tr>
+
+<tr><td><p>&LeftUpDownVector;</p>
+          <p>&amp;##x02951;</p>
+        <p>&amp;#10577;</p></td> </tr>
+
+<tr><td><p>&LeftVectorBar;</p>
+          <p>&amp;#x02952;</p>
+        <p>&amp;#10578;</p></td> </tr>
+
+<tr><td><p>&RightVectorBar;</p>
+          <p>&amp;#x02953;</p>
+        <p>&amp;#10579;</p></td> </tr>
+
+<tr><td><p>&RightUpVectorBar;</p>
+          <p>&amp;#x02904;</p>
+        <p>&amp;#10580;</p></td> </tr>
+
+<tr><td><p>&DownLeftVectorBar;</p>
+          <p>&amp;#x02956;</p>
+        <p>&amp;#10582;</p></td> </tr>
+
+<tr><td><p>&DownRightVectorBar;</p>
+          <p>&amp;#x02957;</p>
+        <p>&amp;#10583;</p></td> </tr>
+
+<tr><td><p>&LeftUpVectorBar;</p>
+          <p>&amp;#x02958;</p>
+        <p>&amp;#10584;</p></td> </tr>
+
+<tr><td><p>&LeftDownVectorBar;</p>
+          <p>&amp;#x02959;</p>
+        <p>&amp;#10585;</p></td> </tr>
+
+<tr><td><p>&RightTeeVector;</p>
+          <p>&amp;#x0295B;</p>
+        <p>&amp;#10587;</p></td> </tr>
+
+<tr><td><p>&RightUpTeeVector;</p>
+          <p>&amp;#x0295C;</p>
+        <p>&amp;#10588;</p></td> </tr>
+
+<tr><td><p>&RightDownTeeVector;</p>
+          <p>&amp;#x0295D;</p>
+        <p>&amp;#10589;</p></td> </tr>
+
+<tr><td><p>&DownLeftTeeVector;</p>
+          <p>&amp;#x0295E;</p>
+        <p>&amp;#10590;</p></td> </tr>
+
+<tr><td><p>&LeftUpTeeVector;</p>
+          <p>&amp;#x02960;</p>
+        <p>&amp;#10592;</p></td> </tr>
+
+<tr><td><p>&LeftDownTeeVector;</p>
+          <p>&amp;#x02961;</p>
+        <p>&amp;#10593;</p></td> </tr>
+
+<tr><td><p>&lHar;</p>
+          <p>&amp;#x02962;</p>
+        <p>&amp;#10594;</p></td> </tr>
+
+<tr><td><p>&uHar;</p>
+          <p>&amp;#x02963;</p>
+        <p>&amp;#10595;</p></td> </tr>
+
+<tr><td><p>&dHar;</p>
+          <p>&amp;#x02965;</p>
+        <p>&amp;#10597;</p></td> </tr>
+
+<tr><td><p>&luruhar;</p>
+          <p>&amp;#x02966;</p>
+        <p>&amp;#10598;</p></td> </tr>
+
+<tr><td><p>&ldrdhar;</p>
+          <p>&amp;#x02967;</p>
+        <p>&amp;#10599;</p></td> </tr>
+
+<tr><td><p>&ruluhar;</p>
+          <p>&amp;#x02968;</p>
+        <p>&amp;#10600;</p></td> </tr>
+
+<tr><td><p>&lharul;</p>
+          <p>&amp;#x0296A;</p>
+        <p>&amp;#10602;</p></td> </tr>
+
+<tr><td><p>&llhard;</p>
+          <p>&amp;#x0296B;</p>
+        <p>&amp;#10603;</p></td> </tr>
+
+<tr><td><p>&rharul;</p>
+          <p>&amp;#x0296C;</p>
+        <p>&amp;#10604;</p></td> </tr>
+
+<tr><td><p>&lrhard;</p>
+          <p>&amp;#x0296D;</p>
+        <p>&amp;#10605;</p></td> </tr>
+
+<tr><td><p>&duhar;</p>
+          <p>&amp;#x0296F;</p>
+        <p>&amp;#10607;</p></td> </tr>
+
+<tr><td><p>&RoundImplies;</p>
+          <p>&amp;#x02970;</p>
+        <p>&amp;#10608;</p></td> </tr>
+
+<tr><td><p>&erarr;</p>
+          <p>&amp;#x02971;</p>
+        <p>&amp;#10609;</p></td> </tr>
+
+<tr><td><p>&simrarr;</p>
+          <p>&amp;#x02972;</p>
+        <p>&amp;#10610;</p></td> </tr>
+
+<tr><td><p>&rarrsim;</p>
+          <p>&amp;#x02974;</p>
+        <p>&amp;#10612;</p></td> </tr>
+
+<tr><td><p>&rarrap;</p>
+          <p>&amp;#x02975;</p>
+        <p>&amp;#10613;</p></td> </tr>
+
+<tr><td><p>&ltlarr;</p>
+          <p>&amp;#x02976;</p>
+        <p>&amp;#10614;</p></td> </tr>
+
+<tr><td><p>&gtrarr;</p>
+          <p>&amp;#x02978;</p>
+        <p>&amp;#10616;</p></td> </tr>
+
+<tr><td><p>&suplarr;</p>
+          <p>&amp;#x0297B;</p>
+        <p>&amp;#10619;</p></td> </tr>
+
+<tr><td><p>&lfisht;</p>
+          <p>&amp;#x0297C;</p>
+        <p>&amp;#10620;</p></td> </tr>
+
+<tr><td><p>&rfisht;</p>
+          <p>&amp;#x0297D;</p>
+        <p>&amp;#10621;</p></td> </tr>
+
+<tr><td><p>&ufisht;</p>
+          <p>&amp;#x0297E;</p>
+        <p>&amp;#10622;</p></td> </tr>
+
+<tr><td><p>&lopar;</p>
+          <p>&amp;#x02985;</p>
+        <p>&amp;#10629;</p></td> </tr>
+
+<tr><td><p>&ropar;</p>
+          <p>&amp;#x02986;</p>
+        <p>&amp;#10630;</p></td> </tr>
+
+<tr><td><p>&lbrke;</p>
+          <p>&amp;#x0298B;</p>
+        <p>&amp;#10635;</p></td> </tr>
+
+<tr><td><p>&rbrke;</p>
+          <p>&amp;#x0298C;</p>
+        <p>&amp;#10636;</p></td> </tr>
+
+<tr><td><p>&rbrksld;</p>
+          <p>&amp;#x0298E;</p>
+        <p>&amp;#10638;</p></td> </tr>
+
+<tr><td><p>&lbrksld;</p>
+          <p>&amp;#x0298F;</p>
+        <p>&amp;#10639;</p></td> </tr>
+
+<tr><td><p>&rbrkslu;</p>
+          <p>&amp;#x02990;</p>
+        <p>&amp;#10640;</p></td> </tr>
+
+<tr><td><p>&langd;</p>
+          <p>&amp;#x02991;</p>
+        <p>&amp;#10641;</p></td> </tr>
+
+<tr><td><p>&lparlt;</p>
+          <p>&amp;#x02993;</p>
+        <p>&amp;#10643;</p></td> </tr>
+
+<tr><td><p>&rpargt;</p>
+          <p>&amp;#x02994;</p>
+        <p>&amp;#10644;</p></td> </tr>
+
+<tr><td><p>&gtlPar;</p>
+          <p>&amp;#x02995;</p>
+        <p>&amp;#10645;</p></td> </tr>
+
+<tr><td><p>&ltrPar;</p>
+          <p>&amp;#x02996;</p>
+        <p>&amp;#10646;</p></td> </tr>
+
+<tr><td><p>&vangrt;</p>
+          <p>&amp;#x0299C;</p>
+        <p>&amp;#10652;</p></td> </tr>
+
+<tr><td><p>&angrtvbd;</p>
+          <p>&amp;#x0299D;</p>
+        <p>&amp;#10653;</p></td> </tr>
+
+<tr><td><p>&ange;</p>
+          <p>&amp;#x029A4;</p>
+        <p>&amp;#10660;</p></td> </tr>
+
+<tr><td><p>&range;</p>
+          <p>&amp;#x029A5;</p>
+        <p>&amp;#10661;</p></td> </tr>
+
+<tr><td><p>&uwangle;</p>
+          <p>&amp;#x029A7;</p>
+        <p>&amp;#10663;</p></td> </tr>
+
+<tr><td><p>&angmsdaa;</p>
+          <p>&amp;#x029A8;</p>
+        <p>&amp;#10664;</p></td> </tr>
+
+<tr><td><p>&angmsdab;</p>
+          <p>&amp;#x029A9;</p>
+        <p>&amp;#10665;</p></td> </tr>
+
+<tr><td><p>&angmsdac;</p>
+          <p>&amp;#x029AA;</p>
+        <p>&amp;#10666;</p></td> </tr>
+
+<tr><td><p>&angmsdae;</p>
+          <p>&amp;#x029AC;</p>
+        <p>&amp;#10668;</p></td> </tr>
+
+<tr><td><p>&angmsdaf;</p>
+          <p>&amp;#x029AD;</p>
+        <p>&amp;#10669;</p></td> </tr>
+
+<tr><td><p>&angmsdag;</p>
+          <p>&amp;#x029AE;</p>
+        <p>&amp;#10670;</p></td> </tr>
+
+<tr><td><p>&angmsdah;</p>
+          <p>&amp;#x029AF;</p>
+        <p>&amp;#10671;</p></td> </tr>
+
+<tr><td><p>&demptyv;</p>
+          <p>&amp;#x029B1;</p>
+        <p>&amp;#10673;</p></td> </tr>
+
+<tr><td><p>&cemptyv;</p>
+          <p>&amp;#x029B2;</p>
+        <p>&amp;#10674;</p></td> </tr>
+
+<tr><td><p>&raemptyv;</p>
+          <p>&amp;#x029B3;</p>
+        <p>&amp;#10675;</p></td> </tr>
+
+<tr><td><p>&laemptyv;</p>
+          <p>&amp;#x029B4;</p>
+        <p>&amp;#10676;</p></td> </tr>
+
+<tr><td><p>&omid;</p>
+          <p>&amp;#x029B6;</p>
+        <p>&amp;#10678;</p></td> </tr>
+
+<tr><td><p>&opar;</p>
+          <p>&amp;#x029B7;</p>
+        <p>&amp;#10679;</p></td> </tr>
+
+<tr><td><p>&operp;</p>
+          <p>&amp;#x029B9;</p>
+        <p>&amp;#10681;</p></td> </tr>
+
+<tr><td><p>&olcross;</p>
+          <p>&amp;#x029BB;</p>
+        <p>&amp;#10683;</p></td> </tr>
+
+<tr><td><p>&olcir;</p>
+          <p>&amp;#x029BE;</p>
+        <p>&amp;#10686;</p></td> </tr>
+
+<tr><td><p>&ofcir;</p>
+          <p>&amp;#x029BF;</p>
+        <p>&amp;#10687;</p></td> </tr>
+
+<tr><td><p>&olt;</p>
+          <p>&amp;#x029C0;</p>
+        <p>&amp;#10688;</p></td> </tr>
+
+<tr><td><p>&ogt;</p>
+          <p>&amp;#x029C1;</p>
+        <p>&amp;#10689;</p></td> </tr>
+
+<tr><td><p>&cirE;</p>
+          <p>&amp;#x029C3;</p>
+        <p>&amp;#10691;</p></td> </tr>
+
+<tr><td><p>&solb;</p>
+          <p>&amp;#x029C4;</p>
+        <p>&amp;#10692;</p></td> </tr>
+
+<tr><td><p>&bsolb;</p>
+          <p>&amp;#x029C5;</p>
+        <p>&amp;#10693;</p></td> </tr>
+
+<tr><td><p>&boxbox;</p>
+          <p>&amp;#x029C9;</p>
+        <p>&amp;#10697;</p></td> </tr>
+
+<tr><td><p>&RightTriangleBar;</p>
+          <p>&amp;#x029CE;</p>
+        <p>&amp;#10702;</p></td> </tr>
+
+<tr><td><p>&LeftTriangleBar;</p>
+          <p>&amp;#x029CF;</p>
+        <p>&amp;#10703;</p></td> </tr>
+
+<tr><td><p>&RightTriangleBar;</p>
+          <p>&amp;#x029D0;</p>
+        <p>&amp;#10704;</p></td> </tr>
+
+<tr><td><p>&race;</p>
+          <p>&amp;#x029DA;</p>
+        <p>&amp;#10714;</p></td> </tr>
+
+<tr><td><p>&infintie;</p>
+          <p>&amp;#x029DD;</p>
+        <p>&amp;#10717;</p></td> </tr>
+
+<tr><td><p>&nvinfin;</p>
+          <p>&amp;#x029DE;</p>
+        <p>&amp;#10718;</p></td> </tr>
+
+<tr><td><p>&eparsl;</p>
+          <p>&amp;#x029E3;</p>
+        <p>&amp;#10723;</p></td> </tr>
+
+<tr><td><p>&smeparsl;</p>
+          <p>&amp;#x029E4;</p>
+        <p>&amp;#10724;</p></td> </tr>
+
+<tr><td><p>&lozf; &blacklozenge;</p>
+          <p>&amp;#x029EB;</p>
+        <p>&amp;#10731;</p></td> </tr>
+
+<tr><td><p>&RuleDelayed;</p>
+          <p>&amp;#x029F4;</p>
+        <p>&amp;#10740;</p></td> </tr>
+
+<tr><td><p>&dsol;</p>
+          <p>&amp;#x029F6;</p>
+        <p>&amp;#10742;</p></td> </tr>
+
+<tr><td><p>&xodot; &bigodot;</p>
+          <p>&amp;#x02A00;</p>
+        <p>&amp;#10752;</p></td> </tr>
+
+<tr><td><p>&xotime; &bigotimes;</p>
+          <p>&amp;#x02A02;</p>
+        <p>&amp;#10754;</p></td> </tr>
+
+<tr><td><p>&xuplus; &biguplus;</p>
+          <p>&amp;#x02A04;</p>
+        <p>&amp;#10756;</p></td> </tr>
+
+<tr><td><p>&xsqcup; &bigsqcup;</p>
+          <p>&amp;#x02A06;</p>
+        <p>&amp;#10758;</p></td> </tr>
+
+<tr><td><p>&qint; &iiiint;</p>
+          <p>&amp;##x02A0C;</p>
+        <p>&amp;#10764;</p></td> </tr>
+
+<tr><td><p>&cirfnint;</p>
+          <p>&amp;#x02A10;</p>
+        <p>&amp;#10768;</p></td> </tr>
+
+<tr><td><p>&awint;</p>
+          <p>&amp;#x02A11;</p>
+        <p>&amp;#10769;</p></td> </tr>
+
+<tr><td><p>&rppolint;</p>
+          <p>&amp;#x02A12;</p>
+        <p>&amp;#10770;</p></td> </tr>
+
+<tr><td><p>&scpolint;</p>
+          <p>&amp;#x02A13;</p>
+        <p>&amp;#10771;</p></td> </tr>
+
+<tr><td><p>&pointint;</p>
+          <p>&amp;#x02A15;</p>
+        <p>&amp;#10773;</p></td> </tr>
+
+<tr><td><p>&quatint;</p>
+          <p>&amp;#x02A16;</p>
+        <p>&amp;#10774;</p></td> </tr>
+
+<tr><td><p>&intlarhk;</p>
+          <p>&amp;#x02A17;</p>
+        <p>&amp;#10775;</p></td> </tr>
+
+<tr><td><p>&pluscir;</p>
+          <p>&amp;#x02A22;</p>
+        <p>&amp;#10786;</p></td> </tr>
+
+<tr><td><p>&simplus;</p>
+          <p>&amp;#x02A24;</p>
+        <p>&amp;#10788;</p></td> </tr>
+
+<tr><td><p>&plusdu;</p>
+          <p>&amp;#x02A25;</p>
+        <p>&amp;#10789;</p></td> </tr>
+
+<tr><td><p>&plussim;</p>
+          <p>&amp;#x02A26;</p>
+        <p>&amp;#10790;</p></td> </tr>
+
+<tr><td><p>&plustwo;</p>
+          <p>&amp;#x02A27;</p>
+        <p>&amp;#10791;</p></td> </tr>
+
+<tr><td><p>&minusdu;</p>
+          <p>&amp;#x02A2A;</p>
+        <p>&amp;#10794;</p></td> </tr>
+
+<tr><td><p>&loplus;</p>
+          <p>&amp;#x02A2D;</p>
+        <p>&amp;#10797;</p></td> </tr>
+
+<tr><td><p>&roplus;</p>
+          <p>&amp;#x02A2E;</p>
+        <p>&amp;#10798;</p></td> </tr>
+
+<tr><td><p>&Cross;</p>
+          <p>&amp;#x02A2F;</p>
+        <p>&amp;#10799;</p></td> </tr>
+
+<tr><td><p>&timesbar;</p>
+          <p>&amp;#x02A31;</p>
+        <p>&amp;#10801;</p></td> </tr>
+
+<tr><td><p>&smashp;</p>
+          <p>&amp;#x02A33;</p>
+        <p>&amp;#10803;</p></td> </tr>
+
+<tr><td><p>&lotimes;</p>
+          <p>&amp;#x02A34;</p>
+        <p>&amp;#10804;</p></td> </tr>
+
+<tr><td><p>&rotimes;</p>
+          <p>&amp;#x02A35;</p>
+        <p>&amp;#10805;</p></td> </tr>
+
+<tr><td><p>&Otimes;</p>
+          <p>&amp;#x02A37;</p>
+        <p>&amp;#10807;</p></td> </tr>
+
+<tr><td><p>&odiv;</p>
+          <p>&amp;#x02A38;</p>
+        <p>&amp;#10808;</p></td> </tr>
+
+<tr><td><p>&triplus;</p>
+          <p>&amp;#x02A39;</p>
+        <p>&amp;#10809;</p></td> </tr>
+
+<tr><td><p>&triminus;</p>
+          <p>&amp;#x02A3A;</p>
+        <p>&amp;#10810;</p></td> </tr>
+
+<tr><td><p>&iprod; &intprod;</p>
+          <p>&amp;#x02A3C;</p>
+        <p>&amp;#10812;</p></td> </tr>
+
+<tr><td><p>&amalg;</p>
+          <p>&amp;#x02A3F;</p>
+        <p>&amp;#10815;</p></td> </tr>
+
+<tr><td><p>&capdot;</p>
+          <p>&amp;#x02A40;</p>
+        <p>&amp;#10816;</p></td> </tr>
+
+<tr><td><p>&ncup;</p>
+          <p>&amp;#x02A42;</p>
+        <p>&amp;#10818;</p></td> </tr>
+
+<tr><td><p>&capand;</p>
+          <p>&amp;#x02A44;</p>
+        <p>&amp;#10820;</p></td> </tr>
+
+<tr><td><p>&cupor;</p>
+          <p>&amp;#x02A45;</p>
+        <p>&amp;#10821;</p></td> </tr>
+
+<tr><td><p>&cupcap;</p>
+          <p>&amp;#x02A46;</p>
+        <p>&amp;#10822;</p></td> </tr>
+
+<tr><td><p>&capcup;</p>
+          <p>&amp;#x02A47;</p>
+        <p>&amp;#10823;</p></td> </tr>
+
+<tr><td><p>&capbrcup;</p>
+          <p>&amp;#x02A49;</p>
+        <p>&amp;#10825;</p></td> </tr>
+
+<tr><td><p>&cupcup;</p>
+          <p>&amp;#x02A4A;</p>
+        <p>&amp;#10826;</p></td> </tr>
+
+<tr><td><p>&capcap;</p>
+          <p>&amp;#x02A4B;</p>
+        <p>&amp;#10827;</p></td> </tr>
+
+<tr><td><p>&ccups;</p>
+          <p>&amp;#x02A4C;</p>
+        <p>&amp;#10828;</p></td> </tr>
+
+<tr><td><p>&ccupssm;</p>
+          <p>&amp;#x02A50;</p>
+        <p>&amp;#10832;</p></td> </tr>
+
+<tr><td><p>&And;</p>
+          <p>&amp;#x02A53;</p>
+        <p>&amp;#10835;</p></td> </tr>
+
+<tr><td><p>&Or;</p>
+          <p>&amp;#x02A54;</p>
+        <p>&amp;#10836;</p></td> </tr>
+
+<tr><td><p>&andand;</p>
+          <p>&amp;#x02A55;</p>
+        <p>&amp;#10837;</p></td> </tr>
+
+<tr><td><p>&orslope;</p>
+          <p>&amp;##x02A57;</p>
+        <p>&amp;#10839;</p></td> </tr>
+
+<tr><td><p>&andslope;</p>
+          <p>&amp;#x02A58;</p>
+        <p>&amp;#10840;</p></td> </tr>
+
+<tr><td><p>&andv;</p>
+          <p>&amp;#x02A5A;</p>
+        <p>&amp;#10842;</p></td> </tr>
+
+<tr><td><p>&orv;</p>
+          <p>&amp;#x02A5B;</p>
+        <p>&amp;#10843;</p></td> </tr>
+
+<tr><td><p>&ord;</p>
+          <p>&amp;#x02A5D;</p>
+        <p>&amp;#10845;</p></td> </tr>
+
+<tr><td><p>&wedbar;</p>
+          <p>&amp;#x02A5F;</p>
+        <p>&amp;#10847;</p></td> </tr>
+
+<tr><td><p>&sdote;</p>
+          <p>&amp;#x02A66;</p>
+        <p>&amp;#10854;</p></td> </tr>
+
+<tr><td><p>&simdot;</p>
+          <p>&amp;#x02A6A;</p>
+        <p>&amp;#10858;</p></td> </tr>
+
+<tr><td><p>&easter;</p>
+          <p>&amp;#x02A6E;</p>
+        <p>&amp;#10862;</p></td> </tr>
+
+<tr><td><p>&apacir;</p>
+          <p>&amp;#x02A6F;</p>
+        <p>&amp;#10863;</p></td> </tr>
+
+<tr><td><p>&apE;</p>
+          <p>&amp;#x02A70;</p>
+        <p>&amp;#10864;</p></td> </tr>
+
+<tr><td><p>&eplus;</p>
+          <p>&amp;#x02A71;</p>
+        <p>&amp;#10865;</p></td> </tr>
+
+<tr><td><p>&Esim;</p>
+          <p>&amp;#x02A73;</p>
+        <p>&amp;#10867;</p></td> </tr>
+
+<tr><td><p>&Colone;</p>
+          <p>&amp;#x02A74;</p>
+        <p>&amp;#10868;</p></td> </tr>
+
+<tr><td><p>&Equal;</p>
+          <p>&amp;#x02A75;</p>
+        <p>&amp;#10869;</p></td> </tr>
+
+<tr><td><p>&eDDot; &ddotseq;</p>
+          <p>&amp;#x02A77;</p>
+        <p>&amp;#10871;</p></td> </tr>
+
+<tr><td><p>&ltcir;</p>
+          <p>&amp;#x02A79;</p>
+        <p>&amp;#10873;</p></td> </tr>
+
+<tr><td><p>&gtcir;</p>
+          <p>&amp;#x02A7A;</p>
+        <p>&amp;#10874;</p></td> </tr>
+
+<tr><td><p>&ltquest;</p>
+          <p>&amp;#x02A7B;</p>
+        <p>&amp;#10875;</p></td> </tr>
+
+<tr><td><p>&gtquest;</p>
+          <p>&amp;#x02A7C;</p>
+        <p>&amp;#10876;</p></td> </tr>
+
+<tr><td><p>&GreaterSlantEqual;</p>
+          <p>&amp;#x02A7E;</p>
+        <p>&amp;#10878;</p></td> </tr>
+
+<tr><td><p>&lesdot;</p>
+          <p>&amp;#x02A7F;</p>
+        <p>&amp;#10879;</p></td> </tr>
+
+<tr><td><p>&gesdot;</p>
+          <p>&amp;#x02A80;</p>
+        <p>&amp;#10880;</p></td> </tr>
+
+<tr><td><p>&lesdoto;</p>
+          <p>&amp;#x02A81;</p>
+        <p>&amp;#10881;</p></td> </tr>
+
+<tr><td><p>&lesdotor;</p>
+          <p>&amp;#x02A83;</p>
+        <p>&amp;#10883;</p></td> </tr>
+
+<tr><td><p>&gesdotol;</p>
+          <p>&amp;#x1D509;</p>
+        <p>&amp;#10884;</p></td> </tr>
+
+<tr><td><p>&lap; &lessapprox;</p>
+          <p>&amp;#x02A85;</p>
+        <p>&amp;#10885;</p></td> </tr>
+
+<tr><td><p>&gap; &gtrapprox;</p>
+          <p>&amp;#x02A86;</p>
+        <p>&amp;#10886;</p></td> </tr>
+
+<tr><td><p>&gne; &gneq;</p>
+          <p>&amp;#x02A88;</p>
+        <p>&amp;#10888;</p></td> </tr>
+
+<tr><td><p>&lnap; &lnapprox;</p>
+          <p>&amp;#x02A89;</p>
+        <p>&amp;#10889;</p></td> </tr>
+
+<tr><td><p>&Ffr;</p>
+          <p>&amp;#x1D509;</p>
+        <p>&amp;#10890;</p></td> </tr>
+
+<tr><td><p>&lEg; &lesseqqgtr;</p>
+          <p>&amp;#x02A8B;</p>
+        <p>&amp;#10891;</p></td> </tr>
+
+<tr><td><p>&lsime;</p>
+          <p>&amp;#x02A8D;</p>
+        <p>&amp;#10893;</p></td> </tr>
+
+<tr><td><p>&gsime;</p>
+          <p>&amp;#x02A8E;</p>
+        <p>&amp;#10894;</p></td> </tr>
+
+<tr><td><p>&lsimg;</p>
+          <p>&amp;#x02A8F;</p>
+        <p>&amp;#10895;</p></td> </tr>
+
+<tr><td><p>&gsiml;</p>
+          <p>&amp;#x02A90;</p>
+        <p>&amp;#10896;</p></td> </tr>
+
+<tr><td><p>&glE;</p>
+          <p>&amp;#x02A92;</p>
+        <p>&amp;#10898;</p></td> </tr>
+
+<tr><td><p>&lesges;</p>
+          <p>&amp;#x02A93;</p>
+        <p>&amp;#10899;</p></td> </tr>
+
+<tr><td><p>&gesles;</p>
+          <p>&amp;#x02A94;</p>
+        <p>&amp;#10900;</p></td> </tr>
+
+<tr><td><p>&els; &eqslantless;</p>
+          <p>&amp;#x02A95;</p>
+        <p>&amp;#10901;</p></td> </tr>
+
+<tr><td><p>&elsdot;</p>
+          <p>&amp;#x02A97;</p>
+        <p>&amp;#10903;</p></td> </tr>
+
+<tr><td><p>&egsdot;</p>
+          <p>&amp;#x02A98;</p>
+        <p>&amp;#10904;</p></td> </tr>
+
+<tr><td><p>&el;</p>
+          <p>&amp;#x02A99;</p>
+        <p>&amp;#10905;</p></td> </tr>
+
+<tr><td><p>&eg;</p>
+          <p>&amp;#x02A9A;</p>
+        <p>&amp;#10906;</p></td> </tr>
+
+<tr><td><p>&simg;</p>
+          <p>&amp;#x02A9E;</p>
+        <p>&amp;#10910;</p></td> </tr>
+
+<tr><td><p>&simlE;</p>
+          <p>&amp;#x02A9F;</p>
+        <p>&amp;#10911;</p></td> </tr>
+
+<tr><td><p>&simgE;</p>
+          <p>&amp;#x02AA0;</p>
+        <p>&amp;#10912;</p></td> </tr>
+
+<tr><td><p>&LessLess;</p>
+          <p>&amp;#x02AA1;</p>
+        <p>&amp;#10913;</p></td> </tr>
+
+<tr><td><p>&glj;</p>
+          <p>&amp;#x02AA4;</p>
+        <p>&amp;#10916;</p></td> </tr>
+
+<tr><td><p>&gla;</p>
+          <p>&amp;#x02AA5;</p>
+        <p>&amp;#10917;</p></td> </tr>
+
+<tr><td><p>&ltcc;</p>
+          <p>&amp;#x02AA6;</p>
+        <p>&amp;#10918;</p></td> </tr>
+
+<tr><td><p>&gtcc;</p>
+          <p>&amp;#x02AA7;</p>
+        <p>&amp;#10919;</p></td> </tr>
+
+<tr><td><p>&gescc;</p>
+          <p>&amp;#x02AA9;</p>
+        <p>&amp;#10921;</p></td> </tr>
+
+<tr><td><p>&smt;</p>
+          <p>&amp;#x02AAA;</p>
+        <p>&amp;#10922;</p></td> </tr>
+
+<tr><td><p>&lat;</p>
+          <p>&amp;#x02AAB;</p>
+        <p>&amp;#10923;</p></td> </tr>
+
+<tr><td><p>&smte;</p>
+          <p>&amp;#x02AAC;</p>
+        <p>&amp;#10924;</p></td> </tr>
+
+<tr><td><p>&PrecedesEqual;</p>
+          <p>&amp;#x02AAF;</p>
+        <p>&amp;#10927;</p></td> </tr>
+
+<tr><td><p>&SucceedsEqual;</p>
+          <p>&amp;#x02AB0;</p>
+        <p>&amp;#10928;</p></td> </tr>
+
+<tr><td><p>&prE;</p>
+          <p>&amp;#x02AB3;</p>
+        <p>&amp;#10931;</p></td> </tr>
+
+<tr><td><p>&prnE; &precneqq;</p>
+          <p>&amp;#x02AB5;</p>
+        <p>&amp;#10933;</p></td> </tr>
+
+<tr><td><p>&scnE; &succneqq;</p>
+          <p>&amp;#x02AB6;</p>
+        <p>&amp;#10934;</p></td> </tr>
+
+<tr><td><p>&prap; &precapprox;</p>
+          <p>&amp;#x02AB7;</p>
+        <p>&amp;#10935;</p></td> </tr>
+
+<tr><td><p>&scap; &succapprox;</p>
+          <p>&amp;#x02AB8;</p>
+        <p>&amp;#10936;</p></td> </tr>
+
+<tr><td><p>&scnap; &succnapprox;</p>
+          <p>&amp;#x02ABA;</p>
+        <p>&amp;#10938;</p></td> </tr>
+
+<tr><td><p>&Pr;</p>
+          <p>&amp;#x02ABB;</p>
+        <p>&amp;#10939;</p></td> </tr>
+
+<tr><td><p>&Sc;</p>
+          <p>&amp;#x02ABC;</p>
+        <p>&amp;#10940;</p></td> </tr>
+
+<tr><td><p>&subdot;</p>
+          <p>&amp;#x02ABD;</p>
+        <p>&amp;#10941;</p></td> </tr>
+
+<tr><td><p>&subplus;</p>
+          <p>&amp;#x02ABF;</p>
+        <p>&amp;#10943;</p></td> </tr>
+
+<tr><td><p>&supplus;</p>
+          <p>&amp;#x02AC0;</p>
+        <p>&amp;#10944;</p></td> </tr>
+
+<tr><td><p>&submult;</p>
+          <p>&amp;#x02AC1;</p>
+        <p>&amp;#10945;</p></td> </tr>
+
+<tr><td><p>&supmult;</p>
+          <p>&amp;x02AC2;</p>
+        <p>&amp;#10946;</p></td> </tr>
+
+<tr><td><p>&supedot;</p>
+          <p>&amp;#x02AC4;</p>
+        <p>&amp;#10948;</p></td> </tr>
+
+<tr><td><p>&subE; &subseteqq;</p>
+          <p>&amp;#x02AC5;</p>
+        <p>&amp;#10949;</p></td> </tr>
+
+<tr><td><p>&supE; &supseteqq;</p>
+          <p>&amp;#x02AC6;</p>
+        <p>&amp;#10950;</p></td> </tr>
+
+<tr><td><p>&subsim;</p>
+          <p>&amp;#x02AC7;</p>
+        <p>&amp;#10951;</p></td> </tr>
+
+<tr><td><p>&subnE; &subsetneqq;</p>
+          <p>&amp;#x02ACB;</p>
+        <p>&amp;#10955;</p></td> </tr>
+
+<tr><td><p>&supnE; &supsetneqq;</p>
+          <p>&amp;#x02ACC;</p>
+        <p>&amp;#10956;</p></td> </tr>
+
+<tr><td><p>&csub;</p>
+          <p>&amp;#x02ACF;</p>
+        <p>&amp;#10959;</p></td> </tr>
+
+<tr><td><p>&csup;</p>
+          <p>&amp;#x02AD0;</p>
+        <p>&amp;#10960;</p></td> </tr>
+
+<tr><td><p>&csube;</p>
+          <p>&amp;#x02AD1;</p>
+        <p>&amp;#10961;</p></td> </tr>
+
+<tr><td><p>&csupe;</p>
+          <p>&amp;#x02AD2;</p>
+        <p>&amp;#10962;</p></td> </tr>
+
+<tr><td><p>&subsup;</p>
+          <p>&amp;#x02AD3;</p>
+        <p>&amp;#10963;</p></td> </tr>
+
+<tr><td><p>&supsub;</p>
+          <p>&amp;#x02AD4;</p>
+        <p>&amp;#10964;</p></td> </tr>
+
+<tr><td><p>&subsub;</p>
+          <p>&amp;#x02AD5;</p>
+        <p>&amp;#10965;</p></td> </tr>
+
+<tr><td><p>&supsup;</p>
+          <p>&amp;#x02AD6;</p>
+        <p>&amp;#10966;</p></td> </tr>
+
+<tr><td><p>&suphsub;</p>
+          <p>&amp;#x02AD7;</p>
+        <p>&amp;#10967;</p></td> </tr>
+
+<tr><td><p>&supdsub;</p>
+          <p>&amp;#x02AD8;</p>
+        <p>&amp;#10968;</p></td> </tr>
+
+<tr><td><p>&forkv;</p>
+          <p>&amp;#x02AD9;</p>
+        <p>&amp;#10969;</p></td> </tr>
+
+<tr><td><p>&topfork;</p>
+          <p>&amp;#x02ADA;</p>
+        <p>&amp;#10970;</p></td> </tr>
+
+<tr><td><p>&mlcp;</p>
+          <p>&amp;#x02ADB;</p>
+        <p>&amp;#10971;</p></td> </tr>
+
+<tr><td><p>&DoubleLeftTee;</p>
+          <p>&amp;#x02AE4;</p>
+        <p>&amp;#10980;</p></td> </tr>
+
+<tr><td><p>&Vdashl;</p>
+          <p>&amp;#x02AE6;</p>
+        <p>&amp;#10982;</p></td> </tr>
+
+<tr><td><p>&Barv;</p>
+          <p>&amp;#x02AE7;</p>
+        <p>&amp;#10983;</p></td> </tr>
+
+<tr><td><p>&vBar;</p>
+          <p>&amp;#x02AE8;</p>
+        <p>&amp;#10984;</p></td> </tr>
+
+<tr><td><p>&vBarv;</p>
+          <p>&amp;#x02AE9;</p>
+        <p>&amp;#10985;</p></td> </tr>
+
+<tr><td><p>&Vbar;</p>
+          <p>&amp;#x02AEB;</p>
+        <p>&amp;#10987;</p></td> </tr>
+
+<tr><td><p>&Not;</p>
+          <p>&amp;#x02AEC;</p>
+        <p>&amp;#10988;</p></td> </tr>
+
+<tr><td><p>&bNot;</p>
+          <p>&amp;#x02AED;</p>
+        <p>&amp;#10989;</p></td> </tr>
+
+<tr><td><p>&rnmid;</p>
+          <p>&amp;#x02AEE;</p>
+        <p>&amp;#10990;</p></td> </tr>
+
+<tr><td><p>&cirmid;</p>
+          <p>&amp;#x02AEF;</p>
+        <p>&amp;#10991;</p></td> </tr>
+
+<tr><td><p>&midcir;</p>
+          <p>&amp;#x02AF0;</p>
+        <p>&amp;#10992;</p></td> </tr>
+
+<tr><td><p>&topcir;</p>
+          <p>&amp;#x02AF1;</p>
+        <p>&amp;#10993;</p></td> </tr>
+
+<tr><td><p>&nhpar;</p>
+          <p>&amp;#x02AF2;</p>
+        <p>&amp;#10994;</p></td> </tr>
+
+<tr><td><p>&parsim;</p>
+          <p>&amp;#x02AF3;</p>
+        <p>&amp;#10995;</p></td> </tr>
+
+<tr><td><p>&parsl;</p>
+          <p>&amp;#x02AFD;</p>
+        <p>&amp;#11005;</p></td> </tr>
+
+<tr><td><p>&fflig;</p>
+          <p>&amp;#x0FB00;</p>
+        <p>&amp;#64256;</p></td> </tr>
+
+<tr><td><p>&filig;</p>
+          <p>&amp;#x0FB01;</p>
+        <p>&amp;#64257;</p></td> </tr>
+
+<tr><td><p>&fllig;</p>
+          <p>&amp;#x0FB02;</p>
+        <p>&amp;#64258;</p></td> </tr>
+
+<tr><td><p>&ffilig;</p>
+          <p>&amp;#x0FB03;</p>
+        <p>&amp;#64259;</p></td> </tr>
+
+<tr><td><p>&ffllig;</p>
+          <p>&amp;#x0FB04;</p>
+        <p>&amp;#64260;</p></td> </tr>
+
+<tr><td><p>&Ffr;</p>
+          <p>&amp;#x1D509;</p>
+        <p>&amp;#120073;</p></td> </tr>
+
+<tr><td><p>&Ascr;</p>
+          <p>&amp;#x1D49C;</p>
+        <p>&amp;#119964;</p></td> </tr>
+
+<tr><td><p>&Cscr;</p>
+          <p>&amp;#x1D49E;</p>
+        <p>&amp;#119966;</p></td> </tr>
+
+<tr><td><p>&Dscr;</p>
+          <p>&amp;#x1D49F;</p>
+        <p>&amp;#119967;</p></td> </tr>
+
+<tr><td><p>&Gscr;</p>
+          <p>&amp;#x1D4A2;</p>
+        <p>&amp;#119970;</p></td> </tr>
+
+<tr><td><p>&Ffr;</p>
+          <p>&amp;#x1D509;</p>
+        <p>&amp;#120073;</p></td> </tr>
+
+<tr><td><p>&Jscr;</p>
+          <p>&amp;#x1D4A5;</p>
+        <p>&amp;#119973;</p></td> </tr>
+
+<tr><td><p>&Kscr;</p>
+          <p>&amp;x1D4A6;</p>
+        <p>&amp;#119974;</p></td> </tr>
+
+<tr><td><p>&Nscr;</p>
+          <p>&amp;#x1D4A9;</p>
+        <p>&amp;#119977;</p></td> </tr>
+
+<tr><td><p>&Oscr;</p>
+          <p>&amp;#x1D4AA;</p>
+        <p>&amp;#119978;</p></td> </tr>
+
+<tr><td><p>&Pscr;</p>
+          <p>&amp;#x1D4AB;</p>
+        <p>&amp;#119979;</p></td> </tr>
+
+<tr><td><p>&Qscr;</p>
+          <p>&amp;#x1D4AC;</p>
+        <p>&amp;#119980;</p></td> </tr>
+
+<tr><td><p>&Sscr;</p>
+          <p>&amp;#x1D4AE;</p>
+        <p>&amp;119982;</p></td> </tr>
+
+<tr><td><p>&Tscr;</p>
+          <p>&amp;#x1D4AF;</p>
+        <p>&amp;#119983;</p></td> </tr>
+
+<tr><td><p>&Uscr;</p>
+          <p>&amp;#x1D4B0;</p>
+        <p>&amp;#119984;</p></td> </tr>
+
+<tr><td><p>&Vscr;</p>
+          <p>&amp;#x1D4B1;</p>
+        <p>&amp;#119985;</p></td> </tr>
+
+<tr><td><p>&Wscr;</p>
+          <p>&amp;#x1D4B2;</p>
+        <p>&amp;#119986;</p></td> </tr>
+
+<tr><td><p>&Xscr;</p>
+          <p>&amp;#x1D4B3;</p>
+        <p>&amp;#119987;</p></td> </tr>
+
+<tr><td><p>&Yscr;</p>
+          <p>&amp;#x1D4B4;</p>
+        <p>&amp;#119988;</p></td> </tr>
+
+<tr><td><p>&Zscr;</p>
+          <p>&amp;#x1D4B5;</p>
+        <p>&amp;#119989;</p></td> </tr>
+
+<tr><td><p>&ascr;</p>
+          <p>&amp;#x1D4B6;</p>
+        <p>&amp;#119990;</p></td> </tr>
+
+<tr><td><p>&bscr;</p>
+          <p>&amp;#x1D4B7;</p>
+        <p>&amp;#119991;</p></td> </tr>
+
+<tr><td><p>&cscr;</p>
+          <p>&amp;#x1D4B8;</p>
+        <p>&amp;#119992;</p></td> </tr>
+
+<tr><td><p>&dscr;</p>
+          <p>&amp;#x1D4B9;</p>
+        <p>&amp;#119993;</p></td> </tr>
+
+<tr><td><p>&fscr;</p>
+          <p>&amp;#x1D4BB;;</p>
+        <p>&amp;#119995;</p></td> </tr>
+
+<tr><td><p>&hscr;</p>
+          <p>&amp;#x1D4BD;</p>
+        <p>&amp;#119997;</p></td> </tr>
+
+<tr><td><p>&iscr;</p>
+          <p>&amp;#x1D4BE;</p>
+        <p>&amp;#119998;</p></td> </tr>
+
+<tr><td><p>&jscr;</p>
+          <p>&amp;#x1D4BF;</p>
+        <p>&amp;#119999;</p></td> </tr>
+
+<tr><td><p>&kscr;</p>
+          <p>&amp;#x1D4C0;</p>
+        <p>&amp;#120000;</p></td> </tr>
+
+<tr><td><p>&lscr;</p>
+          <p>&amp;#x1D4C1;</p>
+        <p>&amp;#120001;</p></td> </tr>
+
+<tr><td><p>&mscr;</p>
+          <p>&amp;#x1D4C2;</p>
+        <p>&amp;#120002;</p></td> </tr>
+
+<tr><td><p>&nscr;</p>
+          <p>&amp;#x1D4C3;</p>
+        <p>&amp;#120003;</p></td> </tr>
+
+<tr><td><p>&pscr;</p>
+          <p>&amp;#x1D4C5;</p>
+        <p>&amp;#120005;</p></td> </tr>
+
+<tr><td><p>&qscr;</p>
+          <p>&amp;#x1D4C6;</p>
+        <p>&amp;#120006;</p></td> </tr>
+
+<tr><td><p>&rscr;</p>
+          <p>&amp;#x1D4C7;</p>
+        <p>&amp;#120007;</p></td> </tr>
+
+<tr><td><p>&sscr;</p>
+          <p>&amp;#x1D4C8;</p>
+        <p>&amp;#120008;</p></td> </tr>
+
+<tr><td><p>&tscr;</p>
+          <p>&amp;#x1D4C9;</p>
+        <p>&amp;#120009;</p></td> </tr>
+
+<tr><td><p>&uscr;</p>
+          <p>&amp;#x1D4CA;</p>
+        <p>&amp;#120010;</p></td> </tr>
+
+<tr><td><p>&vscr;</p>
+          <p>&amp;#x1D4CB;</p>
+        <p>&amp;#120011;</p></td> </tr>
+
+<tr><td><p>&wscr;</p>
+          <p>&amp;#x1D4CC;</p>
+        <p>&amp;#120012;</p></td> </tr>
+
+<tr><td><p>&xscr;</p>
+          <p>&amp;#x1D4CD;</p>
+        <p>&amp;#120013;</p></td> </tr>
+
+<tr><td><p>&yscr;</p>
+          <p>&amp;#x1D4CE;</p>
+        <p>&amp;#120014;</p></td> </tr>
+
+<tr><td><p>&zscr;</p>
+          <p>&amp;#x1D4CF;</p>
+        <p>&amp;#120015;</p></td> </tr>
+
+<tr><td><p>&Afr;</p>
+          <p>&amp;#x1D504;</p>
+        <p>&amp;#120068;</p></td> </tr>
+
+<tr><td><p>&Bfr;</p>
+          <p>&amp;#x1D505;</p>
+        <p>&amp;#120069;</p></td> </tr>
+
+<tr><td><p>&Dfr;</p>
+          <p>&amp;#x1D507;</p>
+        <p>&amp;#120071;</p></td> </tr>
+
+<tr><td><p>&Efr;</p>
+          <p>&amp;#x1D508;</p>
+        <p>&amp;#120072;</p></td> </tr>
+
+<tr><td><p>&Ffr;</p>
+          <p>&amp;#x1D509;</p>
+        <p>&amp;#120073;</p></td> </tr>
+
+<tr><td><p>&Gfr;</p>
+          <p>&amp;#x1D50A;</p>
+        <p>&amp;#120074;</p></td> </tr>
+
+<tr><td><p>&Jfr;</p>
+          <p>&amp;#x1D50D;</p>
+        <p>&amp;#120077;</p></td> </tr>
+
+<tr><td><p>&Kfr;</p>
+          <p>&amp;#x1D50E;</p>
+        <p>&amp;#120078;</p></td> </tr>
+
+<tr><td><p>&Lfr;</p>
+          <p>&amp;#x1D50F;</p>
+        <p>&amp;#120079;</p></td> </tr>
+
+<tr><td><p>&Mfr;</p>
+          <p>&amp;#x1D510;</p>
+        <p>&amp;#120080;</p></td> </tr>
+
+<tr><td><p>&Nfr;</p>
+          <p>&amp;#x1D511;</p>
+        <p>&amp;#120081;</p></td> </tr>
+
+<tr><td><p>&Ofr;</p>
+          <p>&amp;#x1D512;</p>
+        <p>&amp;#120082;</p></td> </tr>
+
+<tr><td><p>&Pfr;</p>
+          <p>&amp;#x1D513;</p>
+        <p>&amp;#120083;</p></td> </tr>
+
+<tr><td><p>&Qfr;</p>
+          <p>&amp;#x1D514;</p>
+        <p>&amp;#120084;</p></td> </tr>
+
+<tr><td><p>&Sfr;</p>
+          <p>&amp;#x1D516;</p>
+        <p>&amp;120086;</p></td> </tr>
+
+<tr><td><p>&Tfr;</p>
+          <p>&amp;#x1D517;</p>
+        <p>&amp;#120087;</p></td> </tr>
+
+<tr><td><p>&Ufr;</p>
+          <p>&amp;#x1D518;</p>
+        <p>&amp;#120088;</p></td> </tr>
+
+<tr><td><p>&Vfr;</p>
+          <p>&amp;#x1D519;</p>
+        <p>&amp;#120089;</p></td> </tr>
+
+<tr><td><p>&Wfr;</p>
+          <p>&amp;#x1D51A;</p>
+        <p>&amp;#120090;</p></td> </tr>
+
+<tr><td><p>&Xfr;</p>
+          <p>&amp;#x1D51B;</p>
+        <p>&amp;#120091;</p></td> </tr>
+
+<tr><td><p>&Yfr;</p>
+          <p>&amp;#x1D51C;</p>
+        <p>&amp;#120092;</p></td> </tr>
+
+<tr><td><p>&afr;</p>
+          <p>&amp;#x1D51E;</p>
+        <p>&amp;#120094;</p></td> </tr>
+
+<tr><td><p>&bfr;</p>
+          <p>&amp;#x1D51F;</p>
+        <p>&amp;#120095;</p></td> </tr>
+
+<tr><td><p>&cfr;</p>
+          <p>&amp;#x1D520;</p>
+        <p>&amp;#120096;</p></td> </tr>
+
+<tr><td><p>&dfr;</p>
+          <p>&amp;#x1D521;</p>
+        <p>&amp;#120097;</p></td> </tr>
+
+<tr><td><p>&efr;</p>
+          <p>&amp;#x1D522;</p>
+        <p>&amp;#120098;</p></td> </tr>
+
+<tr><td><p>&ffr;</p>
+          <p>&amp;#x1D523;</p>
+        <p>&amp;#120099;</p></td> </tr>
+
+<tr><td><p>&gfr;</p>
+          <p>&amp;#x1D524;</p>
+        <p>&amp;#120100;</p></td> </tr>
+
+<tr><td><p>&hfr;</p>
+          <p>&amp;#x1D525;</p>
+        <p>&amp;#120101;</p></td> </tr>
+
+<tr><td><p>&ifr;</p>
+          <p>&amp;#x1D526;</p>
+        <p>&amp;#120102;</p></td> </tr>
+
+<tr><td><p>&jfr;</p>
+          <p>&amp;#x1D527;</p>
+        <p>&amp;#120103;</p></td> </tr>
+
+<tr><td><p>&kfr;</p>
+          <p>&amp;#x1D528;</p>
+        <p>&amp;#120104;</p></td> </tr>
+
+<tr><td><p>&lfr;</p>
+          <p>&amp;#x1D529;</p>
+        <p>&amp;#120105;</p></td> </tr>
+
+<tr><td><p>&mfr;</p>
+          <p>&amp;#x1D52A;</p>
+        <p>&amp;#120106;</p></td> </tr>
+
+<tr><td><p>&nfr;</p>
+          <p>&amp;#x1D52B;</p>
+        <p>&amp;#120107;</p></td> </tr>
+
+<tr><td><p>&ofr;</p>
+          <p>&amp;#x1D52C;</p>
+        <p>&amp;#120108;</p></td> </tr>
+
+<tr><td><p>&pfr;</p>
+          <p>&amp;#x1D52D;</p>
+        <p>&amp;#120109;</p></td> </tr>
+
+<tr><td><p>&qfr;</p>
+          <p>&amp;#x1D52E;</p>
+        <p>&amp;#120110;</p></td> </tr>
+
+<tr><td><p>&rfr;</p>
+          <p>&amp;#x1D52F;</p>
+        <p>&amp;#120111;</p></td> </tr>
+
+<tr><td><p>&sfr;</p>
+          <p>&amp;#x1D530;</p>
+        <p>&amp;#120112;</p></td> </tr>
+
+<tr><td><p>&tfr;</p>
+          <p>&amp;#x1D531;</p>
+        <p>&amp;#120113;</p></td> </tr>
+
+<tr><td><p>&ufr;</p>
+          <p>&amp;#x1D532;</p>
+        <p>&amp;#120114;</p></td> </tr>
+
+<tr><td><p>&vfr;</p>
+          <p>&amp;#x1D533;</p>
+        <p>&amp;#120115;</p></td> </tr>
+
+<tr><td><p>&wfr;</p>
+          <p>&amp;#x1D534;</p>
+        <p>&amp;#120116;</p></td> </tr>
+
+<tr><td><p>&xfr;</p>
+          <p>&amp;#x1D535;</p>
+        <p>&amp;#120117;</p></td> </tr>
+
+<tr><td><p>&yfr;</p>
+          <p>&amp;#x1D536;</p>
+        <p>&amp;#120118;</p></td> </tr>
+
+<tr><td><p>&zfr;</p>
+          <p>&amp;#x1D537;</p>
+        <p>&amp;#120119;</p></td> </tr>
+
+<tr><td><p>&Aopf;</p>
+          <p>&amp;#x1D538;</p>
+        <p>&amp;#120120;</p></td> </tr>
+
+<tr><td><p>&Bopf;</p>
+          <p>&amp;#x1D539;</p>
+        <p>&amp;#120121;</p></td> </tr>
+
+<tr><td><p>&Dopf;</p>
+          <p>&amp;#x1D53B;</p>
+        <p>&amp;#120123;</p></td> </tr>
+
+<tr><td><p>&Eopf;</p>
+          <p>&amp;#x1D53C;</p>
+        <p>&amp;#120124;</p></td> </tr>
+
+<tr><td><p>&Fopf;</p>
+          <p>&amp;#x1D53D;</p>
+        <p>&amp;#120125;</p></td> </tr>
+
+<tr><td><p>&Gopf;</p>
+          <p>&amp;#x1D53E;</p>
+        <p>&amp;#120126;</p></td> </tr>
+
+<tr><td><p>&Iopf;</p>
+          <p>&amp;#x1D540;</p>
+        <p>&amp;#120128;</p></td> </tr>
+
+<tr><td><p>&Jopf;</p>
+          <p>&amp;#x1D541;</p>
+        <p>&amp;#120129;</p></td> </tr>
+
+<tr><td><p>&Kopf;</p>
+          <p>&amp;#x1D542;</p>
+        <p>&amp;#120130;</p></td> </tr>
+
+<tr><td><p>&Lopf;</p>
+          <p>&amp;#x1D543;</p>
+        <p>&amp;#120131;</p></td> </tr>
+
+<tr><td><p>&Mopf;</p>
+          <p>&amp;#x1D544;</p>
+        <p>&amp;#120132;</p></td> </tr>
+
+<tr><td><p>&Oopf;</p>
+          <p>&amp;#x1D546;</p>
+        <p>&amp;#120134;</p></td> </tr>
+
+<tr><td><p>&Sopf;</p>
+          <p>&amp;#x1D54A;</p>
+        <p>&amp;#120138;</p></td> </tr>
+
+<tr><td><p>&Topf;</p>
+          <p>&amp;#x1D54B;</p>
+        <p>&amp;#120139;</p></td> </tr>
+
+<tr><td><p>&Uopf;</p>
+          <p>&amp;#x1D54C;</p>
+        <p>&amp;#120140;</p></td> </tr>
+
+<tr><td><p>&Vopf;</p>
+          <p>&amp;#x1D54D;</p>
+        <p>&amp;#120141;</p></td> </tr>
+
+<tr><td><p>&Wopf;</p>
+          <p>&amp;#x1D54E;</p>
+        <p>&amp;#120142;</p></td> </tr>
+
+<tr><td><p>&Xopf;</p>
+          <p>&amp;#x1D54F;</p>
+        <p>&amp;#120143;</p></td> </tr>
+
+<tr><td><p>&Yopf;</p>
+          <p>&amp;#x1D550;</p>
+        <p>&amp;#120144;/p></td> </tr>
+
+<tr><td><p>&aopf;</p>
+          <p>&amp;#x1D552;</p>
+        <p>&amp;#120146;</p></td> </tr>
+
+<tr><td><p>&bopf;</p>
+          <p>&amp;#x1D553;</p>
+        <p>&amp;#120147;</p></td> </tr>
+
+<tr><td><p>&copf;</p>
+          <p>&amp;#x1D554;</p>
+        <p>&amp;#120148;</p></td> </tr>
+
+<tr><td><p>&dopf;</p>
+          <p>&amp;#x1D555;</p>
+        <p>&amp;#120149;</p></td> </tr>
+
+<tr><td><p>&eopf;</p>
+          <p>&amp;#x1D556;</p>
+        <p>&amp;#120150;</p></td> </tr>
+
+<tr><td><p>&fopf;</p>
+          <p>&amp;#x1D557;</p>
+        <p>&amp;#120151;</p></td> </tr>
+
+<tr><td><p>&gopf;</p>
+          <p>&amp;#x1D558;</p>
+        <p>&amp;#120152;</p></td> </tr>
+
+<tr><td><p>&hopf;</p>
+          <p>&amp;#x1D559;</p>
+        <p>&amp;#120153;</p></td> </tr>
+
+<tr><td><p>&iopf;</p>
+          <p>&amp;#x1D55A;</p>
+        <p>&amp;#120154;</p></td> </tr>
+
+<tr><td><p>&jopf;</p>
+          <p>&amp;#x1D55B;</p>
+        <p>&amp;#120155;</p></td> </tr>
+
+<tr><td><p>&kopf;</p>
+          <p>&amp;#x1D55C;</p>
+        <p>&amp;#120156;</p></td> </tr>
+
+<tr><td><p>&lopf;</p>
+          <p>&amp;#x1D55D;</p>
+        <p>&amp;#120157;</p></td> </tr>
+
+<tr><td><p>&mopf;</p>
+          <p>&amp;#x1D55E;</p>
+        <p>&amp;#120158;</p></td> </tr>
+
+<tr><td><p>&nopf;</p>
+          <p>&amp;#x1D55F;</p>
+        <p>&amp;#120159;</p></td> </tr>
+
+<tr><td><p>&oopf;</p>
+          <p>&amp;#x1D560;</p>
+        <p>&amp;#120160;</p></td> </tr>
+
+<tr><td><p>&popf;</p>
+          <p>&amp;#x1D561;</p>
+        <p>&amp;#120161;</p></td> </tr>
+
+<tr><td><p>&qopf;</p>
+          <p>&amp;#x1D562;</p>
+        <p>&amp;#120162;</p></td> </tr>
+
+<tr><td><p>&ropf;</p>
+          <p>&amp;#x1D563;</p>
+        <p>&amp;#120163;</p></td> </tr>
+
+<tr><td><p>&sopf;</p>
+          <p>&amp;#x1D564;</p>
+        <p>&amp;#120164;</p></td> </tr>
+
+<tr><td><p>&topf;</p>
+          <p>&amp;#x1D565;</p>
+        <p>&amp;#120165;</p></td> </tr>
+
+<tr><td><p>&uopf;</p>
+          <p>&amp;#x1D566;</p>
+        <p>&amp;#120166;</p></td> </tr>
+
+<tr><td><p>&vopf;</p>
+          <p>&amp;#x021FD;</p>
+        <p>&amp;#120167;</p></td> </tr>
+
+<tr><td><p>&wopf;</p>
+          <p>&amp;#x1D568;</p>
+        <p>&amp;#120168;</p></td> </tr>
+
+<tr><td><p>&xopf;</p>
+          <p>&amp;#x1D569;</p>
+        <p>&amp;#120169;</p></td> </tr>
+
+<tr><td><p>&yopf;</p>
+          <p>&amp;#x1D56A;</p>
+        <p>&amp;#120170;</p></td> </tr>
+
+<tr><td><p>&zopf;</p>
+          <p>&amp;#x1D56B;</p>
+        <p>&amp;#120171;</p></td> </tr>
+</table></center>
+</body>
+</html>
